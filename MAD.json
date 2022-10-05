@@ -27,7 +27,7 @@
         },
         "currency": "EUR",
         "host": "airlabs.co",
-        "id": "ikooc6vhm3c",
+        "id": "q2yw03q2r0g",
         "key": {
             "api_key": "b2aa36ba-24ae-4496-a278-e7593719af77",
             "expired": "2022-11-07T00:00:00.000Z",
@@ -35,7 +35,7 @@
             "limits_by_hour": 2500,
             "limits_by_minute": 250,
             "limits_by_month": 1000,
-            "limits_total": 998,
+            "limits_total": 997,
             "registered": "2022-10-05T11:14:18.000Z",
             "type": "free"
         },
@@ -45,9 +45,9 @@
             "dep_iata": "MAD",
             "lang": "en"
         },
-        "pid": 270130,
+        "pid": 270115,
         "server": "l",
-        "time": 2,
+        "time": 4,
         "version": 9
     },
     "response": [

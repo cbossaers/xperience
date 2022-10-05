@@ -1,0 +1,55 @@
+{
+    "request": {
+        "client": {
+            "agent": {},
+            "connection": {
+                "isp_code": 766,
+                "isp_name": "Entidad Publica Empresarial Red.es"
+            },
+            "device": {},
+            "geo": {
+                "city": "Valencia",
+                "continent": "Europe",
+                "country": "Spain",
+                "country_code": "ES",
+                "lat": 39.4667,
+                "lng": -0.3667,
+                "timezone": "Europe/Madrid"
+            },
+            "ip": "158.42.174.102",
+            "karma": {
+                "is_blocked": false,
+                "is_bot": false,
+                "is_crawler": false,
+                "is_friend": false,
+                "is_regular": true
+            }
+        },
+        "currency": "EUR",
+        "host": "airlabs.co",
+        "id": "m4hp9veeoog",
+        "key": {
+            "api_key": "b2aa36ba-24ae-4496-a278-e7593719af77",
+            "expired": "2022-11-07T00:00:00.000Z",
+            "id": 20291,
+            "limits_by_hour": 2500,
+            "limits_by_minute": 250,
+            "limits_by_month": 1000,
+            "limits_total": 997,
+            "registered": "2022-10-05T11:14:18.000Z",
+            "type": "free"
+        },
+        "lang": "en",
+        "method": "routes",
+        "params": {
+            "dep_iata": "LPC",
+            "lang": "en"
+        },
+        "pid": 270089,
+        "server": "l",
+        "time": 0,
+        "version": 9
+    },
+    "response": [],
+    "terms": "Unauthorized access is prohibited and punishable by law. \nReselling data 'As Is' without AirLabs.Co permission is strictly prohibited. \nFull terms on https://airlabs.co/. \nContact us info@airlabs.co"
+}
