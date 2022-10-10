@@ -3,7 +3,7 @@ import requests
 import json
 import os, json
 
-path_to_json = 'AlgoritmoPython/AirportDataJson/'
+path_to_json = 'AlgoritmoPython/airportDataJson/'
 json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 frecuencia = dict()
 
@@ -20,6 +20,6 @@ for pos_json in json_files:
             'Frecuencia': x['days']
             })
 
-with open("prueba_frec.json", "w") as f:
+with open("AlgoritmoPython\Cuni_pruebas\prueba_frec.json", "w") as f:
    json.dump(frecuencia, f, indent=4)    
         
