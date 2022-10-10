@@ -20,6 +20,6 @@ for pos_json in json_files:
             'Frecuencia': x['days']
             })
 
-with open("AlgoritmoPython\Cuni_pruebas\prueba_frec.json", "w") as f:
+with open("AlgoritmoPython\Cuni_pruebas\prueba.json", "w") as f:
    json.dump(frecuencia, f, indent=4)    
         
