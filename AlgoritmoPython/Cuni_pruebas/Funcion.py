@@ -22,18 +22,25 @@ for pos_json in json_files:
       json_text = json.load(json_file)
       if len(json_text['response']) > 2 :
          origen = json_text['response'][0]['dep_iata']
-         frecuencia[origen] = []
+         frecuencia[origen] = dict()
          for x in json_text['response']:
+            destino = x['arr_iata']
             dia = dayToNumber(x['days'])
-            if sitio.get(x['arr_iata']) == None :
-               sitio[x['arr_iata']] = dia
+            precio = 666
+            if sitio.get(destino) == None :
+               sitio[destino] = dict()
+               sitio[destino] = {
+               'dias' : dia,
+               'precio' : precio
+               }
             else : 
-               res = sitio[x['arr_iata']]
+               res = sitio[destino]['dias']
                for i in dia: 
                   if i not in res: 
                      res.append(i) 
-               sitio[x['arr_iata']] = sorted(res)     
-         frecuencia[origen].append(sitio)      
+               dia = sorted(res)      
+               sitio[destino]['dias'] = dia
+         frecuencia[origen] = sitio      
 
 with open("AlgoritmoPython\Cuni_pruebas\prueba_frec.json", "w") as f:
    json.dump(frecuencia, f, indent=4, sort_keys=True) 
@@ -41,7 +48,7 @@ with open("AlgoritmoPython\Cuni_pruebas\prueba_frec.json", "w") as f:
 def getDias(origen,destino):
    with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as json_file:
       json_text = json.load(json_file)
-   return json_text[origen][0][destino]
+   return json_text[origen][destino]
 
 with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as json_file:
       json_text = json.load(json_file)
@@ -53,19 +60,18 @@ def paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto 
    ida = fecha_ida.weekday() 
    vuelta = fecha_vuelta.weekday()
    destinos = []
-   for idx, x in enumerate(json_text[origen][0]) :
-      print(x)
-      if ida in json_text[origen][0].get(x) : 
+   print()
+   for idx, x in enumerate(json_text[origen].keys()) :
+      aeropuertos = json_text[origen][x]['dias']
+      if ida in aeropuertos and vuelta in aeropuertos : 
          destinos.append(x) 
-         
+   with open("AlgoritmoPython\Cuni_pruebas\prueba.json", "w") as f:
+      json.dump(destinos, f, indent=4, sort_keys=True)       
 
-ida = datetime.datetime.today()
+ida = datetime.datetime(2022, 11, 14)
 vuelta = datetime.datetime.today()
 presupuesto = 66
 origen = 'AGP'
 paquetes(origen,ida,vuelta,presupuesto)
-   
 
-   
-   
-        
+ 
