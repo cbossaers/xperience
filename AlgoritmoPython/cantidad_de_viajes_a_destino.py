@@ -1,5 +1,7 @@
 import json
 import os
+import numpy as np
+
 def getJson():
     # assign directory
     directory = 'AlgoritmoPython/airportDataJson'
@@ -25,9 +27,10 @@ def getJson():
     with open ("AlgoritmoPython/cantidad_de_viajes_a_destino.json", "w") as res:
         json.dump(result,res, indent = 2)
     
-# def getNumberOfTravels(number):
-#     with open ("AlgoritmoPython/cantidad_de_viajes_a_destino.json", "r") as res:
-#         dic = json.load(res)
-#     print(dic.keys())
-
-# getNumberOfTravels(5)
+def getNumberOfTravels(number):
+    with open ("AlgoritmoPython/cantidad_de_viajes_a_destino.json", "r") as res:
+        dic = json.load(res).keys()
+        dic2 = []
+        for x in range(number):
+            dic2.append(list(dic)[x])
+    print(dic2)
