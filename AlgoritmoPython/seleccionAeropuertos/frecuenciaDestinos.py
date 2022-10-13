@@ -1,10 +1,9 @@
 import json
 import os
-import numpy as np
 
 def getJson():
     # assign directory
-    directory = 'AlgoritmoPython/airportDataJson'
+    directory = 'AlgoritmoPython/seleccionAeropuertos/airportDestinations'
     # list of airports we dont want
     listDirectory = list(map(lambda x: x.replace('.json', ''), os.listdir(directory)))
     result = {}
@@ -22,13 +21,13 @@ def getJson():
                         stradded = stradded + " " + element["arr_iata"]
                     else:
                         result.update({element["arr_iata"] : result.get(element["arr_iata"])+1})
-    print("Added" + stradded)
+    #print("Added" + stradded)
     result = dict(sorted(result.items(), key=lambda item: item[1], reverse = True))
-    with open ("AlgoritmoPython/cantidad_de_viajes_a_destino.json", "w") as res:
-        json.dump(result,res, indent = 2)
+    with open ("./frecuenciaDestinos.json", "w") as res:
+        json.dump(result, res, indent = 2)
     
 def getNumberOfTravels(number):
-    with open ("AlgoritmoPython/cantidad_de_viajes_a_destino.json", "r") as res:
+    with open ("frecuenciaDestinos.json", "r") as res:
         dic = json.load(res).keys()
         dic2 = []
         for x in range(number):
