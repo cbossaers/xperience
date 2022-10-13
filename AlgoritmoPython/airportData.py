@@ -1,7 +1,7 @@
 import requests
 import json
 
-airports = ['MAD', 'BCN', 'PMI', 'AGP', 'ALC', 'LPA', 'TFS', 'LPC', 'IBZ', 'SVQ']
+airports = ['MAD', 'BCN', 'PMI', 'AGP', 'ALC', 'LPA', 'TFS', 'IBZ', 'SVQ', 'VLC']
 
 
 for airport in airports:

@@ -16,7 +16,7 @@
                 "lng": -0.3667,
                 "timezone": "Europe/Madrid"
             },
-            "ip": "158.42.174.102",
+            "ip": "158.42.174.197",
             "karma": {
                 "is_blocked": false,
                 "is_bot": false,
@@ -27,7 +27,7 @@
         },
         "currency": "EUR",
         "host": "airlabs.co",
-        "id": "nbpts13ys5s",
+        "id": "7b7l1ny4ss4",
         "key": {
             "api_key": "b2aa36ba-24ae-4496-a278-e7593719af77",
             "expired": "2022-11-07T00:00:00.000Z",
@@ -35,7 +35,7 @@
             "limits_by_hour": 2500,
             "limits_by_minute": 250,
             "limits_by_month": 1000,
-            "limits_total": 997,
+            "limits_total": 987,
             "registered": "2022-10-05T11:14:18.000Z",
             "type": "free"
         },
@@ -45,8 +45,8 @@
             "dep_iata": "LPA",
             "lang": "en"
         },
-        "pid": 270130,
-        "server": "l",
+        "pid": 3279405,
+        "server": "o",
         "time": 1,
         "version": 9
     },
@@ -95,7 +95,7 @@
             ],
             "arr_time": "22:10",
             "arr_time_utc": "20:10",
-            "counter": 131,
+            "counter": 149,
             "cs_airline_iata": "AY",
             "cs_flight_iata": "AY303",
             "cs_flight_number": "303",
@@ -114,7 +114,7 @@
             "flight_iata": "4Y303",
             "flight_icao": "OCN303",
             "flight_number": "303",
-            "updated": "2022-10-02T05:05:32.000Z"
+            "updated": "2022-10-12T18:47:52.000Z"
         },
         {
             "aircraft_icao": null,
@@ -127,7 +127,7 @@
             ],
             "arr_time": "22:15",
             "arr_time_utc": "20:15",
-            "counter": 53,
+            "counter": 55,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -143,7 +143,7 @@
             "flight_iata": "4Y303",
             "flight_icao": "OCN303",
             "flight_number": "303",
-            "updated": "2022-10-03T05:05:06.000Z"
+            "updated": "2022-10-10T11:33:01.000Z"
         },
         {
             "aircraft_icao": null,
@@ -320,6 +320,39 @@
         },
         {
             "aircraft_icao": null,
+            "airline_iata": "AA",
+            "airline_icao": "AAL",
+            "arr_iata": "MAD",
+            "arr_icao": "LEMD",
+            "arr_terminals": [
+                "4"
+            ],
+            "arr_time": "17:25",
+            "arr_time_utc": "15:25",
+            "counter": 9,
+            "cs_airline_iata": "I2",
+            "cs_flight_iata": "I23823",
+            "cs_flight_number": "3823",
+            "days": [
+                "sun",
+                "wed",
+                "thu",
+                "fri",
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "13:40",
+            "dep_time_utc": "12:40",
+            "duration": 165,
+            "flight_iata": "AA8595",
+            "flight_icao": "AAL8595",
+            "flight_number": "8595",
+            "updated": "2022-10-08T07:52:52.000Z"
+        },
+        {
+            "aircraft_icao": null,
             "airline_iata": "AD",
             "airline_icao": "AZU",
             "arr_iata": "LIS",
@@ -329,7 +362,7 @@
             ],
             "arr_time": "15:55",
             "arr_time_utc": "14:55",
-            "counter": 50,
+            "counter": 54,
             "cs_airline_iata": "TP",
             "cs_flight_iata": "TP1119",
             "cs_flight_number": "1119",
@@ -349,7 +382,7 @@
             "flight_iata": "AD7349",
             "flight_icao": "AZU7349",
             "flight_number": "7349",
-            "updated": "2022-10-04T02:04:01.000Z"
+            "updated": "2022-10-11T03:06:58.000Z"
         },
         {
             "aircraft_icao": null,
@@ -395,7 +428,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 18,
+            "counter": 19,
             "cs_airline_iata": "UX",
             "cs_flight_iata": "UX9018",
             "cs_flight_number": "9018",
@@ -417,7 +450,7 @@
             "flight_iata": "AF4821",
             "flight_icao": "AFR4821",
             "flight_number": "4821",
-            "updated": "2022-09-20T06:17:09.000Z"
+            "updated": "2022-10-11T09:45:37.000Z"
         },
         {
             "aircraft_icao": null,
@@ -518,7 +551,7 @@
             "arr_terminals": null,
             "arr_time": "21:30",
             "arr_time_utc": "20:30",
-            "counter": 67,
+            "counter": 89,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -536,7 +569,7 @@
             "flight_iata": "AT1419",
             "flight_icao": "RAM1419",
             "flight_number": "1419",
-            "updated": "2022-10-03T21:06:58.000Z"
+            "updated": "2022-10-12T20:25:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -577,7 +610,7 @@
             "arr_terminals": null,
             "arr_time": "17:00",
             "arr_time_utc": "16:00",
-            "counter": 39,
+            "counter": 43,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "999",
@@ -596,7 +629,7 @@
             "flight_iata": "AT999",
             "flight_icao": "RAM999",
             "flight_number": "999",
-            "updated": "2022-10-04T16:08:34.000Z"
+            "updated": "2022-10-11T16:00:47.000Z"
         },
         {
             "aircraft_icao": null,
@@ -943,7 +976,7 @@
             ],
             "arr_time": "22:45",
             "arr_time_utc": "20:45",
-            "counter": 8,
+            "counter": 10,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23833",
             "cs_flight_number": "3833",
@@ -951,7 +984,8 @@
                 "sun",
                 "mon",
                 "tue",
-                "thu"
+                "thu",
+                "fri"
             ],
             "dep_iata": "LPA",
             "dep_icao": "GCLP",
@@ -962,7 +996,7 @@
             "flight_iata": "AV6031",
             "flight_icao": "AVA6031",
             "flight_number": "6031",
-            "updated": "2022-09-29T19:40:48.000Z"
+            "updated": "2022-10-07T19:21:25.000Z"
         },
         {
             "aircraft_icao": null,
@@ -1327,7 +1361,7 @@
             "updated": "2022-03-18T10:31:31.000Z"
         },
         {
-            "aircraft_icao": "A20N",
+            "aircraft_icao": null,
             "airline_iata": "BA",
             "airline_icao": "BAW",
             "arr_iata": "LGW",
@@ -1337,7 +1371,7 @@
             ],
             "arr_time": "23:55",
             "arr_time_utc": "22:55",
-            "counter": 41,
+            "counter": 88,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1353,7 +1387,7 @@
             "flight_iata": "BA2601",
             "flight_icao": "BAW2601",
             "flight_number": "2601",
-            "updated": "2022-09-28T14:27:46.000Z"
+            "updated": "2022-10-13T01:13:11.000Z"
         },
         {
             "aircraft_icao": null,
@@ -1629,6 +1663,39 @@
         },
         {
             "aircraft_icao": null,
+            "airline_iata": "BA",
+            "airline_icao": "BAW",
+            "arr_iata": "MAD",
+            "arr_icao": "LEMD",
+            "arr_terminals": [
+                "4"
+            ],
+            "arr_time": "17:25",
+            "arr_time_utc": "15:25",
+            "counter": 9,
+            "cs_airline_iata": "I2",
+            "cs_flight_iata": "I23823",
+            "cs_flight_number": "3823",
+            "days": [
+                "sun",
+                "wed",
+                "thu",
+                "fri",
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "13:40",
+            "dep_time_utc": "12:40",
+            "duration": 165,
+            "flight_iata": "BA7145",
+            "flight_icao": "BAW7145",
+            "flight_number": "7145",
+            "updated": "2022-10-08T07:52:52.000Z"
+        },
+        {
+            "aircraft_icao": null,
             "airline_iata": "D8",
             "airline_icao": "IBK",
             "arr_iata": "CPH",
@@ -1726,7 +1793,7 @@
             ],
             "arr_time": "16:35",
             "arr_time_utc": "14:35",
-            "counter": 63,
+            "counter": 70,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1742,7 +1809,7 @@
             "flight_iata": "DE1405",
             "flight_icao": "CFG1405",
             "flight_number": "1405",
-            "updated": "2022-10-02T14:52:38.000Z"
+            "updated": "2022-10-09T15:44:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -1755,7 +1822,7 @@
             ],
             "arr_time": "21:50",
             "arr_time_utc": "19:50",
-            "counter": 95,
+            "counter": 107,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1771,10 +1838,10 @@
             "flight_iata": "DE1405",
             "flight_icao": "CFG1405",
             "flight_number": "1405",
-            "updated": "2022-10-01T20:08:53.000Z"
+            "updated": "2022-10-08T20:06:34.000Z"
         },
         {
-            "aircraft_icao": "A320",
+            "aircraft_icao": null,
             "airline_iata": "DE",
             "airline_icao": "CFG",
             "arr_iata": "FRA",
@@ -1784,7 +1851,7 @@
             ],
             "arr_time": "22:10",
             "arr_time_utc": "20:10",
-            "counter": 69,
+            "counter": 86,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1800,10 +1867,10 @@
             "flight_iata": "DE1405",
             "flight_icao": "CFG1405",
             "flight_number": "1405",
-            "updated": "2022-09-29T21:31:20.000Z"
+            "updated": "2022-10-06T20:21:36.000Z"
         },
         {
-            "aircraft_icao": "A320",
+            "aircraft_icao": null,
             "airline_iata": "DE",
             "airline_icao": "CFG",
             "arr_iata": "FRA",
@@ -1813,7 +1880,7 @@
             ],
             "arr_time": "22:45",
             "arr_time_utc": "20:45",
-            "counter": 61,
+            "counter": 108,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1830,10 +1897,10 @@
             "flight_iata": "DE1405",
             "flight_icao": "CFG1405",
             "flight_number": "1405",
-            "updated": "2022-09-28T16:15:23.000Z"
+            "updated": "2022-10-12T21:40:28.000Z"
         },
         {
-            "aircraft_icao": "A320",
+            "aircraft_icao": null,
             "airline_iata": "DE",
             "airline_icao": "CFG",
             "arr_iata": "DUS",
@@ -1841,7 +1908,7 @@
             "arr_terminals": null,
             "arr_time": "22:40",
             "arr_time_utc": "20:40",
-            "counter": 49,
+            "counter": 72,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1858,10 +1925,10 @@
             "flight_iata": "DE1435",
             "flight_icao": "CFG1435",
             "flight_number": "1435",
-            "updated": "2022-09-29T22:28:30.000Z"
+            "updated": "2022-10-06T20:31:39.000Z"
         },
         {
-            "aircraft_icao": "A320",
+            "aircraft_icao": null,
             "airline_iata": "DE",
             "airline_icao": "CFG",
             "arr_iata": "DUS",
@@ -1869,7 +1936,7 @@
             "arr_terminals": null,
             "arr_time": "22:45",
             "arr_time_utc": "20:45",
-            "counter": 93,
+            "counter": 151,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1887,7 +1954,7 @@
             "flight_iata": "DE1435",
             "flight_icao": "CFG1435",
             "flight_number": "1435",
-            "updated": "2022-09-28T19:37:50.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -1898,7 +1965,7 @@
             "arr_terminals": null,
             "arr_time": "22:50",
             "arr_time_utc": "20:50",
-            "counter": 99,
+            "counter": 119,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1914,7 +1981,7 @@
             "flight_iata": "DE1435",
             "flight_icao": "CFG1435",
             "flight_number": "1435",
-            "updated": "2022-10-01T21:28:20.000Z"
+            "updated": "2022-10-08T22:01:24.000Z"
         },
         {
             "aircraft_icao": null,
@@ -1925,7 +1992,7 @@
             "arr_terminals": null,
             "arr_time": "22:55",
             "arr_time_utc": "20:55",
-            "counter": 68,
+            "counter": 88,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1941,10 +2008,10 @@
             "flight_iata": "DE1435",
             "flight_icao": "CFG1435",
             "flight_number": "1435",
-            "updated": "2022-10-02T21:36:40.000Z"
+            "updated": "2022-10-09T21:08:19.000Z"
         },
         {
-            "aircraft_icao": "A321",
+            "aircraft_icao": null,
             "airline_iata": "DE",
             "airline_icao": "CFG",
             "arr_iata": "LEJ",
@@ -1952,7 +2019,7 @@
             "arr_terminals": null,
             "arr_time": "23:00",
             "arr_time_utc": "21:00",
-            "counter": 50,
+            "counter": 77,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -1968,7 +2035,7 @@
             "flight_iata": "DE1463",
             "flight_icao": "CFG1463",
             "flight_number": "1463",
-            "updated": "2022-09-28T16:15:23.000Z"
+            "updated": "2022-10-12T18:47:52.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -1982,7 +2049,7 @@
             ],
             "arr_time": "22:25",
             "arr_time_utc": "20:25",
-            "counter": 12,
+            "counter": 14,
             "cs_airline_iata": "FB",
             "cs_flight_iata": "FB1481",
             "cs_flight_number": "1481",
@@ -1998,7 +2065,7 @@
             "flight_iata": "DE1481",
             "flight_icao": "CFG1481",
             "flight_number": "1481",
-            "updated": "2022-10-02T15:45:24.000Z"
+            "updated": "2022-10-09T11:03:47.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -2012,7 +2079,7 @@
             ],
             "arr_time": "23:20",
             "arr_time_utc": "21:20",
-            "counter": 22,
+            "counter": 36,
             "cs_airline_iata": "FB",
             "cs_flight_iata": "FB1481",
             "cs_flight_number": "1481",
@@ -2028,7 +2095,7 @@
             "flight_iata": "DE1481",
             "flight_icao": "CFG1481",
             "flight_number": "1481",
-            "updated": "2022-09-28T14:03:34.000Z"
+            "updated": "2022-10-12T17:35:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2041,7 +2108,7 @@
             ],
             "arr_time": "22:30",
             "arr_time_utc": "20:30",
-            "counter": 61,
+            "counter": 79,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2058,7 +2125,7 @@
             "flight_iata": "DE1519",
             "flight_icao": "CFG1519",
             "flight_number": "1519",
-            "updated": "2022-10-02T21:12:40.000Z"
+            "updated": "2022-10-09T22:28:54.000Z"
         },
         {
             "aircraft_icao": "A321",
@@ -2125,6 +2192,33 @@
             "arr_terminals": null,
             "arr_time": "00:10",
             "arr_time_utc": "22:10",
+            "counter": 8,
+            "cs_airline_iata": "D8",
+            "cs_flight_iata": "D81817",
+            "cs_flight_number": "1817",
+            "days": [
+                "fri"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "17:45",
+            "dep_time_utc": "16:45",
+            "duration": 325,
+            "flight_iata": "DY1817",
+            "flight_icao": "NOZ1817",
+            "flight_number": "1817",
+            "updated": "2022-10-07T07:03:33.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "DY",
+            "airline_icao": "NOZ",
+            "arr_iata": "OSL",
+            "arr_icao": "ENGM",
+            "arr_terminals": null,
+            "arr_time": "00:10",
+            "arr_time_utc": "22:10",
             "counter": 11,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
@@ -2154,7 +2248,7 @@
             ],
             "arr_time": "17:25",
             "arr_time_utc": "16:25",
-            "counter": 63,
+            "counter": 67,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2170,7 +2264,7 @@
             "flight_iata": "EI781",
             "flight_icao": "EIN781",
             "flight_number": "781",
-            "updated": "2022-10-04T16:29:12.000Z"
+            "updated": "2022-10-11T16:30:38.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2183,7 +2277,7 @@
             ],
             "arr_time": "01:20",
             "arr_time_utc": "00:20",
-            "counter": 145,
+            "counter": 195,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2200,7 +2294,7 @@
             "flight_iata": "EI783",
             "flight_icao": "EIN783",
             "flight_number": "783",
-            "updated": "2022-10-02T00:20:20.000Z"
+            "updated": "2022-10-09T00:59:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2213,7 +2307,7 @@
             ],
             "arr_time": "16:05",
             "arr_time_utc": "14:05",
-            "counter": 76,
+            "counter": 80,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "269",
@@ -2229,7 +2323,7 @@
             "flight_iata": "EW269",
             "flight_icao": "EWG269",
             "flight_number": "269",
-            "updated": "2022-10-02T14:19:45.000Z"
+            "updated": "2022-10-09T13:53:04.000Z"
         },
         {
             "aircraft_icao": "A319",
@@ -2290,7 +2384,7 @@
             "updated": "2022-04-20T17:03:11.000Z"
         },
         {
-            "aircraft_icao": "A319",
+            "aircraft_icao": null,
             "airline_iata": "EW",
             "airline_icao": "EWG",
             "arr_iata": "CGN",
@@ -2300,7 +2394,7 @@
             ],
             "arr_time": "17:20",
             "arr_time_utc": "15:20",
-            "counter": 78,
+            "counter": 87,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2316,7 +2410,7 @@
             "flight_iata": "EW269",
             "flight_icao": "EWG269",
             "flight_number": "269",
-            "updated": "2022-09-29T22:42:28.000Z"
+            "updated": "2022-10-13T01:13:10.000Z"
         },
         {
             "aircraft_icao": "A319",
@@ -2417,7 +2511,7 @@
             ],
             "arr_time": "22:35",
             "arr_time_utc": "20:35",
-            "counter": 68,
+            "counter": 88,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2434,7 +2528,7 @@
             "flight_iata": "EW7267",
             "flight_icao": "EWG7267",
             "flight_number": "7267",
-            "updated": "2022-10-01T21:43:38.000Z"
+            "updated": "2022-10-08T20:52:01.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2445,7 +2539,7 @@
             "arr_terminals": null,
             "arr_time": "16:15",
             "arr_time_utc": "14:15",
-            "counter": 86,
+            "counter": 110,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2461,7 +2555,7 @@
             "flight_iata": "EW9543",
             "flight_icao": "EWG9543",
             "flight_number": "9543",
-            "updated": "2022-10-02T14:15:15.000Z"
+            "updated": "2022-10-09T14:36:01.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2472,7 +2566,7 @@
             "arr_terminals": null,
             "arr_time": "17:40",
             "arr_time_utc": "15:40",
-            "counter": 105,
+            "counter": 162,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2489,7 +2583,7 @@
             "flight_iata": "EW9543",
             "flight_icao": "EWG9543",
             "flight_number": "9543",
-            "updated": "2022-10-05T01:03:28.000Z"
+            "updated": "2022-10-12T15:39:24.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2535,7 +2629,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 18,
+            "counter": 19,
             "cs_airline_iata": "UX",
             "cs_flight_iata": "UX9018",
             "cs_flight_number": "9018",
@@ -2557,7 +2651,7 @@
             "flight_iata": "EY4314",
             "flight_icao": "ETD4314",
             "flight_number": "4314",
-            "updated": "2022-09-20T06:17:09.000Z"
+            "updated": "2022-10-11T09:45:37.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2767,7 +2861,7 @@
             "arr_terminals": null,
             "arr_time": "16:20",
             "arr_time_utc": "15:20",
-            "counter": 17,
+            "counter": 21,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2783,10 +2877,10 @@
             "flight_iata": "FR1129",
             "flight_icao": "RYR1129",
             "flight_number": "1129",
-            "updated": "2022-10-02T15:30:47.000Z"
+            "updated": "2022-10-09T15:55:48.000Z"
         },
         {
-            "aircraft_icao": "B738",
+            "aircraft_icao": null,
             "airline_iata": "FR",
             "airline_icao": "RYR",
             "arr_iata": "BHX",
@@ -2794,7 +2888,7 @@
             "arr_terminals": null,
             "arr_time": "23:15",
             "arr_time_utc": "22:15",
-            "counter": 44,
+            "counter": 55,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2810,7 +2904,7 @@
             "flight_iata": "FR1129",
             "flight_icao": "RYR1129",
             "flight_number": "1129",
-            "updated": "2022-09-28T16:15:23.000Z"
+            "updated": "2022-10-12T22:27:37.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2821,7 +2915,7 @@
             "arr_terminals": null,
             "arr_time": "10:10",
             "arr_time_utc": "09:10",
-            "counter": 30,
+            "counter": 32,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2837,7 +2931,7 @@
             "flight_iata": "FR1446",
             "flight_icao": "RYR1446",
             "flight_number": "1446",
-            "updated": "2022-09-30T09:49:15.000Z"
+            "updated": "2022-10-07T09:06:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2848,7 +2942,7 @@
             "arr_terminals": null,
             "arr_time": "15:40",
             "arr_time_utc": "14:40",
-            "counter": 37,
+            "counter": 43,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2864,7 +2958,7 @@
             "flight_iata": "FR1446",
             "flight_icao": "RYR1446",
             "flight_number": "1446",
-            "updated": "2022-10-03T14:38:24.000Z"
+            "updated": "2022-10-10T14:49:41.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2877,7 +2971,7 @@
             ],
             "arr_time": "12:55",
             "arr_time_utc": "10:55",
-            "counter": 59,
+            "counter": 67,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2893,7 +2987,7 @@
             "flight_iata": "FR2012",
             "flight_icao": "RYR2012",
             "flight_number": "2012",
-            "updated": "2022-10-03T10:38:44.000Z"
+            "updated": "2022-10-10T10:57:07.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2906,7 +3000,7 @@
             ],
             "arr_time": "23:15",
             "arr_time_utc": "21:15",
-            "counter": 69,
+            "counter": 111,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2923,7 +3017,7 @@
             "flight_iata": "FR2012",
             "flight_icao": "RYR2012",
             "flight_number": "2012",
-            "updated": "2022-09-30T21:24:36.000Z"
+            "updated": "2022-10-12T21:30:04.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2936,7 +3030,7 @@
             ],
             "arr_time": "23:40",
             "arr_time_utc": "21:40",
-            "counter": 46,
+            "counter": 64,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2952,7 +3046,7 @@
             "flight_iata": "FR2012",
             "flight_icao": "RYR2012",
             "flight_number": "2012",
-            "updated": "2022-10-02T21:27:00.000Z"
+            "updated": "2022-10-09T21:54:24.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2965,7 +3059,7 @@
             ],
             "arr_time": "00:20",
             "arr_time_utc": "22:20",
-            "counter": 144,
+            "counter": 198,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -2983,7 +3077,7 @@
             "flight_iata": "FR2012",
             "flight_icao": "RYR2012",
             "flight_number": "2012",
-            "updated": "2022-10-04T22:15:03.000Z"
+            "updated": "2022-10-11T22:04:46.000Z"
         },
         {
             "aircraft_icao": null,
@@ -2996,7 +3090,7 @@
             ],
             "arr_time": "12:20",
             "arr_time_utc": "10:20",
-            "counter": 47,
+            "counter": 61,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3012,7 +3106,7 @@
             "flight_iata": "FR2032",
             "flight_icao": "RYR2032",
             "flight_number": "2032",
-            "updated": "2022-10-01T10:24:34.000Z"
+            "updated": "2022-10-08T10:16:26.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3025,7 +3119,7 @@
             ],
             "arr_time": "13:05",
             "arr_time_utc": "11:05",
-            "counter": 177,
+            "counter": 245,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3045,7 +3139,7 @@
             "flight_iata": "FR2032",
             "flight_icao": "RYR2032",
             "flight_number": "2032",
-            "updated": "2022-10-04T11:03:44.000Z"
+            "updated": "2022-10-12T11:04:09.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3058,7 +3152,7 @@
             ],
             "arr_time": "23:50",
             "arr_time_utc": "21:50",
-            "counter": 46,
+            "counter": 58,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3074,10 +3168,10 @@
             "flight_iata": "FR2032",
             "flight_icao": "RYR2032",
             "flight_number": "2032",
-            "updated": "2022-10-03T21:46:39.000Z"
+            "updated": "2022-10-10T22:05:34.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "B738",
             "airline_iata": "FR",
             "airline_icao": "RYR",
             "arr_iata": "PMI",
@@ -3085,7 +3179,7 @@
             "arr_terminals": null,
             "arr_time": "14:35",
             "arr_time_utc": "12:35",
-            "counter": 71,
+            "counter": 100,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3101,10 +3195,10 @@
             "flight_iata": "FR2296",
             "flight_icao": "RYR2296",
             "flight_number": "2296",
-            "updated": "2022-10-03T12:57:57.000Z"
+            "updated": "2022-10-10T11:22:12.000Z"
         },
         {
-            "aircraft_icao": "B738",
+            "aircraft_icao": null,
             "airline_iata": "FR",
             "airline_icao": "RYR",
             "arr_iata": "PMI",
@@ -3112,7 +3206,7 @@
             "arr_terminals": null,
             "arr_time": "23:25",
             "arr_time_utc": "21:25",
-            "counter": 56,
+            "counter": 101,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3128,7 +3222,7 @@
             "flight_iata": "FR2296",
             "flight_icao": "RYR2296",
             "flight_number": "2296",
-            "updated": "2022-10-02T00:00:12.000Z"
+            "updated": "2022-10-08T01:58:35.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3142,7 +3236,7 @@
             ],
             "arr_time": "17:30",
             "arr_time_utc": "15:30",
-            "counter": 76,
+            "counter": 96,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "2501",
@@ -3158,7 +3252,7 @@
             "flight_iata": "FR2501",
             "flight_icao": "RYR2501",
             "flight_number": "2501",
-            "updated": "2022-09-30T15:09:59.000Z"
+            "updated": "2022-10-07T15:26:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3172,7 +3266,7 @@
             ],
             "arr_time": "22:30",
             "arr_time_utc": "20:30",
-            "counter": 78,
+            "counter": 104,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "2501",
@@ -3188,7 +3282,7 @@
             "flight_iata": "FR2501",
             "flight_icao": "RYR2501",
             "flight_number": "2501",
-            "updated": "2022-10-03T21:21:58.000Z"
+            "updated": "2022-10-10T22:05:34.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3199,7 +3293,7 @@
             "arr_terminals": null,
             "arr_time": "16:35",
             "arr_time_utc": "14:35",
-            "counter": 60,
+            "counter": 84,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3215,7 +3309,7 @@
             "flight_iata": "FR2571",
             "flight_icao": "RYR2571",
             "flight_number": "2571",
-            "updated": "2022-10-04T14:37:55.000Z"
+            "updated": "2022-10-11T15:07:56.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3226,7 +3320,7 @@
             "arr_terminals": null,
             "arr_time": "17:45",
             "arr_time_utc": "15:45",
-            "counter": 79,
+            "counter": 105,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3242,7 +3336,7 @@
             "flight_iata": "FR2571",
             "flight_icao": "RYR2571",
             "flight_number": "2571",
-            "updated": "2022-10-01T15:53:27.000Z"
+            "updated": "2022-10-08T15:43:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3256,7 +3350,7 @@
             ],
             "arr_time": "15:40",
             "arr_time_utc": "14:40",
-            "counter": 118,
+            "counter": 164,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3273,7 +3367,7 @@
             "flight_iata": "FR2584",
             "flight_icao": "RYR2584",
             "flight_number": "2584",
-            "updated": "2022-10-04T15:03:33.000Z"
+            "updated": "2022-10-11T15:12:41.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3287,7 +3381,7 @@
             ],
             "arr_time": "00:45",
             "arr_time_utc": "23:45",
-            "counter": 66,
+            "counter": 100,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3303,7 +3397,7 @@
             "flight_iata": "FR2584",
             "flight_icao": "RYR2584",
             "flight_number": "2584",
-            "updated": "2022-10-01T23:55:29.000Z"
+            "updated": "2022-10-09T00:59:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3317,7 +3411,7 @@
             ],
             "arr_time": "18:40",
             "arr_time_utc": "16:40",
-            "counter": 67,
+            "counter": 75,
             "cs_airline_iata": "RR",
             "cs_flight_iata": "RR2967",
             "cs_flight_number": "2967",
@@ -3333,7 +3427,7 @@
             "flight_iata": "FR2967",
             "flight_icao": "RYR2967",
             "flight_number": "2967",
-            "updated": "2022-10-05T01:03:28.000Z"
+            "updated": "2022-10-12T17:03:13.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3346,7 +3440,7 @@
             ],
             "arr_time": "16:45",
             "arr_time_utc": "14:45",
-            "counter": 40,
+            "counter": 42,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "303",
@@ -3362,7 +3456,7 @@
             "flight_iata": "FR303",
             "flight_icao": "RYR303",
             "flight_number": "303",
-            "updated": "2022-10-04T09:11:01.000Z"
+            "updated": "2022-10-11T06:48:25.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3375,7 +3469,7 @@
             ],
             "arr_time": "00:25",
             "arr_time_utc": "22:25",
-            "counter": 57,
+            "counter": 59,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "303",
@@ -3391,7 +3485,7 @@
             "flight_iata": "FR303",
             "flight_icao": "RYR303",
             "flight_number": "303",
-            "updated": "2022-10-01T16:14:19.000Z"
+            "updated": "2022-10-08T20:43:08.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3402,7 +3496,7 @@
             "arr_terminals": null,
             "arr_time": "23:15",
             "arr_time_utc": "22:15",
-            "counter": 65,
+            "counter": 99,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3418,7 +3512,7 @@
             "flight_iata": "FR3163",
             "flight_icao": "RYR3163",
             "flight_number": "3163",
-            "updated": "2022-10-01T22:31:22.000Z"
+            "updated": "2022-10-08T22:22:10.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3515,7 +3609,7 @@
             "arr_terminals": null,
             "arr_time": "16:10",
             "arr_time_utc": "15:10",
-            "counter": 47,
+            "counter": 65,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3531,7 +3625,7 @@
             "flight_iata": "FR426",
             "flight_icao": "RYR426",
             "flight_number": "426",
-            "updated": "2022-09-22T15:35:37.000Z"
+            "updated": "2022-10-06T16:11:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3542,7 +3636,7 @@
             "arr_terminals": null,
             "arr_time": "16:25",
             "arr_time_utc": "15:25",
-            "counter": 55,
+            "counter": 81,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3558,7 +3652,7 @@
             "flight_iata": "FR426",
             "flight_icao": "RYR426",
             "flight_number": "426",
-            "updated": "2022-10-02T15:45:24.000Z"
+            "updated": "2022-10-09T16:05:32.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3571,7 +3665,7 @@
             ],
             "arr_time": "18:25",
             "arr_time_utc": "16:25",
-            "counter": 90,
+            "counter": 114,
             "cs_airline_iata": "RR",
             "cs_flight_iata": "RR4504",
             "cs_flight_number": "4504",
@@ -3587,7 +3681,7 @@
             "flight_iata": "FR4504",
             "flight_icao": "RYR4504",
             "flight_number": "4504",
-            "updated": "2022-10-01T17:19:47.000Z"
+            "updated": "2022-10-08T18:23:41.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3598,7 +3692,7 @@
             "arr_terminals": null,
             "arr_time": "23:40",
             "arr_time_utc": "21:40",
-            "counter": 83,
+            "counter": 107,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "4515",
@@ -3614,7 +3708,7 @@
             "flight_iata": "FR4515",
             "flight_icao": "RYR4515",
             "flight_number": "4515",
-            "updated": "2022-09-30T00:30:45.000Z"
+            "updated": "2022-10-06T22:04:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3625,7 +3719,7 @@
             "arr_terminals": null,
             "arr_time": "00:20",
             "arr_time_utc": "22:20",
-            "counter": 62,
+            "counter": 86,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "4515",
@@ -3641,7 +3735,7 @@
             "flight_iata": "FR4515",
             "flight_icao": "RYR4515",
             "flight_number": "4515",
-            "updated": "2022-10-02T22:33:16.000Z"
+            "updated": "2022-10-09T22:38:20.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3652,7 +3746,7 @@
             "arr_terminals": null,
             "arr_time": "15:15",
             "arr_time_utc": "14:15",
-            "counter": 105,
+            "counter": 131,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3670,7 +3764,7 @@
             "flight_iata": "FR4758",
             "flight_icao": "RYR4758",
             "flight_number": "4758",
-            "updated": "2022-10-03T14:33:39.000Z"
+            "updated": "2022-10-10T14:20:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3681,7 +3775,7 @@
             "arr_terminals": null,
             "arr_time": "16:20",
             "arr_time_utc": "15:20",
-            "counter": 49,
+            "counter": 65,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3697,7 +3791,7 @@
             "flight_iata": "FR5499",
             "flight_icao": "RYR5499",
             "flight_number": "5499",
-            "updated": "2022-09-30T16:15:00.000Z"
+            "updated": "2022-10-07T15:26:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3710,7 +3804,7 @@
             ],
             "arr_time": "15:00",
             "arr_time_utc": "13:00",
-            "counter": 78,
+            "counter": 125,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "5522",
@@ -3726,7 +3820,7 @@
             "flight_iata": "FR5522",
             "flight_icao": "RYR5522",
             "flight_number": "5522",
-            "updated": "2022-10-04T13:38:23.000Z"
+            "updated": "2022-10-11T15:55:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3739,7 +3833,7 @@
             ],
             "arr_time": "00:55",
             "arr_time_utc": "22:55",
-            "counter": 98,
+            "counter": 147,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "5522",
@@ -3755,10 +3849,10 @@
             "flight_iata": "FR5522",
             "flight_icao": "RYR5522",
             "flight_number": "5522",
-            "updated": "2022-10-02T13:18:50.000Z"
+            "updated": "2022-10-08T23:06:43.000Z"
         },
         {
-            "aircraft_icao": "B738",
+            "aircraft_icao": null,
             "airline_iata": "FR",
             "airline_icao": "RYR",
             "arr_iata": "BGY",
@@ -3766,7 +3860,7 @@
             "arr_terminals": null,
             "arr_time": "15:45",
             "arr_time_utc": "13:45",
-            "counter": 10,
+            "counter": 53,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6092",
@@ -3782,10 +3876,10 @@
             "flight_iata": "FR6092",
             "flight_icao": "RYR6092",
             "flight_number": "6092",
-            "updated": "2022-09-22T14:55:02.000Z"
+            "updated": "2022-10-13T01:13:10.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "B738",
             "airline_iata": "FR",
             "airline_icao": "RYR",
             "arr_iata": "BGY",
@@ -3793,7 +3887,7 @@
             "arr_terminals": null,
             "arr_time": "00:10",
             "arr_time_utc": "22:10",
-            "counter": 133,
+            "counter": 183,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6092",
@@ -3809,7 +3903,7 @@
             "flight_iata": "FR6092",
             "flight_icao": "RYR6092",
             "flight_number": "6092",
-            "updated": "2022-10-04T22:53:14.000Z"
+            "updated": "2022-10-12T00:49:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3820,7 +3914,7 @@
             "arr_terminals": null,
             "arr_time": "00:50",
             "arr_time_utc": "22:50",
-            "counter": 93,
+            "counter": 156,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6092",
@@ -3836,7 +3930,7 @@
             "flight_iata": "FR6092",
             "flight_icao": "RYR6092",
             "flight_number": "6092",
-            "updated": "2022-10-03T23:50:27.000Z"
+            "updated": "2022-10-10T01:08:33.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3847,7 +3941,7 @@
             "arr_terminals": null,
             "arr_time": "23:59",
             "arr_time_utc": "22:59",
-            "counter": 40,
+            "counter": 78,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3863,7 +3957,7 @@
             "flight_iata": "FR6254",
             "flight_icao": "RYR6254",
             "flight_number": "6254",
-            "updated": "2022-09-28T19:37:50.000Z"
+            "updated": "2022-10-12T22:32:29.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3874,7 +3968,7 @@
             "arr_terminals": null,
             "arr_time": "00:20",
             "arr_time_utc": "23:20",
-            "counter": 62,
+            "counter": 88,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3890,7 +3984,7 @@
             "flight_iata": "FR6254",
             "flight_icao": "RYR6254",
             "flight_number": "6254",
-            "updated": "2022-10-03T00:45:48.000Z"
+            "updated": "2022-10-09T23:27:48.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3901,7 +3995,7 @@
             "arr_terminals": null,
             "arr_time": "16:50",
             "arr_time_utc": "15:50",
-            "counter": 54,
+            "counter": 58,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3917,7 +4011,7 @@
             "flight_iata": "FR6699",
             "flight_icao": "RYR6699",
             "flight_number": "6699",
-            "updated": "2022-10-04T16:13:40.000Z"
+            "updated": "2022-10-11T16:05:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3928,7 +4022,7 @@
             "arr_terminals": null,
             "arr_time": "23:59",
             "arr_time_utc": "22:59",
-            "counter": 79,
+            "counter": 81,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3944,7 +4038,7 @@
             "flight_iata": "FR6699",
             "flight_icao": "RYR6699",
             "flight_number": "6699",
-            "updated": "2022-10-01T23:12:44.000Z"
+            "updated": "2022-10-09T00:59:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3955,7 +4049,7 @@
             "arr_terminals": null,
             "arr_time": "22:25",
             "arr_time_utc": "21:25",
-            "counter": 66,
+            "counter": 85,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -3971,7 +4065,7 @@
             "flight_iata": "FR6765",
             "flight_icao": "RYR6765",
             "flight_number": "6765",
-            "updated": "2022-10-02T21:22:01.000Z"
+            "updated": "2022-10-09T21:08:19.000Z"
         },
         {
             "aircraft_icao": null,
@@ -3986,7 +4080,7 @@
             ],
             "arr_time": "22:05",
             "arr_time_utc": "20:05",
-            "counter": 41,
+            "counter": 51,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4003,7 +4097,7 @@
             "flight_iata": "FR7003",
             "flight_icao": "RYR7003",
             "flight_number": "7003",
-            "updated": "2022-09-29T20:22:22.000Z"
+            "updated": "2022-10-06T20:16:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4017,7 +4111,7 @@
             ],
             "arr_time": "22:10",
             "arr_time_utc": "20:10",
-            "counter": 39,
+            "counter": 49,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4035,7 +4129,7 @@
             "flight_iata": "FR7003",
             "flight_icao": "RYR7003",
             "flight_number": "7003",
-            "updated": "2022-09-30T20:21:11.000Z"
+            "updated": "2022-10-07T20:18:31.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4048,7 +4142,7 @@
             ],
             "arr_time": "23:00",
             "arr_time_utc": "21:00",
-            "counter": 36,
+            "counter": 65,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4064,7 +4158,7 @@
             "flight_iata": "FR7003",
             "flight_icao": "RYR7003",
             "flight_number": "7003",
-            "updated": "2022-09-28T19:37:50.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4077,7 +4171,7 @@
             ],
             "arr_time": "23:10",
             "arr_time_utc": "21:10",
-            "counter": 142,
+            "counter": 186,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4095,7 +4189,7 @@
             "flight_iata": "FR7003",
             "flight_icao": "RYR7003",
             "flight_number": "7003",
-            "updated": "2022-10-04T21:18:09.000Z"
+            "updated": "2022-10-11T22:00:07.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4108,7 +4202,7 @@
             ],
             "arr_time": "23:25",
             "arr_time_utc": "21:25",
-            "counter": 51,
+            "counter": 73,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4124,7 +4218,7 @@
             "flight_iata": "FR7003",
             "flight_icao": "RYR7003",
             "flight_number": "7003",
-            "updated": "2022-10-01T21:33:28.000Z"
+            "updated": "2022-10-08T21:31:13.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4135,7 +4229,7 @@
             "arr_terminals": null,
             "arr_time": "23:10",
             "arr_time_utc": "22:10",
-            "counter": 57,
+            "counter": 80,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4151,7 +4245,7 @@
             "flight_iata": "FR7027",
             "flight_icao": "RYR7027",
             "flight_number": "7027",
-            "updated": "2022-10-02T22:06:55.000Z"
+            "updated": "2022-10-09T22:08:22.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4164,7 +4258,7 @@
             ],
             "arr_time": "15:05",
             "arr_time_utc": "14:05",
-            "counter": 97,
+            "counter": 125,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4180,7 +4274,7 @@
             "flight_iata": "FR7127",
             "flight_icao": "RYR7127",
             "flight_number": "7127",
-            "updated": "2022-10-04T14:37:55.000Z"
+            "updated": "2022-10-11T14:17:31.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4193,7 +4287,7 @@
             ],
             "arr_time": "16:50",
             "arr_time_utc": "15:50",
-            "counter": 54,
+            "counter": 74,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4209,7 +4303,7 @@
             "flight_iata": "FR7127",
             "flight_icao": "RYR7127",
             "flight_number": "7127",
-            "updated": "2022-09-29T18:15:06.000Z"
+            "updated": "2022-10-06T16:22:10.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4222,7 +4316,7 @@
             ],
             "arr_time": "23:40",
             "arr_time_utc": "22:40",
-            "counter": 60,
+            "counter": 97,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4238,7 +4332,7 @@
             "flight_iata": "FR7127",
             "flight_icao": "RYR7127",
             "flight_number": "7127",
-            "updated": "2022-09-21T23:24:55.000Z"
+            "updated": "2022-10-13T00:22:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4251,7 +4345,7 @@
             ],
             "arr_time": "23:50",
             "arr_time_utc": "22:50",
-            "counter": 76,
+            "counter": 112,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4268,7 +4362,7 @@
             "flight_iata": "FR7127",
             "flight_icao": "RYR7127",
             "flight_number": "7127",
-            "updated": "2022-10-02T00:15:31.000Z"
+            "updated": "2022-10-08T23:45:56.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4281,7 +4375,7 @@
             ],
             "arr_time": "14:20",
             "arr_time_utc": "12:20",
-            "counter": 36,
+            "counter": 42,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4297,7 +4391,7 @@
             "flight_iata": "FR7201",
             "flight_icao": "RYR7201",
             "flight_number": "7201",
-            "updated": "2022-09-30T13:09:09.000Z"
+            "updated": "2022-10-07T12:12:04.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4310,7 +4404,7 @@
             ],
             "arr_time": "20:35",
             "arr_time_utc": "18:35",
-            "counter": 42,
+            "counter": 72,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4326,7 +4420,7 @@
             "flight_iata": "FR7201",
             "flight_icao": "RYR7201",
             "flight_number": "7201",
-            "updated": "2022-09-28T18:45:44.000Z"
+            "updated": "2022-10-12T18:37:47.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4339,7 +4433,7 @@
             ],
             "arr_time": "23:10",
             "arr_time_utc": "21:10",
-            "counter": 41,
+            "counter": 59,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4355,7 +4449,7 @@
             "flight_iata": "FR7201",
             "flight_icao": "RYR7201",
             "flight_number": "7201",
-            "updated": "2022-10-02T20:55:40.000Z"
+            "updated": "2022-10-09T21:50:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4368,7 +4462,7 @@
             ],
             "arr_time": "15:30",
             "arr_time_utc": "13:30",
-            "counter": 27,
+            "counter": 31,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4384,7 +4478,7 @@
             "flight_iata": "FR7723",
             "flight_icao": "RYR7723",
             "flight_number": "7723",
-            "updated": "2022-09-22T13:49:18.000Z"
+            "updated": "2022-10-06T13:42:22.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4397,7 +4491,7 @@
             ],
             "arr_time": "16:10",
             "arr_time_utc": "14:10",
-            "counter": 39,
+            "counter": 53,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4413,7 +4507,7 @@
             "flight_iata": "FR7723",
             "flight_icao": "RYR7723",
             "flight_number": "7723",
-            "updated": "2022-10-01T14:21:46.000Z"
+            "updated": "2022-10-08T14:34:15.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4426,7 +4520,7 @@
             ],
             "arr_time": "18:45",
             "arr_time_utc": "16:45",
-            "counter": 43,
+            "counter": 53,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4442,7 +4536,7 @@
             "flight_iata": "FR7723",
             "flight_icao": "RYR7723",
             "flight_number": "7723",
-            "updated": "2022-10-04T18:15:11.000Z"
+            "updated": "2022-10-11T18:15:56.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4455,7 +4549,7 @@
             ],
             "arr_time": "16:25",
             "arr_time_utc": "15:25",
-            "counter": 56,
+            "counter": 78,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4471,7 +4565,7 @@
             "flight_iata": "FR8133",
             "flight_icao": "RYR8133",
             "flight_number": "8133",
-            "updated": "2022-10-02T15:25:37.000Z"
+            "updated": "2022-10-09T15:29:38.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4484,7 +4578,7 @@
             ],
             "arr_time": "16:30",
             "arr_time_utc": "15:30",
-            "counter": 227,
+            "counter": 341,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4503,7 +4597,7 @@
             "flight_iata": "FR8133",
             "flight_icao": "RYR8133",
             "flight_number": "8133",
-            "updated": "2022-10-04T17:20:46.000Z"
+            "updated": "2022-10-12T15:48:56.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4514,7 +4608,7 @@
             "arr_terminals": null,
             "arr_time": "22:05",
             "arr_time_utc": "20:05",
-            "counter": 63,
+            "counter": 67,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4531,7 +4625,7 @@
             "flight_iata": "FR8177",
             "flight_icao": "RYR8177",
             "flight_number": "8177",
-            "updated": "2022-10-02T20:31:02.000Z"
+            "updated": "2022-10-09T20:05:30.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4544,7 +4638,7 @@
             ],
             "arr_time": "16:00",
             "arr_time_utc": "14:00",
-            "counter": 65,
+            "counter": 67,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "8982",
@@ -4560,7 +4654,7 @@
             "flight_iata": "FR8982",
             "flight_icao": "RYR8982",
             "flight_number": "8982",
-            "updated": "2022-10-01T16:14:20.000Z"
+            "updated": "2022-10-08T14:09:14.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4573,7 +4667,7 @@
             ],
             "arr_time": "23:15",
             "arr_time_utc": "21:15",
-            "counter": 65,
+            "counter": 68,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "8982",
@@ -4589,10 +4683,10 @@
             "flight_iata": "FR8982",
             "flight_icao": "RYR8982",
             "flight_number": "8982",
-            "updated": "2022-10-04T21:37:05.000Z"
+            "updated": "2022-10-11T21:15:23.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "B738",
             "airline_iata": "FS",
             "airline_icao": "FOX",
             "arr_iata": "OSL",
@@ -4600,7 +4694,7 @@
             "arr_terminals": null,
             "arr_time": "20:00",
             "arr_time_utc": "18:00",
-            "counter": 64,
+            "counter": 215,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4617,7 +4711,7 @@
             "flight_iata": "FS1283",
             "flight_icao": "FOX1283",
             "flight_number": "1283",
-            "updated": "2022-10-01T19:20:06.000Z"
+            "updated": "2022-10-12T19:55:13.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4685,7 +4779,7 @@
             ],
             "arr_time": "00:05",
             "arr_time_utc": "22:05",
-            "counter": 18,
+            "counter": 20,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4701,7 +4795,7 @@
             "flight_iata": "HV5662",
             "flight_icao": "TRA5662",
             "flight_number": "5662",
-            "updated": "2022-09-30T13:15:49.000Z"
+            "updated": "2022-10-07T19:37:43.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4745,7 +4839,7 @@
             ],
             "arr_time": "16:10",
             "arr_time_utc": "14:10",
-            "counter": 16,
+            "counter": 22,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4761,7 +4855,7 @@
             "flight_iata": "HV5664",
             "flight_icao": "TRA5664",
             "flight_number": "5664",
-            "updated": "2022-10-02T01:52:17.000Z"
+            "updated": "2022-10-09T12:19:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4775,7 +4869,7 @@
             ],
             "arr_time": "16:30",
             "arr_time_utc": "14:30",
-            "counter": 44,
+            "counter": 46,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4791,7 +4885,7 @@
             "flight_iata": "HV5664",
             "flight_icao": "TRA5664",
             "flight_number": "5664",
-            "updated": "2022-09-28T14:33:40.000Z"
+            "updated": "2022-10-12T11:52:23.000Z"
         },
         {
             "aircraft_icao": "B738",
@@ -4836,7 +4930,7 @@
             ],
             "arr_time": "00:15",
             "arr_time_utc": "22:15",
-            "counter": 11,
+            "counter": 13,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4852,7 +4946,34 @@
             "flight_iata": "HV5666",
             "flight_icao": "TRA5666",
             "flight_number": "5666",
-            "updated": "2022-10-04T22:48:49.000Z"
+            "updated": "2022-10-11T22:37:23.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "HV",
+            "airline_icao": "TRA",
+            "arr_iata": "RTM",
+            "arr_icao": "EHRD",
+            "arr_terminals": null,
+            "arr_time": "16:45",
+            "arr_time_utc": "14:45",
+            "counter": 22,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": null,
+            "days": [
+                "thu"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "11:25",
+            "dep_time_utc": "10:25",
+            "duration": 260,
+            "flight_iata": "HV6302",
+            "flight_icao": "TRA6302",
+            "flight_number": "6302",
+            "updated": "2022-10-13T01:13:10.000Z"
         },
         {
             "aircraft_icao": "B737",
@@ -4863,7 +4984,7 @@
             "arr_terminals": null,
             "arr_time": "22:55",
             "arr_time_utc": "20:55",
-            "counter": 38,
+            "counter": 46,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4879,7 +5000,7 @@
             "flight_iata": "HV6302",
             "flight_icao": "TRA6302",
             "flight_number": "6302",
-            "updated": "2022-10-03T22:01:07.000Z"
+            "updated": "2022-10-10T22:59:54.000Z"
         },
         {
             "aircraft_icao": null,
@@ -4892,7 +5013,7 @@
             ],
             "arr_time": "23:45",
             "arr_time_utc": "21:45",
-            "counter": 41,
+            "counter": 49,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -4908,7 +5029,7 @@
             "flight_iata": "HV6458",
             "flight_icao": "TRA6458",
             "flight_number": "6458",
-            "updated": "2022-09-29T23:13:12.000Z"
+            "updated": "2022-10-12T22:22:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -5033,7 +5154,7 @@
             "updated": "2022-08-02T17:46:16.000Z"
         },
         {
-            "aircraft_icao": "A21N",
+            "aircraft_icao": null,
             "airline_iata": "I2",
             "airline_icao": "IBS",
             "arr_iata": "MAD",
@@ -5043,7 +5164,7 @@
             ],
             "arr_time": "17:15",
             "arr_time_utc": "15:15",
-            "counter": 177,
+            "counter": 210,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5065,7 +5186,7 @@
             "flight_iata": "I23823",
             "flight_icao": "IBS3823",
             "flight_number": "3823",
-            "updated": "2022-10-05T05:02:31.000Z"
+            "updated": "2022-10-13T03:04:59.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5111,7 +5232,7 @@
             ],
             "arr_time": "17:25",
             "arr_time_utc": "15:25",
-            "counter": 8,
+            "counter": 16,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5119,7 +5240,8 @@
                 "sun",
                 "wed",
                 "thu",
-                "fri"
+                "fri",
+                "sat"
             ],
             "dep_iata": "LPA",
             "dep_icao": "GCLP",
@@ -5130,7 +5252,7 @@
             "flight_iata": "I23823",
             "flight_icao": "IBS3823",
             "flight_number": "3823",
-            "updated": "2022-09-07T16:10:32.000Z"
+            "updated": "2022-10-08T15:28:17.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5201,7 +5323,7 @@
             "updated": "2022-03-30T17:32:02.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "A320",
             "airline_iata": "I2",
             "airline_icao": "IBS",
             "arr_iata": "MAD",
@@ -5211,7 +5333,7 @@
             ],
             "arr_time": "18:45",
             "arr_time_utc": "16:45",
-            "counter": 96,
+            "counter": 115,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5233,7 +5355,7 @@
             "flight_iata": "I23825",
             "flight_icao": "IBS3825",
             "flight_number": "3825",
-            "updated": "2022-10-05T03:03:53.000Z"
+            "updated": "2022-10-10T14:04:06.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -5246,7 +5368,7 @@
             ],
             "arr_time": "18:50",
             "arr_time_utc": "16:50",
-            "counter": 45,
+            "counter": 63,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5268,7 +5390,7 @@
             "flight_iata": "I23825",
             "flight_icao": "IBS3825",
             "flight_number": "3825",
-            "updated": "2022-10-04T06:02:39.000Z"
+            "updated": "2022-10-12T13:33:00.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -5380,7 +5502,7 @@
             ],
             "arr_time": "14:45",
             "arr_time_utc": "12:45",
-            "counter": 16,
+            "counter": 20,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5402,7 +5524,7 @@
             "flight_iata": "I23827",
             "flight_icao": "IBS3827",
             "flight_number": "3827",
-            "updated": "2022-10-03T08:05:56.000Z"
+            "updated": "2022-10-12T03:03:48.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5415,7 +5537,7 @@
             ],
             "arr_time": "14:50",
             "arr_time_utc": "12:50",
-            "counter": 38,
+            "counter": 56,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5437,7 +5559,7 @@
             "flight_iata": "I23827",
             "flight_icao": "IBS3827",
             "flight_number": "3827",
-            "updated": "2022-10-05T02:02:35.000Z"
+            "updated": "2022-10-13T03:14:47.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5483,7 +5605,7 @@
             ],
             "arr_time": "20:55",
             "arr_time_utc": "18:55",
-            "counter": 101,
+            "counter": 105,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5505,7 +5627,7 @@
             "flight_iata": "I23829",
             "flight_icao": "IBS3829",
             "flight_number": "3829",
-            "updated": "2022-10-04T18:48:36.000Z"
+            "updated": "2022-10-08T18:54:10.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5518,7 +5640,7 @@
             ],
             "arr_time": "21:00",
             "arr_time_utc": "19:00",
-            "counter": 73,
+            "counter": 105,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5539,7 +5661,7 @@
             "flight_iata": "I23829",
             "flight_icao": "IBS3829",
             "flight_number": "3829",
-            "updated": "2022-10-03T12:46:53.000Z"
+            "updated": "2022-10-12T19:16:54.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5814,7 +5936,7 @@
             ],
             "arr_time": "22:40",
             "arr_time_utc": "20:40",
-            "counter": 100,
+            "counter": 122,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5836,7 +5958,7 @@
             "flight_iata": "I23833",
             "flight_icao": "IBS3833",
             "flight_number": "3833",
-            "updated": "2022-10-04T10:00:53.000Z"
+            "updated": "2022-10-12T13:33:00.000Z"
         },
         {
             "aircraft_icao": "A321",
@@ -5849,7 +5971,7 @@
             ],
             "arr_time": "10:30",
             "arr_time_utc": "08:30",
-            "counter": 230,
+            "counter": 266,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5871,7 +5993,7 @@
             "flight_iata": "I23835",
             "flight_icao": "IBS3835",
             "flight_number": "3835",
-            "updated": "2022-10-05T00:01:18.000Z"
+            "updated": "2022-10-13T03:14:47.000Z"
         },
         {
             "aircraft_icao": "A321",
@@ -5919,7 +6041,7 @@
             ],
             "arr_time": "06:10",
             "arr_time_utc": "04:10",
-            "counter": 25,
+            "counter": 29,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5941,7 +6063,7 @@
             "flight_iata": "I23839",
             "flight_icao": "IBS3839",
             "flight_number": "3839",
-            "updated": "2022-09-19T04:06:49.000Z"
+            "updated": "2022-10-10T04:14:44.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -5954,7 +6076,7 @@
             ],
             "arr_time": "06:15",
             "arr_time_utc": "04:15",
-            "counter": 61,
+            "counter": 63,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -5976,7 +6098,7 @@
             "flight_iata": "I23839",
             "flight_icao": "IBS3839",
             "flight_number": "3839",
-            "updated": "2022-10-01T00:04:21.000Z"
+            "updated": "2022-10-07T19:05:55.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -6092,7 +6214,7 @@
             ],
             "arr_time": "15:15",
             "arr_time_utc": "14:15",
-            "counter": 55,
+            "counter": 59,
             "cs_airline_iata": "NT",
             "cs_flight_iata": "NT518",
             "cs_flight_number": "518",
@@ -6113,7 +6235,7 @@
             "flight_iata": "IB106",
             "flight_icao": "IBE106",
             "flight_number": "106",
-            "updated": "2022-10-05T03:03:53.000Z"
+            "updated": "2022-10-12T04:04:19.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6161,9 +6283,9 @@
             ],
             "arr_time": "20:15",
             "arr_time_utc": "19:15",
-            "counter": 85,
-            "cs_airline_iata": "NT",
-            "cs_flight_iata": "NT536",
+            "counter": 86,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
             "cs_flight_number": "536",
             "days": [
                 "sun",
@@ -6183,7 +6305,7 @@
             "flight_iata": "IB111",
             "flight_icao": "IBE111",
             "flight_number": "111",
-            "updated": "2022-10-04T08:07:07.000Z"
+            "updated": "2022-10-06T09:05:26.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6253,7 +6375,7 @@
             ],
             "arr_time": "17:50",
             "arr_time_utc": "16:50",
-            "counter": 58,
+            "counter": 62,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "311",
@@ -6273,7 +6395,7 @@
             "flight_iata": "IB144",
             "flight_icao": "IBE144",
             "flight_number": "144",
-            "updated": "2022-09-29T16:52:10.000Z"
+            "updated": "2022-10-11T06:06:16.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6284,9 +6406,9 @@
             "arr_terminals": null,
             "arr_time": "20:30",
             "arr_time_utc": "19:30",
-            "counter": 87,
-            "cs_airline_iata": "NT",
-            "cs_flight_iata": "NT191",
+            "counter": 90,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
             "cs_flight_number": "191",
             "days": [
                 "sun",
@@ -6306,7 +6428,7 @@
             "flight_iata": "IB146",
             "flight_icao": "IBE146",
             "flight_number": "146",
-            "updated": "2022-10-04T08:07:07.000Z"
+            "updated": "2022-10-12T09:04:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6319,9 +6441,9 @@
             ],
             "arr_time": "12:15",
             "arr_time_utc": "11:15",
-            "counter": 123,
-            "cs_airline_iata": "NT",
-            "cs_flight_iata": "NT206",
+            "counter": 128,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
             "cs_flight_number": "206",
             "days": [
                 "sun",
@@ -6341,7 +6463,7 @@
             "flight_iata": "IB149",
             "flight_icao": "IBE149",
             "flight_number": "149",
-            "updated": "2022-10-05T00:05:37.000Z"
+            "updated": "2022-10-13T01:08:46.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6455,9 +6577,42 @@
             "arr_terminals": [
                 "4"
             ],
+            "arr_time": "17:25",
+            "arr_time_utc": "15:25",
+            "counter": 9,
+            "cs_airline_iata": "I2",
+            "cs_flight_iata": "I23823",
+            "cs_flight_number": "3823",
+            "days": [
+                "sun",
+                "wed",
+                "thu",
+                "fri",
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "13:40",
+            "dep_time_utc": "12:40",
+            "duration": 165,
+            "flight_iata": "IB3823",
+            "flight_icao": "IBE3823",
+            "flight_number": "3823",
+            "updated": "2022-10-08T07:52:52.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "IB",
+            "airline_icao": "IBE",
+            "arr_iata": "MAD",
+            "arr_icao": "LEMD",
+            "arr_terminals": [
+                "4"
+            ],
             "arr_time": "18:45",
             "arr_time_utc": "16:45",
-            "counter": 112,
+            "counter": 150,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23825",
             "cs_flight_number": "3825",
@@ -6479,7 +6634,7 @@
             "flight_iata": "IB3825",
             "flight_icao": "IBE3825",
             "flight_number": "3825",
-            "updated": "2022-09-29T16:59:51.000Z"
+            "updated": "2022-10-10T16:35:23.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6492,7 +6647,7 @@
             ],
             "arr_time": "18:50",
             "arr_time_utc": "16:50",
-            "counter": 46,
+            "counter": 78,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23825",
             "cs_flight_number": "3825",
@@ -6514,7 +6669,7 @@
             "flight_iata": "IB3825",
             "flight_icao": "IBE3825",
             "flight_number": "3825",
-            "updated": "2022-10-04T16:44:41.000Z"
+            "updated": "2022-10-12T16:58:43.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -6749,7 +6904,7 @@
             ],
             "arr_time": "14:45",
             "arr_time_utc": "12:45",
-            "counter": 25,
+            "counter": 51,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23827",
             "cs_flight_number": "3827",
@@ -6771,7 +6926,7 @@
             "flight_iata": "IB3827",
             "flight_icao": "IBE3827",
             "flight_number": "3827",
-            "updated": "2022-10-03T12:37:10.000Z"
+            "updated": "2022-10-12T13:05:53.000Z"
         },
         {
             "aircraft_icao": null,
@@ -6982,7 +7137,7 @@
             ],
             "arr_time": "22:40",
             "arr_time_utc": "20:40",
-            "counter": 228,
+            "counter": 302,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23833",
             "cs_flight_number": "3833",
@@ -7004,7 +7159,7 @@
             "flight_iata": "IB3833",
             "flight_icao": "IBE3833",
             "flight_number": "3833",
-            "updated": "2022-10-04T20:54:52.000Z"
+            "updated": "2022-10-12T21:35:43.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7017,7 +7172,7 @@
             ],
             "arr_time": "10:30",
             "arr_time_utc": "08:30",
-            "counter": 210,
+            "counter": 304,
             "cs_airline_iata": "I2",
             "cs_flight_iata": "I23835",
             "cs_flight_number": "3835",
@@ -7039,7 +7194,7 @@
             "flight_iata": "IB3835",
             "flight_icao": "IBE3835",
             "flight_number": "3835",
-            "updated": "2022-10-04T09:11:02.000Z"
+            "updated": "2022-10-12T09:04:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7662,9 +7817,9 @@
             "arr_terminals": null,
             "arr_time": "09:30",
             "arr_time_utc": "08:30",
-            "counter": 172,
-            "cs_airline_iata": "NT",
-            "cs_flight_iata": "NT119",
+            "counter": 177,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
             "cs_flight_number": "119",
             "days": [
                 "sun",
@@ -7684,7 +7839,7 @@
             "flight_iata": "IB603",
             "flight_icao": "IBE603",
             "flight_number": "603",
-            "updated": "2022-10-01T21:28:20.000Z"
+            "updated": "2022-10-12T22:03:49.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7695,7 +7850,7 @@
             "arr_terminals": null,
             "arr_time": "10:30",
             "arr_time_utc": "09:30",
-            "counter": 83,
+            "counter": 87,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "109",
@@ -7717,7 +7872,7 @@
             "flight_iata": "IB604",
             "flight_icao": "IBE604",
             "flight_number": "604",
-            "updated": "2022-10-04T22:04:45.000Z"
+            "updated": "2022-10-12T23:05:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7728,7 +7883,7 @@
             "arr_terminals": null,
             "arr_time": "14:30",
             "arr_time_utc": "13:30",
-            "counter": 55,
+            "counter": 57,
             "cs_airline_iata": "NT",
             "cs_flight_iata": "NT147",
             "cs_flight_number": "147",
@@ -7750,7 +7905,7 @@
             "flight_iata": "IB608",
             "flight_icao": "IBE608",
             "flight_number": "608",
-            "updated": "2022-10-03T02:04:47.000Z"
+            "updated": "2022-10-10T03:05:52.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7761,7 +7916,7 @@
             "arr_terminals": null,
             "arr_time": "17:30",
             "arr_time_utc": "16:30",
-            "counter": 103,
+            "counter": 107,
             "cs_airline_iata": "NT",
             "cs_flight_iata": "NT169",
             "cs_flight_number": "169",
@@ -7783,7 +7938,7 @@
             "flight_iata": "IB612",
             "flight_icao": "IBE612",
             "flight_number": "612",
-            "updated": "2022-10-04T05:04:06.000Z"
+            "updated": "2022-10-11T06:06:16.000Z"
         },
         {
             "aircraft_icao": null,
@@ -7850,9 +8005,9 @@
             "arr_terminals": null,
             "arr_time": "12:00",
             "arr_time_utc": "11:00",
-            "counter": 85,
-            "cs_airline_iata": "NT",
-            "cs_flight_iata": "NT127",
+            "counter": 90,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
             "cs_flight_number": "127",
             "days": [
                 "sun",
@@ -7871,7 +8026,7 @@
             "flight_iata": "IB83",
             "flight_icao": "IBE83",
             "flight_number": "83",
-            "updated": "2022-10-05T00:05:37.000Z"
+            "updated": "2022-10-13T01:02:23.000Z"
         },
         {
             "aircraft_icao": null,
@@ -8058,7 +8213,7 @@
             "arr_terminals": null,
             "arr_time": "15:30",
             "arr_time_utc": "14:30",
-            "counter": 52,
+            "counter": 54,
             "cs_airline_iata": "NT",
             "cs_flight_iata": "NT135",
             "cs_flight_number": "135",
@@ -8079,7 +8234,7 @@
             "flight_iata": "IB86",
             "flight_icao": "IBE86",
             "flight_number": "86",
-            "updated": "2022-10-03T03:03:34.000Z"
+            "updated": "2022-10-10T04:05:03.000Z"
         },
         {
             "aircraft_icao": null,
@@ -8092,9 +8247,9 @@
             ],
             "arr_time": "20:45",
             "arr_time_utc": "19:45",
-            "counter": 117,
-            "cs_airline_iata": null,
-            "cs_flight_iata": null,
+            "counter": 120,
+            "cs_airline_iata": "NT",
+            "cs_flight_iata": "NT317",
             "cs_flight_number": "317",
             "days": [
                 "sun",
@@ -8114,7 +8269,7 @@
             "flight_iata": "IB91",
             "flight_icao": "IBE91",
             "flight_number": "91",
-            "updated": "2022-10-02T08:05:07.000Z"
+            "updated": "2022-10-10T09:04:03.000Z"
         },
         {
             "aircraft_icao": null,
@@ -8127,9 +8282,9 @@
             ],
             "arr_time": "20:40",
             "arr_time_utc": "19:40",
-            "counter": 64,
-            "cs_airline_iata": null,
-            "cs_flight_iata": null,
+            "counter": 67,
+            "cs_airline_iata": "NT",
+            "cs_flight_iata": "NT234",
             "cs_flight_number": "234",
             "days": [
                 "sun",
@@ -8149,7 +8304,7 @@
             "flight_iata": "IB92",
             "flight_icao": "IBE92",
             "flight_number": "92",
-            "updated": "2022-10-04T08:07:07.000Z"
+            "updated": "2022-10-12T09:04:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -8357,7 +8512,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 18,
+            "counter": 19,
             "cs_airline_iata": "UX",
             "cs_flight_iata": "UX9018",
             "cs_flight_number": "9018",
@@ -8379,7 +8534,7 @@
             "flight_iata": "KL3339",
             "flight_icao": "KLM3339",
             "flight_number": "3339",
-            "updated": "2022-09-20T06:17:09.000Z"
+            "updated": "2022-10-11T09:45:37.000Z"
         },
         {
             "aircraft_icao": "B38M",
@@ -8419,7 +8574,7 @@
             "arr_terminals": null,
             "arr_time": "13:50",
             "arr_time_utc": "13:50",
-            "counter": 223,
+            "counter": 326,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -8436,10 +8591,10 @@
             "flight_iata": "L6111",
             "flight_icao": "MAI111",
             "flight_number": "111",
-            "updated": "2022-10-04T16:54:42.000Z"
+            "updated": "2022-10-11T16:46:41.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "B38M",
             "airline_iata": "L6",
             "airline_icao": "MAI",
             "arr_iata": "NKC",
@@ -8447,7 +8602,7 @@
             "arr_terminals": null,
             "arr_time": "22:30",
             "arr_time_utc": "22:30",
-            "counter": 62,
+            "counter": 95,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -8463,7 +8618,7 @@
             "flight_iata": "L6121",
             "flight_icao": "MAI121",
             "flight_number": "121",
-            "updated": "2022-09-30T23:33:28.000Z"
+            "updated": "2022-10-07T23:15:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9070,7 +9225,7 @@
             ],
             "arr_time": "22:10",
             "arr_time_utc": "20:10",
-            "counter": 42,
+            "counter": 44,
             "cs_airline_iata": "AY",
             "cs_flight_iata": "AY303",
             "cs_flight_number": "303",
@@ -9089,7 +9244,7 @@
             "flight_iata": "LH4379",
             "flight_icao": "DLH4379",
             "flight_number": "4379",
-            "updated": "2022-10-02T05:05:32.000Z"
+            "updated": "2022-10-09T06:05:54.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9129,7 +9284,7 @@
             "arr_terminals": null,
             "arr_time": "01:10",
             "arr_time_utc": "00:10",
-            "counter": 201,
+            "counter": 275,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9149,7 +9304,7 @@
             "flight_iata": "LS1260",
             "flight_icao": "EXS1260",
             "flight_number": "1260",
-            "updated": "2022-10-04T23:56:34.000Z"
+            "updated": "2022-10-12T01:00:49.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9160,7 +9315,7 @@
             "arr_terminals": null,
             "arr_time": "02:25",
             "arr_time_utc": "01:25",
-            "counter": 63,
+            "counter": 81,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9176,7 +9331,7 @@
             "flight_iata": "LS1260",
             "flight_icao": "EXS1260",
             "flight_number": "1260",
-            "updated": "2022-10-01T02:16:30.000Z"
+            "updated": "2022-10-08T00:37:09.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9187,7 +9342,7 @@
             "arr_terminals": null,
             "arr_time": "03:00",
             "arr_time_utc": "02:00",
-            "counter": 63,
+            "counter": 85,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9203,7 +9358,7 @@
             "flight_iata": "LS1260",
             "flight_icao": "EXS1260",
             "flight_number": "1260",
-            "updated": "2022-10-02T02:15:29.000Z"
+            "updated": "2022-10-09T02:11:46.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9216,7 +9371,7 @@
             ],
             "arr_time": "02:20",
             "arr_time_utc": "01:20",
-            "counter": 156,
+            "counter": 240,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9234,7 +9389,7 @@
             "flight_iata": "LS144",
             "flight_icao": "EXS144",
             "flight_number": "144",
-            "updated": "2022-10-05T00:53:31.000Z"
+            "updated": "2022-10-12T00:34:36.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9247,7 +9402,7 @@
             ],
             "arr_time": "20:20",
             "arr_time_utc": "19:20",
-            "counter": 42,
+            "counter": 58,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9265,7 +9420,7 @@
             "flight_iata": "LS1508",
             "flight_icao": "EXS1508",
             "flight_number": "1508",
-            "updated": "2022-10-04T19:23:22.000Z"
+            "updated": "2022-10-11T19:27:33.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9278,7 +9433,7 @@
             ],
             "arr_time": "02:40",
             "arr_time_utc": "01:40",
-            "counter": 311,
+            "counter": 393,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9298,7 +9453,7 @@
             "flight_iata": "LS1508",
             "flight_icao": "EXS1508",
             "flight_number": "1508",
-            "updated": "2022-10-03T01:19:50.000Z"
+            "updated": "2022-10-10T01:41:52.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9309,7 +9464,7 @@
             "arr_terminals": null,
             "arr_time": "23:00",
             "arr_time_utc": "22:00",
-            "counter": 108,
+            "counter": 146,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9326,7 +9481,7 @@
             "flight_iata": "LS1854",
             "flight_icao": "EXS1854",
             "flight_number": "1854",
-            "updated": "2022-10-03T22:10:11.000Z"
+            "updated": "2022-10-10T22:15:00.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9337,7 +9492,7 @@
             "arr_terminals": null,
             "arr_time": "01:25",
             "arr_time_utc": "00:25",
-            "counter": 25,
+            "counter": 31,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9354,7 +9509,7 @@
             "flight_iata": "LS372",
             "flight_icao": "EXS372",
             "flight_number": "372",
-            "updated": "2022-10-02T22:52:07.000Z"
+            "updated": "2022-10-09T19:17:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9365,7 +9520,7 @@
             "arr_terminals": null,
             "arr_time": "03:10",
             "arr_time_utc": "02:10",
-            "counter": 198,
+            "counter": 282,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9384,10 +9539,10 @@
             "flight_iata": "LS478",
             "flight_icao": "EXS478",
             "flight_number": "478",
-            "updated": "2022-10-05T01:44:08.000Z"
+            "updated": "2022-10-12T02:06:56.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "B738",
             "airline_iata": "LS",
             "airline_icao": "EXS",
             "arr_iata": "NCL",
@@ -9395,7 +9550,7 @@
             "arr_terminals": null,
             "arr_time": "02:10",
             "arr_time_utc": "01:10",
-            "counter": 133,
+            "counter": 292,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9413,7 +9568,7 @@
             "flight_iata": "LS542",
             "flight_icao": "EXS542",
             "flight_number": "542",
-            "updated": "2022-10-05T02:12:14.000Z"
+            "updated": "2022-10-12T03:59:47.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9451,7 +9606,7 @@
             "arr_terminals": null,
             "arr_time": "01:50",
             "arr_time_utc": "00:50",
-            "counter": 112,
+            "counter": 156,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9468,7 +9623,7 @@
             "flight_iata": "LS716",
             "flight_icao": "EXS716",
             "flight_number": "716",
-            "updated": "2022-10-04T00:38:15.000Z"
+            "updated": "2022-10-11T01:01:50.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9481,7 +9636,7 @@
             ],
             "arr_time": "20:05",
             "arr_time_utc": "19:05",
-            "counter": 14,
+            "counter": 52,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9500,7 +9655,7 @@
             "flight_iata": "LS782",
             "flight_icao": "EXS782",
             "flight_number": "782",
-            "updated": "2022-09-28T19:20:39.000Z"
+            "updated": "2022-10-12T19:16:54.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9515,7 +9670,7 @@
             ],
             "arr_time": "02:25",
             "arr_time_utc": "01:25",
-            "counter": 381,
+            "counter": 488,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9537,7 +9692,7 @@
             "flight_iata": "LS782",
             "flight_icao": "EXS782",
             "flight_number": "782",
-            "updated": "2022-10-05T01:21:45.000Z"
+            "updated": "2022-10-12T00:34:36.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9550,7 +9705,7 @@
             ],
             "arr_time": "02:40",
             "arr_time_utc": "01:40",
-            "counter": 66,
+            "counter": 86,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9566,7 +9721,7 @@
             "flight_iata": "LS782",
             "flight_icao": "EXS782",
             "flight_number": "782",
-            "updated": "2022-10-02T01:52:18.000Z"
+            "updated": "2022-10-09T02:02:58.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9580,7 +9735,7 @@
             ],
             "arr_time": "15:30",
             "arr_time_utc": "13:30",
-            "counter": 12,
+            "counter": 14,
             "cs_airline_iata": "WK",
             "cs_flight_iata": "WK201",
             "cs_flight_number": "201",
@@ -9597,7 +9752,7 @@
             "flight_iata": "LX8201",
             "flight_icao": "SWR8201",
             "flight_number": "8201",
-            "updated": "2022-10-02T14:10:35.000Z"
+            "updated": "2022-10-09T00:59:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9641,7 +9796,7 @@
             ],
             "arr_time": "22:40",
             "arr_time_utc": "20:40",
-            "counter": 9,
+            "counter": 10,
             "cs_airline_iata": "WK",
             "cs_flight_iata": "WK201",
             "cs_flight_number": "201",
@@ -9659,7 +9814,7 @@
             "flight_iata": "LX8201",
             "flight_icao": "SWR8201",
             "flight_number": "8201",
-            "updated": "2022-09-01T23:06:12.000Z"
+            "updated": "2022-10-06T20:36:32.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9958,7 +10113,7 @@
             "arr_terminals": null,
             "arr_time": "08:00",
             "arr_time_utc": "07:00",
-            "counter": 84,
+            "counter": 86,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -9977,7 +10132,7 @@
             "flight_iata": "NT103",
             "flight_icao": "IBB103",
             "flight_number": "103",
-            "updated": "2022-10-04T20:02:58.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -9988,7 +10143,7 @@
             "arr_terminals": null,
             "arr_time": "08:30",
             "arr_time_utc": "07:30",
-            "counter": 388,
+            "counter": 396,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "107",
@@ -10010,7 +10165,7 @@
             "flight_iata": "NT107",
             "flight_icao": "IBB107",
             "flight_number": "107",
-            "updated": "2022-09-28T08:08:48.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10021,7 +10176,7 @@
             "arr_terminals": null,
             "arr_time": "10:30",
             "arr_time_utc": "09:30",
-            "counter": 83,
+            "counter": 87,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "109",
@@ -10043,7 +10198,7 @@
             "flight_iata": "NT109",
             "flight_icao": "IBB109",
             "flight_number": "109",
-            "updated": "2022-10-04T22:04:45.000Z"
+            "updated": "2022-10-12T23:05:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10054,7 +10209,7 @@
             "arr_terminals": null,
             "arr_time": "10:00",
             "arr_time_utc": "09:00",
-            "counter": 41,
+            "counter": 43,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10073,7 +10228,7 @@
             "flight_iata": "NT111",
             "flight_icao": "IBB111",
             "flight_number": "111",
-            "updated": "2022-10-04T22:04:45.000Z"
+            "updated": "2022-10-12T23:05:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10114,10 +10269,10 @@
             "arr_terminals": null,
             "arr_time": "09:30",
             "arr_time_utc": "08:30",
-            "counter": 182,
+            "counter": 187,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "119",
             "days": [
                 "sun",
                 "mon",
@@ -10136,7 +10291,7 @@
             "flight_iata": "NT119",
             "flight_icao": "IBB119",
             "flight_number": "119",
-            "updated": "2022-10-01T21:28:20.000Z"
+            "updated": "2022-10-12T22:03:49.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10203,10 +10358,10 @@
             "arr_terminals": null,
             "arr_time": "12:00",
             "arr_time_utc": "11:00",
-            "counter": 115,
+            "counter": 120,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "127",
             "days": [
                 "sun",
                 "mon",
@@ -10225,7 +10380,7 @@
             "flight_iata": "NT127",
             "flight_icao": "IBB127",
             "flight_number": "127",
-            "updated": "2022-10-05T00:05:37.000Z"
+            "updated": "2022-10-13T01:02:23.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10264,7 +10419,7 @@
             "arr_terminals": null,
             "arr_time": "15:30",
             "arr_time_utc": "14:30",
-            "counter": 76,
+            "counter": 78,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10286,7 +10441,7 @@
             "flight_iata": "NT135",
             "flight_icao": "IBB135",
             "flight_number": "135",
-            "updated": "2022-10-02T03:04:03.000Z"
+            "updated": "2022-10-09T04:06:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10297,7 +10452,7 @@
             "arr_terminals": null,
             "arr_time": "13:30",
             "arr_time_utc": "12:30",
-            "counter": 31,
+            "counter": 33,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10319,7 +10474,7 @@
             "flight_iata": "NT145",
             "flight_icao": "IBB145",
             "flight_number": "145",
-            "updated": "2022-10-01T01:05:07.000Z"
+            "updated": "2022-10-13T02:05:58.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10330,7 +10485,7 @@
             "arr_terminals": null,
             "arr_time": "14:30",
             "arr_time_utc": "13:30",
-            "counter": 59,
+            "counter": 61,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10352,7 +10507,7 @@
             "flight_iata": "NT147",
             "flight_icao": "IBB147",
             "flight_number": "147",
-            "updated": "2022-10-03T02:04:47.000Z"
+            "updated": "2022-10-10T03:05:52.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10363,7 +10518,7 @@
             "arr_terminals": null,
             "arr_time": "14:40",
             "arr_time_utc": "13:40",
-            "counter": 43,
+            "counter": 45,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "151",
@@ -10383,7 +10538,7 @@
             "flight_iata": "NT151",
             "flight_icao": "IBB151",
             "flight_number": "151",
-            "updated": "2022-10-03T02:04:47.000Z"
+            "updated": "2022-10-11T03:06:58.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10427,7 +10582,7 @@
             "arr_terminals": null,
             "arr_time": "07:30",
             "arr_time_utc": "06:30",
-            "counter": 125,
+            "counter": 127,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10449,7 +10604,7 @@
             "flight_iata": "NT153",
             "flight_icao": "IBB153",
             "flight_number": "153",
-            "updated": "2022-10-02T19:02:49.000Z"
+            "updated": "2022-10-12T20:05:02.000Z"
         },
         {
             "aircraft_icao": "AT76",
@@ -10460,7 +10615,7 @@
             "arr_terminals": null,
             "arr_time": "08:55",
             "arr_time_utc": "07:55",
-            "counter": 40,
+            "counter": 56,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "155",
@@ -10482,7 +10637,7 @@
             "flight_iata": "NT155",
             "flight_icao": "IBB155",
             "flight_number": "155",
-            "updated": "2022-10-05T05:02:31.000Z"
+            "updated": "2022-10-12T22:03:49.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10551,7 +10706,7 @@
             "arr_terminals": null,
             "arr_time": "18:00",
             "arr_time_utc": "17:00",
-            "counter": 29,
+            "counter": 32,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "165",
@@ -10569,7 +10724,7 @@
             "flight_iata": "NT165",
             "flight_icao": "IBB165",
             "flight_number": "165",
-            "updated": "2022-10-04T11:59:25.000Z"
+            "updated": "2022-10-05T17:54:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10613,7 +10768,7 @@
             "arr_terminals": null,
             "arr_time": "17:30",
             "arr_time_utc": "16:30",
-            "counter": 107,
+            "counter": 111,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10635,7 +10790,7 @@
             "flight_iata": "NT169",
             "flight_icao": "IBB169",
             "flight_number": "169",
-            "updated": "2022-10-04T05:04:06.000Z"
+            "updated": "2022-10-11T06:06:16.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10646,10 +10801,10 @@
             "arr_terminals": null,
             "arr_time": "17:00",
             "arr_time_utc": "16:00",
-            "counter": 21,
+            "counter": 24,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "171",
             "days": [
                 "sun",
                 "tue",
@@ -10666,7 +10821,7 @@
             "flight_iata": "NT171",
             "flight_icao": "IBB171",
             "flight_number": "171",
-            "updated": "2022-10-05T05:02:31.000Z"
+            "updated": "2022-10-11T06:01:53.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10677,10 +10832,10 @@
             "arr_terminals": null,
             "arr_time": "18:30",
             "arr_time_utc": "17:30",
-            "counter": 133,
+            "counter": 136,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "173",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -10699,7 +10854,7 @@
             "flight_iata": "NT173",
             "flight_icao": "IBB173",
             "flight_number": "173",
-            "updated": "2022-09-29T16:52:10.000Z"
+            "updated": "2022-10-12T07:04:26.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10710,7 +10865,7 @@
             "arr_terminals": null,
             "arr_time": "20:00",
             "arr_time_utc": "19:00",
-            "counter": 28,
+            "counter": 30,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10728,7 +10883,7 @@
             "flight_iata": "NT175",
             "flight_icao": "IBB175",
             "flight_number": "175",
-            "updated": "2022-10-02T08:05:07.000Z"
+            "updated": "2022-10-07T09:01:58.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10739,7 +10894,7 @@
             "arr_terminals": null,
             "arr_time": "19:30",
             "arr_time_utc": "18:30",
-            "counter": 98,
+            "counter": 100,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "179",
@@ -10761,7 +10916,7 @@
             "flight_iata": "NT179",
             "flight_icao": "IBB179",
             "flight_number": "179",
-            "updated": "2022-10-04T07:06:33.000Z"
+            "updated": "2022-10-11T08:06:50.000Z"
         },
         {
             "aircraft_icao": "AT76",
@@ -10772,10 +10927,10 @@
             "arr_terminals": null,
             "arr_time": "20:30",
             "arr_time_utc": "19:30",
-            "counter": 153,
+            "counter": 177,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "191",
             "days": [
                 "sun",
                 "mon",
@@ -10794,7 +10949,7 @@
             "flight_iata": "NT191",
             "flight_icao": "IBB191",
             "flight_number": "191",
-            "updated": "2022-10-04T20:59:22.000Z"
+            "updated": "2022-10-12T10:42:54.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10805,7 +10960,7 @@
             "arr_terminals": null,
             "arr_time": "22:30",
             "arr_time_utc": "21:30",
-            "counter": 71,
+            "counter": 73,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10827,7 +10982,7 @@
             "flight_iata": "NT193",
             "flight_icao": "IBB193",
             "flight_number": "193",
-            "updated": "2022-10-03T10:03:51.000Z"
+            "updated": "2022-10-10T11:05:18.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10867,7 +11022,7 @@
             "arr_terminals": null,
             "arr_time": "21:30",
             "arr_time_utc": "20:30",
-            "counter": 53,
+            "counter": 55,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -10889,7 +11044,7 @@
             "flight_iata": "NT195",
             "flight_icao": "IBB195",
             "flight_number": "195",
-            "updated": "2022-09-04T11:34:05.000Z"
+            "updated": "2022-10-08T10:06:43.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10902,10 +11057,10 @@
             ],
             "arr_time": "07:40",
             "arr_time_utc": "06:40",
-            "counter": 310,
+            "counter": 315,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "200",
             "days": [
                 "sun",
                 "mon",
@@ -10924,7 +11079,7 @@
             "flight_iata": "NT200",
             "flight_icao": "IBB200",
             "flight_number": "200",
-            "updated": "2022-10-04T19:04:33.000Z"
+            "updated": "2022-10-12T20:05:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10937,10 +11092,10 @@
             ],
             "arr_time": "12:15",
             "arr_time_utc": "11:15",
-            "counter": 126,
+            "counter": 131,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "206",
             "days": [
                 "sun",
                 "mon",
@@ -10959,7 +11114,7 @@
             "flight_iata": "NT206",
             "flight_icao": "IBB206",
             "flight_number": "206",
-            "updated": "2022-10-05T00:05:37.000Z"
+            "updated": "2022-10-13T01:08:46.000Z"
         },
         {
             "aircraft_icao": null,
@@ -10972,10 +11127,10 @@
             ],
             "arr_time": "10:00",
             "arr_time_utc": "09:00",
-            "counter": 205,
+            "counter": 210,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "208",
             "days": [
                 "sun",
                 "mon",
@@ -10994,7 +11149,7 @@
             "flight_iata": "NT208",
             "flight_icao": "IBB208",
             "flight_number": "208",
-            "updated": "2022-10-04T22:04:45.000Z"
+            "updated": "2022-10-11T23:05:26.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11007,7 +11162,7 @@
             ],
             "arr_time": "10:40",
             "arr_time_utc": "09:40",
-            "counter": 66,
+            "counter": 68,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -11028,7 +11183,7 @@
             "flight_iata": "NT210",
             "flight_icao": "IBB210",
             "flight_number": "210",
-            "updated": "2022-09-29T22:11:17.000Z"
+            "updated": "2022-10-12T23:05:57.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11069,10 +11224,10 @@
             ],
             "arr_time": "14:40",
             "arr_time_utc": "13:40",
-            "counter": 265,
+            "counter": 276,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "214",
             "days": [
                 "sun",
                 "mon",
@@ -11091,7 +11246,7 @@
             "flight_iata": "NT214",
             "flight_icao": "IBB214",
             "flight_number": "214",
-            "updated": "2022-10-04T13:52:52.000Z"
+            "updated": "2022-10-13T03:04:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11102,7 +11257,7 @@
             "arr_terminals": null,
             "arr_time": "19:50",
             "arr_time_utc": "18:50",
-            "counter": 33,
+            "counter": 35,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "216",
@@ -11119,7 +11274,7 @@
             "flight_iata": "NT216",
             "flight_icao": "IBB216",
             "flight_number": "216",
-            "updated": "2022-09-30T08:14:52.000Z"
+            "updated": "2022-10-09T09:04:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11224,10 +11379,10 @@
             ],
             "arr_time": "15:40",
             "arr_time_utc": "14:40",
-            "counter": 88,
+            "counter": 91,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "222",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -11246,7 +11401,7 @@
             "flight_iata": "NT222",
             "flight_icao": "IBB222",
             "flight_number": "222",
-            "updated": "2022-10-03T03:03:34.000Z"
+            "updated": "2022-10-11T04:03:08.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11259,10 +11414,10 @@
             ],
             "arr_time": "18:00",
             "arr_time_utc": "17:00",
-            "counter": 100,
+            "counter": 103,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "224",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -11281,7 +11436,7 @@
             "flight_iata": "NT224",
             "flight_icao": "IBB224",
             "flight_number": "224",
-            "updated": "2022-10-03T06:04:29.000Z"
+            "updated": "2022-10-11T07:02:46.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11294,7 +11449,7 @@
             ],
             "arr_time": "08:10",
             "arr_time_utc": "07:10",
-            "counter": 95,
+            "counter": 97,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -11313,7 +11468,7 @@
             "flight_iata": "NT226",
             "flight_icao": "IBB226",
             "flight_number": "226",
-            "updated": "2022-09-04T00:25:49.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11326,7 +11481,7 @@
             ],
             "arr_time": "19:20",
             "arr_time_utc": "18:20",
-            "counter": 64,
+            "counter": 66,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "228",
@@ -11348,7 +11503,7 @@
             "flight_iata": "NT228",
             "flight_icao": "IBB228",
             "flight_number": "228",
-            "updated": "2022-10-03T07:04:00.000Z"
+            "updated": "2022-10-10T08:06:00.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11389,7 +11544,7 @@
             "arr_terminals": null,
             "arr_time": "15:10",
             "arr_time_utc": "14:10",
-            "counter": 8,
+            "counter": 10,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "230",
@@ -11406,7 +11561,7 @@
             "flight_iata": "NT230",
             "flight_icao": "IBB230",
             "flight_number": "230",
-            "updated": "2022-10-02T03:04:03.000Z"
+            "updated": "2022-10-09T04:06:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11451,10 +11606,10 @@
             ],
             "arr_time": "20:40",
             "arr_time_utc": "19:40",
-            "counter": 70,
+            "counter": 73,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "234",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -11473,7 +11628,7 @@
             "flight_iata": "NT234",
             "flight_icao": "IBB234",
             "flight_number": "234",
-            "updated": "2022-10-04T08:07:07.000Z"
+            "updated": "2022-10-12T09:04:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11584,10 +11739,10 @@
             ],
             "arr_time": "08:10",
             "arr_time_utc": "07:10",
-            "counter": 389,
+            "counter": 430,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "309",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -11606,7 +11761,7 @@
             "flight_iata": "NT309",
             "flight_icao": "IBB309",
             "flight_number": "309",
-            "updated": "2022-10-04T20:02:58.000Z"
+            "updated": "2022-10-12T21:30:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11712,7 +11867,7 @@
             ],
             "arr_time": "17:50",
             "arr_time_utc": "16:50",
-            "counter": 174,
+            "counter": 214,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "311",
@@ -11734,7 +11889,7 @@
             "flight_iata": "NT311",
             "flight_icao": "IBB311",
             "flight_number": "311",
-            "updated": "2022-10-04T16:59:44.000Z"
+            "updated": "2022-10-12T16:15:13.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11747,7 +11902,7 @@
             ],
             "arr_time": "10:50",
             "arr_time_utc": "09:50",
-            "counter": 264,
+            "counter": 296,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -11769,7 +11924,7 @@
             "flight_iata": "NT313",
             "flight_icao": "IBB313",
             "flight_number": "313",
-            "updated": "2022-10-03T10:09:26.000Z"
+            "updated": "2022-10-10T10:57:07.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11841,7 +11996,7 @@
             ],
             "arr_time": "19:35",
             "arr_time_utc": "18:35",
-            "counter": 58,
+            "counter": 64,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "315",
@@ -11858,7 +12013,7 @@
             "flight_iata": "NT315",
             "flight_icao": "IBB315",
             "flight_number": "315",
-            "updated": "2022-10-02T18:39:41.000Z"
+            "updated": "2022-10-09T18:33:33.000Z"
         },
         {
             "aircraft_icao": null,
@@ -11872,10 +12027,10 @@
             ],
             "arr_time": "20:45",
             "arr_time_utc": "19:45",
-            "counter": 120,
+            "counter": 123,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "317",
+            "cs_flight_number": null,
             "days": [
                 "sun",
                 "mon",
@@ -11894,7 +12049,7 @@
             "flight_iata": "NT317",
             "flight_icao": "IBB317",
             "flight_number": "317",
-            "updated": "2022-10-02T08:05:07.000Z"
+            "updated": "2022-10-10T09:04:03.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12358,10 +12513,10 @@
             ],
             "arr_time": "07:45",
             "arr_time_utc": "06:45",
-            "counter": 389,
+            "counter": 424,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "500",
             "days": [
                 "sun",
                 "mon",
@@ -12380,7 +12535,7 @@
             "flight_iata": "NT500",
             "flight_icao": "IBB500",
             "flight_number": "500",
-            "updated": "2022-10-04T07:01:18.000Z"
+            "updated": "2022-10-12T20:05:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12394,10 +12549,10 @@
             ],
             "arr_time": "09:00",
             "arr_time_utc": "08:00",
-            "counter": 192,
+            "counter": 211,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "504",
+            "cs_flight_number": null,
             "days": [
                 "mon",
                 "tue",
@@ -12415,7 +12570,7 @@
             "flight_iata": "NT504",
             "flight_icao": "IBB504",
             "flight_number": "504",
-            "updated": "2022-10-04T09:16:06.000Z"
+            "updated": "2022-10-12T07:58:09.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12459,7 +12614,7 @@
             ],
             "arr_time": "13:15",
             "arr_time_utc": "12:15",
-            "counter": 12,
+            "counter": 16,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12475,7 +12630,7 @@
             "flight_iata": "NT506",
             "flight_icao": "IBB506",
             "flight_number": "506",
-            "updated": "2022-09-30T13:09:09.000Z"
+            "updated": "2022-10-07T12:06:37.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12489,10 +12644,10 @@
             ],
             "arr_time": "10:45",
             "arr_time_utc": "09:45",
-            "counter": 139,
+            "counter": 160,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": "508",
+            "cs_flight_number": null,
             "days": [
                 "mon",
                 "tue",
@@ -12509,7 +12664,7 @@
             "flight_iata": "NT508",
             "flight_icao": "IBB508",
             "flight_number": "508",
-            "updated": "2022-10-04T22:04:45.000Z"
+            "updated": "2022-10-11T09:50:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12523,10 +12678,10 @@
             ],
             "arr_time": "11:30",
             "arr_time_utc": "10:30",
-            "counter": 149,
+            "counter": 178,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "510",
             "days": [
                 "sun",
                 "mon",
@@ -12545,7 +12700,7 @@
             "flight_iata": "NT510",
             "flight_icao": "IBB510",
             "flight_number": "510",
-            "updated": "2022-10-03T10:24:51.000Z"
+            "updated": "2022-10-12T10:33:30.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12556,7 +12711,7 @@
             "arr_terminals": null,
             "arr_time": "12:30",
             "arr_time_utc": "10:30",
-            "counter": 51,
+            "counter": 74,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12574,7 +12729,7 @@
             "flight_iata": "NT5100",
             "flight_icao": "IBB5100",
             "flight_number": "5100",
-            "updated": "2022-10-03T10:29:31.000Z"
+            "updated": "2022-10-10T10:57:08.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12674,7 +12829,7 @@
             ],
             "arr_time": "14:00",
             "arr_time_utc": "13:00",
-            "counter": 149,
+            "counter": 155,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12696,7 +12851,7 @@
             "flight_iata": "NT514",
             "flight_icao": "IBB514",
             "flight_number": "514",
-            "updated": "2022-10-02T12:44:26.000Z"
+            "updated": "2022-10-09T12:49:30.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12710,7 +12865,7 @@
             ],
             "arr_time": "12:45",
             "arr_time_utc": "11:45",
-            "counter": 156,
+            "counter": 196,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12732,7 +12887,7 @@
             "flight_iata": "NT516",
             "flight_icao": "IBB516",
             "flight_number": "516",
-            "updated": "2022-10-05T00:05:37.000Z"
+            "updated": "2022-10-12T11:34:01.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12779,7 +12934,7 @@
             ],
             "arr_time": "15:15",
             "arr_time_utc": "14:15",
-            "counter": 159,
+            "counter": 201,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12801,7 +12956,7 @@
             "flight_iata": "NT518",
             "flight_icao": "IBB518",
             "flight_number": "518",
-            "updated": "2022-10-05T03:03:53.000Z"
+            "updated": "2022-10-12T14:15:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12850,7 +13005,7 @@
             ],
             "arr_time": "08:15",
             "arr_time_utc": "07:15",
-            "counter": 232,
+            "counter": 252,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12871,7 +13026,7 @@
             "flight_iata": "NT520",
             "flight_icao": "IBB520",
             "flight_number": "520",
-            "updated": "2022-10-04T08:42:40.000Z"
+            "updated": "2022-10-11T07:21:21.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12949,7 +13104,7 @@
             ],
             "arr_time": "16:35",
             "arr_time_utc": "15:35",
-            "counter": 177,
+            "counter": 209,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -12971,7 +13126,7 @@
             "flight_iata": "NT522",
             "flight_icao": "IBB522",
             "flight_number": "522",
-            "updated": "2022-10-04T15:29:02.000Z"
+            "updated": "2022-10-11T16:21:14.000Z"
         },
         {
             "aircraft_icao": null,
@@ -12985,7 +13140,7 @@
             ],
             "arr_time": "17:45",
             "arr_time_utc": "16:45",
-            "counter": 248,
+            "counter": 290,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13007,7 +13162,7 @@
             "flight_iata": "NT524",
             "flight_icao": "IBB524",
             "flight_number": "524",
-            "updated": "2022-10-04T16:44:41.000Z"
+            "updated": "2022-10-12T16:54:10.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13021,7 +13176,7 @@
             ],
             "arr_time": "17:15",
             "arr_time_utc": "16:15",
-            "counter": 193,
+            "counter": 221,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13042,7 +13197,7 @@
             "flight_iata": "NT526",
             "flight_icao": "IBB526",
             "flight_number": "526",
-            "updated": "2022-10-02T08:57:02.000Z"
+            "updated": "2022-10-09T17:39:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13145,7 +13300,7 @@
             ],
             "arr_time": "19:00",
             "arr_time_utc": "18:00",
-            "counter": 205,
+            "counter": 233,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13167,7 +13322,7 @@
             "flight_iata": "NT530",
             "flight_icao": "IBB530",
             "flight_number": "530",
-            "updated": "2022-10-04T18:10:26.000Z"
+            "updated": "2022-10-11T18:55:29.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13210,10 +13365,10 @@
             ],
             "arr_time": "18:15",
             "arr_time_utc": "17:15",
-            "counter": 23,
+            "counter": 30,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "532",
             "days": [
                 "sun",
                 "thu",
@@ -13228,7 +13383,7 @@
             "flight_iata": "NT532",
             "flight_icao": "IBB532",
             "flight_number": "532",
-            "updated": "2022-06-26T08:29:50.000Z"
+            "updated": "2022-10-06T17:20:51.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13359,7 +13514,7 @@
             ],
             "arr_time": "21:15",
             "arr_time_utc": "20:15",
-            "counter": 32,
+            "counter": 48,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13376,7 +13531,38 @@
             "flight_iata": "NT534",
             "flight_icao": "IBB534",
             "flight_number": "534",
-            "updated": "2022-10-02T20:41:33.000Z"
+            "updated": "2022-10-09T20:49:56.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "NT",
+            "airline_icao": "IBB",
+            "arr_iata": "ACE",
+            "arr_icao": "GCRR",
+            "arr_terminals": [
+                "2"
+            ],
+            "arr_time": "20:10",
+            "arr_time_utc": "19:10",
+            "counter": 10,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": "536",
+            "days": [
+                "mon",
+                "wed",
+                "thu"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "19:25",
+            "dep_time_utc": "18:25",
+            "duration": 45,
+            "flight_iata": "NT536",
+            "flight_icao": "IBB536",
+            "flight_number": "536",
+            "updated": "2022-10-12T19:26:11.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13390,10 +13576,10 @@
             ],
             "arr_time": "20:15",
             "arr_time_utc": "19:15",
-            "counter": 197,
+            "counter": 224,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "536",
             "days": [
                 "sun",
                 "mon",
@@ -13412,7 +13598,7 @@
             "flight_iata": "NT536",
             "flight_icao": "IBB536",
             "flight_number": "536",
-            "updated": "2022-10-04T19:04:33.000Z"
+            "updated": "2022-10-11T19:17:53.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13456,13 +13642,14 @@
             ],
             "arr_time": "20:25",
             "arr_time_utc": "19:25",
-            "counter": 9,
+            "counter": 18,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
             "days": [
                 "sun",
                 "thu",
+                "fri",
                 "sat"
             ],
             "dep_iata": "LPA",
@@ -13474,7 +13661,7 @@
             "flight_iata": "NT536",
             "flight_icao": "IBB536",
             "flight_number": "536",
-            "updated": "2022-10-02T19:47:29.000Z"
+            "updated": "2022-10-09T19:27:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13487,7 +13674,7 @@
             ],
             "arr_time": "22:45",
             "arr_time_utc": "21:45",
-            "counter": 63,
+            "counter": 83,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13507,7 +13694,7 @@
             "flight_iata": "NT538",
             "flight_icao": "IBB538",
             "flight_number": "538",
-            "updated": "2022-10-04T22:19:30.000Z"
+            "updated": "2022-10-12T21:40:28.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13520,7 +13707,7 @@
             ],
             "arr_time": "23:00",
             "arr_time_utc": "22:00",
-            "counter": 30,
+            "counter": 42,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13537,7 +13724,7 @@
             "flight_iata": "NT538",
             "flight_icao": "IBB538",
             "flight_number": "538",
-            "updated": "2022-10-02T21:41:39.000Z"
+            "updated": "2022-10-09T21:50:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13551,7 +13738,7 @@
             ],
             "arr_time": "23:05",
             "arr_time_utc": "22:05",
-            "counter": 17,
+            "counter": 23,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13568,7 +13755,7 @@
             "flight_iata": "NT538",
             "flight_icao": "IBB538",
             "flight_number": "538",
-            "updated": "2022-09-29T22:01:54.000Z"
+            "updated": "2022-10-06T22:10:19.000Z"
         },
         {
             "aircraft_icao": null,
@@ -13581,9 +13768,9 @@
                 "T1",
                 "1"
             ],
-            "arr_time": "12:30",
-            "arr_time_utc": "10:30",
-            "counter": 80,
+            "arr_time": "12:40",
+            "arr_time_utc": "10:40",
+            "counter": 89,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -13596,11 +13783,11 @@
             "dep_terminals": null,
             "dep_time": "08:30",
             "dep_time_utc": "07:30",
-            "duration": 180,
+            "duration": 190,
             "flight_iata": "NT5400",
             "flight_icao": "IBB5400",
             "flight_number": "5400",
-            "updated": "2022-10-02T10:27:00.000Z"
+            "updated": "2022-10-07T10:35:41.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14046,7 +14233,7 @@
             ],
             "arr_time": "12:05",
             "arr_time_utc": "10:05",
-            "counter": 48,
+            "counter": 72,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -14066,7 +14253,7 @@
             "flight_iata": "NT5600",
             "flight_icao": "IBB5600",
             "flight_number": "5600",
-            "updated": "2022-10-04T21:04:00.000Z"
+            "updated": "2022-10-12T10:01:00.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14165,10 +14352,10 @@
             ],
             "arr_time": "10:15",
             "arr_time_utc": "09:15",
-            "counter": 283,
+            "counter": 324,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "590",
             "days": [
                 "sun",
                 "mon",
@@ -14187,7 +14374,7 @@
             "flight_iata": "NT590",
             "flight_icao": "IBB590",
             "flight_number": "590",
-            "updated": "2022-10-04T09:30:42.000Z"
+            "updated": "2022-10-12T23:05:57.000Z"
         },
         {
             "aircraft_icao": "AT75",
@@ -14225,7 +14412,7 @@
             "arr_terminals": null,
             "arr_time": "12:15",
             "arr_time_utc": "11:15",
-            "counter": 181,
+            "counter": 191,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6102",
@@ -14242,7 +14429,7 @@
             "flight_iata": "NT6102",
             "flight_icao": "IBB6102",
             "flight_number": "6102",
-            "updated": "2022-10-04T11:28:43.000Z"
+            "updated": "2022-10-11T11:12:02.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14253,7 +14440,7 @@
             "arr_terminals": null,
             "arr_time": "15:45",
             "arr_time_utc": "14:45",
-            "counter": 47,
+            "counter": 49,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6167",
@@ -14269,7 +14456,7 @@
             "flight_iata": "NT6167",
             "flight_icao": "IBB6167",
             "flight_number": "6167",
-            "updated": "2022-10-01T14:44:47.000Z"
+            "updated": "2022-10-08T15:02:33.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14312,10 +14499,10 @@
             ],
             "arr_time": "12:45",
             "arr_time_utc": "11:45",
-            "counter": 26,
+            "counter": 33,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
-            "cs_flight_number": null,
+            "cs_flight_number": "6202",
             "days": [
                 "sun",
                 "thu"
@@ -14329,7 +14516,7 @@
             "flight_iata": "NT6202",
             "flight_icao": "IBB6202",
             "flight_number": "6202",
-            "updated": "2022-10-02T11:15:22.000Z"
+            "updated": "2022-10-13T00:04:09.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14506,14 +14693,15 @@
             "arr_terminals": null,
             "arr_time": "00:05",
             "arr_time_utc": "00:05",
-            "counter": 98,
+            "counter": 105,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
             "days": [
                 "mon",
                 "tue",
-                "thu"
+                "thu",
+                "sat"
             ],
             "dep_iata": "LPA",
             "dep_icao": "GCLP",
@@ -14524,7 +14712,7 @@
             "flight_iata": "NT6604",
             "flight_icao": "IBB6604",
             "flight_number": "6604",
-            "updated": "2022-10-04T01:07:09.000Z"
+            "updated": "2022-10-10T23:58:38.000Z"
         },
         {
             "aircraft_icao": "E290",
@@ -14590,7 +14778,7 @@
             "arr_terminals": null,
             "arr_time": "12:25",
             "arr_time_utc": "11:25",
-            "counter": 110,
+            "counter": 118,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": "6804",
@@ -14607,7 +14795,7 @@
             "flight_iata": "NT6804",
             "flight_icao": "IBB6804",
             "flight_number": "6804",
-            "updated": "2022-10-04T23:06:37.000Z"
+            "updated": "2022-10-12T11:24:31.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14840,25 +15028,26 @@
             "arr_iata": "TLS",
             "arr_icao": "LFBO",
             "arr_terminals": null,
-            "arr_time": "12:45",
-            "arr_time_utc": "10:45",
-            "counter": 13,
+            "arr_time": "12:50",
+            "arr_time_utc": "10:50",
+            "counter": 23,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
             "days": [
-                "tue"
+                "tue",
+                "sat"
             ],
             "dep_iata": "LPA",
             "dep_icao": "GCLP",
             "dep_terminals": null,
             "dep_time": "08:30",
             "dep_time_utc": "07:30",
-            "duration": 195,
+            "duration": 200,
             "flight_iata": "NT9100",
             "flight_icao": "IBB9100",
             "flight_number": "9100",
-            "updated": "2022-09-06T13:02:58.000Z"
+            "updated": "2022-10-08T10:30:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -14959,7 +15148,7 @@
             ],
             "arr_time": "17:45",
             "arr_time_utc": "16:45",
-            "counter": 18,
+            "counter": 64,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -14978,7 +15167,7 @@
             "flight_iata": "NT912",
             "flight_icao": "IBB912",
             "flight_number": "912",
-            "updated": "2022-10-03T17:30:42.000Z"
+            "updated": "2022-10-10T18:26:20.000Z"
         },
         {
             "aircraft_icao": "AT75",
@@ -15049,7 +15238,7 @@
             "arr_terminals": null,
             "arr_time": "16:00",
             "arr_time_utc": "14:00",
-            "counter": 59,
+            "counter": 83,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15067,7 +15256,7 @@
             "flight_iata": "NT9200",
             "flight_icao": "IBB9200",
             "flight_number": "9200",
-            "updated": "2022-10-04T14:27:41.000Z"
+            "updated": "2022-10-11T13:37:04.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15076,27 +15265,28 @@
             "arr_iata": "VCE",
             "arr_icao": "LIPZ",
             "arr_terminals": null,
-            "arr_time": "15:35",
-            "arr_time_utc": "13:35",
-            "counter": 44,
+            "arr_time": "15:40",
+            "arr_time_utc": "13:40",
+            "counter": 53,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
             "days": [
                 "mon",
                 "wed",
-                "fri"
+                "fri",
+                "sat"
             ],
             "dep_iata": "LPA",
             "dep_icao": "GCLP",
             "dep_terminals": null,
             "dep_time": "10:20",
             "dep_time_utc": "09:20",
-            "duration": 255,
+            "duration": 260,
             "flight_iata": "NT9400",
             "flight_icao": "IBB9400",
             "flight_number": "9400",
-            "updated": "2022-09-26T13:31:12.000Z"
+            "updated": "2022-10-08T11:46:30.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15107,7 +15297,7 @@
             "arr_terminals": null,
             "arr_time": "14:45",
             "arr_time_utc": "12:45",
-            "counter": 73,
+            "counter": 99,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15123,7 +15313,7 @@
             "flight_iata": "NT9600",
             "flight_icao": "IBB9600",
             "flight_number": "9600",
-            "updated": "2022-10-01T13:12:08.000Z"
+            "updated": "2022-10-08T12:22:31.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15194,7 +15384,7 @@
             ],
             "arr_time": "03:35",
             "arr_time_utc": "01:35",
-            "counter": 19,
+            "counter": 35,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15211,7 +15401,7 @@
             "flight_iata": "OR1636",
             "flight_icao": "TFL1636",
             "flight_number": "1636",
-            "updated": "2022-10-03T10:03:51.000Z"
+            "updated": "2022-10-11T01:01:50.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15222,7 +15412,7 @@
             "arr_terminals": null,
             "arr_time": "19:55",
             "arr_time_utc": "17:55",
-            "counter": 65,
+            "counter": 81,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15238,7 +15428,7 @@
             "flight_iata": "OR1656",
             "flight_icao": "TFL1656",
             "flight_number": "1656",
-            "updated": "2022-10-03T17:39:49.000Z"
+            "updated": "2022-10-10T18:21:54.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15249,7 +15439,7 @@
             "arr_terminals": null,
             "arr_time": "20:25",
             "arr_time_utc": "18:25",
-            "counter": 45,
+            "counter": 71,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15265,7 +15455,7 @@
             "flight_iata": "OR1656",
             "flight_icao": "TFL1656",
             "flight_number": "1656",
-            "updated": "2022-09-29T20:59:18.000Z"
+            "updated": "2022-10-06T18:02:24.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15332,7 +15522,7 @@
             ],
             "arr_time": "22:35",
             "arr_time_utc": "20:35",
-            "counter": 52,
+            "counter": 66,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15348,7 +15538,7 @@
             "flight_iata": "OS9504",
             "flight_icao": "AUA9504",
             "flight_number": "9504",
-            "updated": "2022-09-29T21:12:50.000Z"
+            "updated": "2022-10-06T20:31:39.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15361,7 +15551,7 @@
             ],
             "arr_time": "00:15",
             "arr_time_utc": "22:15",
-            "counter": 67,
+            "counter": 101,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15377,7 +15567,7 @@
             "flight_iata": "OS9504",
             "flight_icao": "AUA9504",
             "flight_number": "9504",
-            "updated": "2022-10-01T22:18:32.000Z"
+            "updated": "2022-10-08T22:22:10.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15392,7 +15582,7 @@
             ],
             "arr_time": "12:30",
             "arr_time_utc": "11:30",
-            "counter": 396,
+            "counter": 412,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15414,7 +15604,7 @@
             "flight_iata": "PM212",
             "flight_icao": "CNF212",
             "flight_number": "212",
-            "updated": "2022-10-04T11:28:43.000Z"
+            "updated": "2022-10-12T11:41:04.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15428,7 +15618,7 @@
             ],
             "arr_time": "12:45",
             "arr_time_utc": "11:45",
-            "counter": 291,
+            "counter": 389,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15450,7 +15640,7 @@
             "flight_iata": "PM729",
             "flight_icao": "CNF729",
             "flight_number": "729",
-            "updated": "2022-10-05T04:17:25.000Z"
+            "updated": "2022-10-13T03:04:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15783,7 +15973,7 @@
             ],
             "arr_time": "15:40",
             "arr_time_utc": "14:40",
-            "counter": 36,
+            "counter": 76,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15799,7 +15989,7 @@
             "flight_iata": "RK2584",
             "flight_icao": "RUK2584",
             "flight_number": "2584",
-            "updated": "2022-10-05T04:17:25.000Z"
+            "updated": "2022-10-12T16:30:50.000Z"
         },
         {
             "aircraft_icao": null,
@@ -15840,7 +16030,7 @@
             "arr_terminals": null,
             "arr_time": "08:30",
             "arr_time_utc": "07:30",
-            "counter": 157,
+            "counter": 167,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -15862,7 +16052,7 @@
             "flight_iata": null,
             "flight_icao": "RSC107",
             "flight_number": "107",
-            "updated": "2022-10-04T08:33:15.000Z"
+            "updated": "2022-10-11T07:40:40.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16081,7 +16271,7 @@
             ],
             "arr_time": "14:40",
             "arr_time_utc": "13:40",
-            "counter": 159,
+            "counter": 163,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16103,7 +16293,7 @@
             "flight_iata": null,
             "flight_icao": "RSC214",
             "flight_number": "214",
-            "updated": "2022-10-03T13:45:34.000Z"
+            "updated": "2022-10-09T14:02:16.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16274,7 +16464,7 @@
             ],
             "arr_time": "10:45",
             "arr_time_utc": "09:45",
-            "counter": 110,
+            "counter": 120,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16294,7 +16484,7 @@
             "flight_iata": null,
             "flight_icao": "RSC508",
             "flight_number": "508",
-            "updated": "2022-10-05T04:17:25.000Z"
+            "updated": "2022-10-08T09:14:22.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16337,7 +16527,7 @@
             ],
             "arr_time": "15:55",
             "arr_time_utc": "14:55",
-            "counter": 50,
+            "counter": 54,
             "cs_airline_iata": "TP",
             "cs_flight_iata": "TP1119",
             "cs_flight_number": "1119",
@@ -16357,7 +16547,7 @@
             "flight_iata": "S48197",
             "flight_icao": "RZO8197",
             "flight_number": "8197",
-            "updated": "2022-10-04T02:04:01.000Z"
+            "updated": "2022-10-11T03:06:58.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -16370,7 +16560,7 @@
             ],
             "arr_time": "22:00",
             "arr_time_utc": "20:00",
-            "counter": 28,
+            "counter": 30,
             "cs_airline_iata": "SL",
             "cs_flight_iata": "SL1944",
             "cs_flight_number": "1944",
@@ -16390,7 +16580,7 @@
             "flight_iata": "SK1944",
             "flight_icao": "SAS1944",
             "flight_number": "1944",
-            "updated": "2022-10-01T21:56:42.000Z"
+            "updated": "2022-10-08T10:01:56.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -16460,7 +16650,7 @@
             "arr_terminals": null,
             "arr_time": "23:20",
             "arr_time_utc": "21:20",
-            "counter": 29,
+            "counter": 57,
             "cs_airline_iata": "SL",
             "cs_flight_iata": "SL4698",
             "cs_flight_number": "4698",
@@ -16478,7 +16668,61 @@
             "flight_iata": "SK4698",
             "flight_icao": "SAS4698",
             "flight_number": "4698",
-            "updated": "2022-10-01T21:33:28.000Z"
+            "updated": "2022-10-08T23:20:29.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "SK",
+            "airline_icao": "SAS",
+            "arr_iata": "KRS",
+            "arr_icao": "ENCN",
+            "arr_terminals": null,
+            "arr_time": "22:15",
+            "arr_time_utc": "20:15",
+            "counter": 8,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": null,
+            "days": [
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "16:05",
+            "dep_time_utc": "15:05",
+            "duration": 310,
+            "flight_iata": "SK7418",
+            "flight_icao": "SAS7418",
+            "flight_number": "7418",
+            "updated": "2022-10-08T21:44:22.000Z"
+        },
+        {
+            "aircraft_icao": null,
+            "airline_iata": "SK",
+            "airline_icao": "SAS",
+            "arr_iata": "OSL",
+            "arr_icao": "ENGM",
+            "arr_terminals": null,
+            "arr_time": "21:30",
+            "arr_time_utc": "19:30",
+            "counter": 16,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": null,
+            "days": [
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "15:00",
+            "dep_time_utc": "14:00",
+            "duration": 330,
+            "flight_iata": "SK7472",
+            "flight_icao": "SAS7472",
+            "flight_number": "7472",
+            "updated": "2022-10-08T21:22:41.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16489,7 +16733,7 @@
             "arr_terminals": null,
             "arr_time": "17:10",
             "arr_time_utc": "15:10",
-            "counter": 13,
+            "counter": 17,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16505,7 +16749,7 @@
             "flight_iata": "SN3784",
             "flight_icao": "BEL3784",
             "flight_number": "3784",
-            "updated": "2022-10-02T01:52:17.000Z"
+            "updated": "2022-10-09T12:19:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16635,9 +16879,9 @@
             "arr_iata": "BRU",
             "arr_icao": "EBBR",
             "arr_terminals": null,
-            "arr_time": "23:55",
-            "arr_time_utc": "21:55",
-            "counter": 8,
+            "arr_time": "23:50",
+            "arr_time_utc": "21:50",
+            "counter": 10,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16649,11 +16893,11 @@
             "dep_terminals": null,
             "dep_time": "18:10",
             "dep_time_utc": "17:10",
-            "duration": 285,
+            "duration": 280,
             "flight_iata": "TB1552",
             "flight_icao": "JAF1552",
             "flight_number": "1552",
-            "updated": "2022-09-01T01:19:37.000Z"
+            "updated": "2022-10-12T16:39:55.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16781,7 +17025,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 18,
+            "counter": 19,
             "cs_airline_iata": "UX",
             "cs_flight_iata": "UX9018",
             "cs_flight_number": "9018",
@@ -16803,7 +17047,7 @@
             "flight_iata": "TK9399",
             "flight_icao": "THY9399",
             "flight_number": "9399",
-            "updated": "2022-09-20T06:17:09.000Z"
+            "updated": "2022-10-11T09:45:37.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16817,7 +17061,7 @@
             ],
             "arr_time": "15:45",
             "arr_time_utc": "13:45",
-            "counter": 60,
+            "counter": 84,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16833,7 +17077,7 @@
             "flight_iata": "TO4681",
             "flight_icao": "TVF4681",
             "flight_number": "4681",
-            "updated": "2022-10-04T14:22:37.000Z"
+            "updated": "2022-10-11T13:32:29.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16847,7 +17091,7 @@
             ],
             "arr_time": "16:20",
             "arr_time_utc": "14:20",
-            "counter": 52,
+            "counter": 74,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16863,7 +17107,7 @@
             "flight_iata": "TO4681",
             "flight_icao": "TVF4681",
             "flight_number": "4681",
-            "updated": "2022-10-01T14:16:52.000Z"
+            "updated": "2022-10-08T14:43:55.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16876,7 +17120,7 @@
             ],
             "arr_time": "15:55",
             "arr_time_utc": "14:55",
-            "counter": 447,
+            "counter": 491,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16896,7 +17140,7 @@
             "flight_iata": "TP1119",
             "flight_icao": "TAP1119",
             "flight_number": "1119",
-            "updated": "2022-10-04T15:03:33.000Z"
+            "updated": "2022-10-11T15:17:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16909,7 +17153,7 @@
             ],
             "arr_time": "16:20",
             "arr_time_utc": "15:20",
-            "counter": 59,
+            "counter": 61,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16925,7 +17169,7 @@
             "flight_iata": "U26562",
             "flight_icao": "EZY6562",
             "flight_number": "6562",
-            "updated": "2022-09-29T18:43:26.000Z"
+            "updated": "2022-10-06T16:47:22.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16938,7 +17182,7 @@
             ],
             "arr_time": "17:15",
             "arr_time_utc": "16:15",
-            "counter": 43,
+            "counter": 45,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16954,7 +17198,7 @@
             "flight_iata": "U26562",
             "flight_icao": "EZY6562",
             "flight_number": "6562",
-            "updated": "2022-10-04T16:39:37.000Z"
+            "updated": "2022-10-11T16:21:14.000Z"
         },
         {
             "aircraft_icao": null,
@@ -16967,7 +17211,7 @@
             ],
             "arr_time": "23:20",
             "arr_time_utc": "22:20",
-            "counter": 55,
+            "counter": 57,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -16983,7 +17227,7 @@
             "flight_iata": "U26562",
             "flight_icao": "EZY6562",
             "flight_number": "6562",
-            "updated": "2022-10-03T00:45:48.000Z"
+            "updated": "2022-10-09T23:55:00.000Z"
         },
         {
             "aircraft_icao": "B788",
@@ -17058,7 +17302,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 156,
+            "counter": 181,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17080,7 +17324,7 @@
             "flight_iata": "UX9018",
             "flight_icao": "AEA9018",
             "flight_number": "9018",
-            "updated": "2022-10-05T00:01:18.000Z"
+            "updated": "2022-10-12T00:34:36.000Z"
         },
         {
             "aircraft_icao": "B738",
@@ -17095,7 +17339,7 @@
             ],
             "arr_time": "13:45",
             "arr_time_utc": "11:45",
-            "counter": 138,
+            "counter": 168,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17117,7 +17361,7 @@
             "flight_iata": "UX9161",
             "flight_icao": "AEA9161",
             "flight_number": "9161",
-            "updated": "2022-10-05T01:03:28.000Z"
+            "updated": "2022-10-13T03:14:47.000Z"
         },
         {
             "aircraft_icao": "B738",
@@ -17132,7 +17376,7 @@
             ],
             "arr_time": "21:45",
             "arr_time_utc": "19:45",
-            "counter": 407,
+            "counter": 453,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17154,7 +17398,7 @@
             "flight_iata": "UX9165",
             "flight_icao": "AEA9165",
             "flight_number": "9165",
-            "updated": "2022-10-04T20:22:05.000Z"
+            "updated": "2022-10-12T19:45:52.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17165,7 +17409,7 @@
             "arr_terminals": null,
             "arr_time": "06:15",
             "arr_time_utc": "04:15",
-            "counter": 66,
+            "counter": 92,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17181,7 +17425,7 @@
             "flight_iata": "V72739",
             "flight_icao": "VOE2739",
             "flight_number": "2739",
-            "updated": "2022-10-02T04:12:03.000Z"
+            "updated": "2022-10-09T07:00:20.000Z"
         },
         {
             "aircraft_icao": "A319",
@@ -17220,7 +17464,7 @@
             "arr_terminals": null,
             "arr_time": "13:05",
             "arr_time_utc": "11:05",
-            "counter": 27,
+            "counter": 31,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17237,7 +17481,7 @@
             "flight_iata": "V73561",
             "flight_icao": "VOE3561",
             "flight_number": "3561",
-            "updated": "2022-10-01T11:38:55.000Z"
+            "updated": "2022-10-08T11:18:08.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17250,7 +17494,7 @@
             ],
             "arr_time": "12:45",
             "arr_time_utc": "10:45",
-            "counter": 62,
+            "counter": 70,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17267,7 +17511,7 @@
             "flight_iata": "VY1175",
             "flight_icao": "VLG1175",
             "flight_number": "1175",
-            "updated": "2022-10-04T10:49:00.000Z"
+            "updated": "2022-10-11T10:29:01.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17280,7 +17524,7 @@
             ],
             "arr_time": "13:05",
             "arr_time_utc": "11:05",
-            "counter": 41,
+            "counter": 45,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17296,7 +17540,7 @@
             "flight_iata": "VY1175",
             "flight_icao": "VLG1175",
             "flight_number": "1175",
-            "updated": "2022-09-30T12:00:53.000Z"
+            "updated": "2022-10-07T11:05:30.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17309,7 +17553,7 @@
             ],
             "arr_time": "13:45",
             "arr_time_utc": "11:45",
-            "counter": 49,
+            "counter": 53,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17326,7 +17570,7 @@
             "flight_iata": "VY1175",
             "flight_icao": "VLG1175",
             "flight_number": "1175",
-            "updated": "2022-10-01T11:58:35.000Z"
+            "updated": "2022-10-08T11:41:52.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17369,7 +17613,7 @@
             ],
             "arr_time": "11:15",
             "arr_time_utc": "09:15",
-            "counter": 282,
+            "counter": 380,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17391,7 +17635,7 @@
             "flight_iata": "VY3001",
             "flight_icao": "VLG3001",
             "flight_number": "3001",
-            "updated": "2022-10-04T09:46:22.000Z"
+            "updated": "2022-10-12T09:04:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17404,7 +17648,7 @@
             ],
             "arr_time": "20:05",
             "arr_time_utc": "18:05",
-            "counter": 444,
+            "counter": 574,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17426,7 +17670,7 @@
             "flight_iata": "VY3003",
             "flight_icao": "VLG3003",
             "flight_number": "3003",
-            "updated": "2022-10-04T18:15:11.000Z"
+            "updated": "2022-10-12T18:12:14.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17439,7 +17683,7 @@
             ],
             "arr_time": "14:15",
             "arr_time_utc": "12:15",
-            "counter": 251,
+            "counter": 347,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17461,7 +17705,7 @@
             "flight_iata": "VY3005",
             "flight_icao": "VLG3005",
             "flight_number": "3005",
-            "updated": "2022-10-04T12:24:13.000Z"
+            "updated": "2022-10-12T12:26:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17505,7 +17749,7 @@
             ],
             "arr_time": "00:15",
             "arr_time_utc": "22:15",
-            "counter": 461,
+            "counter": 627,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17527,7 +17771,7 @@
             "flight_iata": "VY3007",
             "flight_icao": "VLG3007",
             "flight_number": "3007",
-            "updated": "2022-10-04T23:25:05.000Z"
+            "updated": "2022-10-12T22:09:04.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17570,7 +17814,7 @@
             ],
             "arr_time": "12:55",
             "arr_time_utc": "10:55",
-            "counter": 46,
+            "counter": 50,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17586,7 +17830,7 @@
             "flight_iata": "VY3022",
             "flight_icao": "VLG3022",
             "flight_number": "3022",
-            "updated": "2022-10-04T07:36:47.000Z"
+            "updated": "2022-10-11T12:48:44.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -17618,7 +17862,7 @@
             "updated": "2022-08-25T19:48:35.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "A320",
             "airline_iata": "VY",
             "airline_icao": "VLG",
             "arr_iata": "SCQ",
@@ -17628,7 +17872,7 @@
             ],
             "arr_time": "23:35",
             "arr_time_utc": "21:35",
-            "counter": 59,
+            "counter": 66,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17644,7 +17888,7 @@
             "flight_iata": "VY3022",
             "flight_icao": "VLG3022",
             "flight_number": "3022",
-            "updated": "2022-10-01T22:31:22.000Z"
+            "updated": "2022-10-08T23:33:13.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -17657,7 +17901,7 @@
             ],
             "arr_time": "09:25",
             "arr_time_utc": "07:25",
-            "counter": 70,
+            "counter": 86,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17673,10 +17917,10 @@
             "flight_iata": "VY3045",
             "flight_icao": "VLG3045",
             "flight_number": "3045",
-            "updated": "2022-10-03T08:43:18.000Z"
+            "updated": "2022-10-10T05:21:04.000Z"
         },
         {
-            "aircraft_icao": null,
+            "aircraft_icao": "A320",
             "airline_iata": "VY",
             "airline_icao": "VLG",
             "arr_iata": "SVQ",
@@ -17686,7 +17930,7 @@
             ],
             "arr_time": "10:10",
             "arr_time_utc": "08:10",
-            "counter": 52,
+            "counter": 67,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17703,7 +17947,7 @@
             "flight_iata": "VY3045",
             "flight_icao": "VLG3045",
             "flight_number": "3045",
-            "updated": "2022-10-05T04:31:58.000Z"
+            "updated": "2022-10-11T23:05:26.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -17716,7 +17960,7 @@
             ],
             "arr_time": "10:55",
             "arr_time_utc": "08:55",
-            "counter": 98,
+            "counter": 148,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17736,7 +17980,7 @@
             "flight_iata": "VY3045",
             "flight_icao": "VLG3045",
             "flight_number": "3045",
-            "updated": "2022-10-04T23:33:52.000Z"
+            "updated": "2022-10-13T01:30:32.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -17779,7 +18023,7 @@
             ],
             "arr_time": "12:05",
             "arr_time_utc": "10:05",
-            "counter": 69,
+            "counter": 79,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17798,7 +18042,7 @@
             "flight_iata": "VY3045",
             "flight_icao": "VLG3045",
             "flight_number": "3045",
-            "updated": "2022-10-02T23:49:42.000Z"
+            "updated": "2022-10-09T05:14:32.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -17811,7 +18055,7 @@
             ],
             "arr_time": "16:40",
             "arr_time_utc": "14:40",
-            "counter": 27,
+            "counter": 47,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17827,7 +18071,7 @@
             "flight_iata": "VY3045",
             "flight_icao": "VLG3045",
             "flight_number": "3045",
-            "updated": "2022-10-01T10:15:24.000Z"
+            "updated": "2022-10-08T14:53:16.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17869,7 +18113,7 @@
             ],
             "arr_time": "19:35",
             "arr_time_utc": "17:35",
-            "counter": 25,
+            "counter": 31,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17885,7 +18129,7 @@
             "flight_iata": "VY3047",
             "flight_icao": "VLG3047",
             "flight_number": "3047",
-            "updated": "2022-09-30T18:07:10.000Z"
+            "updated": "2022-10-07T12:28:31.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -17898,7 +18142,7 @@
             ],
             "arr_time": "19:45",
             "arr_time_utc": "17:45",
-            "counter": 46,
+            "counter": 48,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17915,10 +18159,10 @@
             "flight_iata": "VY3047",
             "flight_icao": "VLG3047",
             "flight_number": "3047",
-            "updated": "2022-10-02T17:35:11.000Z"
+            "updated": "2022-10-09T08:02:29.000Z"
         },
         {
-            "aircraft_icao": "A20N",
+            "aircraft_icao": null,
             "airline_iata": "VY",
             "airline_icao": "VLG",
             "arr_iata": "SVQ",
@@ -17928,7 +18172,7 @@
             ],
             "arr_time": "23:30",
             "arr_time_utc": "21:30",
-            "counter": 147,
+            "counter": 219,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17948,7 +18192,7 @@
             "flight_iata": "VY3047",
             "flight_icao": "VLG3047",
             "flight_number": "3047",
-            "updated": "2022-10-04T22:57:34.000Z"
+            "updated": "2022-10-12T23:59:12.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17961,7 +18205,7 @@
             ],
             "arr_time": "15:30",
             "arr_time_utc": "13:30",
-            "counter": 26,
+            "counter": 30,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -17977,7 +18221,7 @@
             "flight_iata": "VY3061",
             "flight_icao": "VLG3061",
             "flight_number": "3061",
-            "updated": "2022-09-26T13:56:13.000Z"
+            "updated": "2022-10-10T13:35:11.000Z"
         },
         {
             "aircraft_icao": null,
@@ -17990,7 +18234,7 @@
             ],
             "arr_time": "20:25",
             "arr_time_utc": "18:25",
-            "counter": 18,
+            "counter": 24,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18007,7 +18251,7 @@
             "flight_iata": "VY3061",
             "flight_icao": "VLG3061",
             "flight_number": "3061",
-            "updated": "2022-09-30T13:15:49.000Z"
+            "updated": "2022-10-07T19:37:43.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18037,7 +18281,7 @@
             "updated": "2022-09-10T23:08:21.000Z"
         },
         {
-            "aircraft_icao": "A20N",
+            "aircraft_icao": null,
             "airline_iata": "VY",
             "airline_icao": "VLG",
             "arr_iata": "AGP",
@@ -18045,7 +18289,7 @@
             "arr_terminals": null,
             "arr_time": "16:15",
             "arr_time_utc": "14:15",
-            "counter": 26,
+            "counter": 51,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18061,7 +18305,7 @@
             "flight_iata": "VY3067",
             "flight_icao": "VLG3067",
             "flight_number": "3067",
-            "updated": "2022-09-22T15:40:56.000Z"
+            "updated": "2022-10-06T16:42:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18072,7 +18316,7 @@
             "arr_terminals": null,
             "arr_time": "21:30",
             "arr_time_utc": "19:30",
-            "counter": 129,
+            "counter": 211,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18090,7 +18334,7 @@
             "flight_iata": "VY3067",
             "flight_icao": "VLG3067",
             "flight_number": "3067",
-            "updated": "2022-10-03T20:51:18.000Z"
+            "updated": "2022-10-10T21:50:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18101,7 +18345,7 @@
             "arr_terminals": null,
             "arr_time": "23:35",
             "arr_time_utc": "21:35",
-            "counter": 77,
+            "counter": 95,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18118,7 +18362,7 @@
             "flight_iata": "VY3067",
             "flight_icao": "VLG3067",
             "flight_number": "3067",
-            "updated": "2022-10-01T21:33:27.000Z"
+            "updated": "2022-10-08T22:53:00.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -18157,7 +18401,7 @@
             "arr_terminals": null,
             "arr_time": "11:50",
             "arr_time_utc": "09:50",
-            "counter": 69,
+            "counter": 93,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18174,7 +18418,7 @@
             "flight_iata": "VY3069",
             "flight_icao": "VLG3069",
             "flight_number": "3069",
-            "updated": "2022-10-01T09:46:40.000Z"
+            "updated": "2022-10-08T11:46:30.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18185,7 +18429,7 @@
             "arr_terminals": null,
             "arr_time": "11:55",
             "arr_time_utc": "09:55",
-            "counter": 20,
+            "counter": 40,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18201,7 +18445,7 @@
             "flight_iata": "VY3069",
             "flight_icao": "VLG3069",
             "flight_number": "3069",
-            "updated": "2022-10-02T09:55:20.000Z"
+            "updated": "2022-10-09T11:58:44.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18212,7 +18456,7 @@
             "arr_terminals": null,
             "arr_time": "12:35",
             "arr_time_utc": "10:35",
-            "counter": 17,
+            "counter": 43,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18228,7 +18472,7 @@
             "flight_iata": "VY3069",
             "flight_icao": "VLG3069",
             "flight_number": "3069",
-            "updated": "2022-09-22T11:58:05.000Z"
+            "updated": "2022-10-13T03:04:59.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18239,7 +18483,7 @@
             "arr_terminals": null,
             "arr_time": "16:45",
             "arr_time_utc": "14:45",
-            "counter": 76,
+            "counter": 142,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18260,7 +18504,7 @@
             "flight_iata": "VY3069",
             "flight_icao": "VLG3069",
             "flight_number": "3069",
-            "updated": "2022-10-05T04:17:25.000Z"
+            "updated": "2022-10-12T16:30:50.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -18273,7 +18517,7 @@
             ],
             "arr_time": "12:55",
             "arr_time_utc": "10:55",
-            "counter": 134,
+            "counter": 162,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18291,7 +18535,7 @@
             "flight_iata": "VY3163",
             "flight_icao": "VLG3163",
             "flight_number": "3163",
-            "updated": "2022-10-02T11:56:56.000Z"
+            "updated": "2022-10-09T05:14:32.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18305,7 +18549,7 @@
             ],
             "arr_time": "11:15",
             "arr_time_utc": "09:15",
-            "counter": 79,
+            "counter": 117,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18321,7 +18565,7 @@
             "flight_iata": "VY3184",
             "flight_icao": "VLG3184",
             "flight_number": "3184",
-            "updated": "2022-10-04T19:04:33.000Z"
+            "updated": "2022-10-12T09:20:51.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18335,7 +18579,7 @@
             ],
             "arr_time": "12:00",
             "arr_time_utc": "10:00",
-            "counter": 270,
+            "counter": 359,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18354,7 +18598,7 @@
             "flight_iata": "VY3184",
             "flight_icao": "VLG3184",
             "flight_number": "3184",
-            "updated": "2022-10-02T09:55:20.000Z"
+            "updated": "2022-10-13T01:13:10.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18368,7 +18612,7 @@
             ],
             "arr_time": "19:25",
             "arr_time_utc": "17:25",
-            "counter": 83,
+            "counter": 107,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18384,7 +18628,7 @@
             "flight_iata": "VY3184",
             "flight_icao": "VLG3184",
             "flight_number": "3184",
-            "updated": "2022-10-04T17:25:55.000Z"
+            "updated": "2022-10-11T17:11:01.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18423,7 +18667,7 @@
             "arr_terminals": null,
             "arr_time": "16:45",
             "arr_time_utc": "14:45",
-            "counter": 69,
+            "counter": 73,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18440,7 +18684,7 @@
             "flight_iata": "VY3201",
             "flight_icao": "VLG3201",
             "flight_number": "3201",
-            "updated": "2022-10-01T14:58:00.000Z"
+            "updated": "2022-10-08T14:43:55.000Z"
         },
         {
             "aircraft_icao": "A20N",
@@ -18453,7 +18697,7 @@
             ],
             "arr_time": "20:45",
             "arr_time_utc": "18:45",
-            "counter": 12,
+            "counter": 16,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18469,7 +18713,7 @@
             "flight_iata": "VY3204",
             "flight_icao": "VLG3204",
             "flight_number": "3204",
-            "updated": "2022-09-24T08:09:29.000Z"
+            "updated": "2022-10-08T18:41:08.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18482,7 +18726,7 @@
             ],
             "arr_time": "20:00",
             "arr_time_utc": "18:00",
-            "counter": 89,
+            "counter": 137,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18504,7 +18748,7 @@
             "flight_iata": "VY3271",
             "flight_icao": "VLG3271",
             "flight_number": "3271",
-            "updated": "2022-10-03T18:04:32.000Z"
+            "updated": "2022-10-12T18:18:42.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18547,7 +18791,7 @@
             ],
             "arr_time": "23:00",
             "arr_time_utc": "21:00",
-            "counter": 182,
+            "counter": 252,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18567,7 +18811,7 @@
             "flight_iata": "VY3271",
             "flight_icao": "VLG3271",
             "flight_number": "3271",
-            "updated": "2022-10-04T21:08:41.000Z"
+            "updated": "2022-10-11T21:19:39.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18580,7 +18824,7 @@
             ],
             "arr_time": "12:15",
             "arr_time_utc": "10:15",
-            "counter": 70,
+            "counter": 72,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18600,7 +18844,7 @@
             "flight_iata": "VY3273",
             "flight_icao": "VLG3273",
             "flight_number": "3273",
-            "updated": "2022-09-30T11:27:03.000Z"
+            "updated": "2022-10-07T10:19:41.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -18640,7 +18884,7 @@
             "arr_terminals": null,
             "arr_time": "19:25",
             "arr_time_utc": "17:25",
-            "counter": 83,
+            "counter": 87,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18657,7 +18901,7 @@
             "flight_iata": "VY6574",
             "flight_icao": "VLG6574",
             "flight_number": "6574",
-            "updated": "2022-09-29T18:15:06.000Z"
+            "updated": "2022-10-11T18:15:55.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18668,7 +18912,7 @@
             "arr_terminals": null,
             "arr_time": "20:45",
             "arr_time_utc": "18:45",
-            "counter": 23,
+            "counter": 29,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18684,7 +18928,7 @@
             "flight_iata": "VY6574",
             "flight_icao": "VLG6574",
             "flight_number": "6574",
-            "updated": "2022-10-02T18:39:41.000Z"
+            "updated": "2022-10-09T18:33:33.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18698,7 +18942,7 @@
             ],
             "arr_time": "16:55",
             "arr_time_utc": "14:55",
-            "counter": 166,
+            "counter": 174,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18716,7 +18960,7 @@
             "flight_iata": "VY8341",
             "flight_icao": "VLG8341",
             "flight_number": "8341",
-            "updated": "2022-10-04T15:09:19.000Z"
+            "updated": "2022-10-11T14:55:36.000Z"
         },
         {
             "aircraft_icao": "A21N",
@@ -18813,7 +19057,7 @@
             "arr_terminals": null,
             "arr_time": "01:10",
             "arr_time_utc": "00:10",
-            "counter": 203,
+            "counter": 223,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18830,7 +19074,37 @@
             "flight_iata": "W92972",
             "flight_icao": "WUK2972",
             "flight_number": "2972",
-            "updated": "2022-10-05T00:21:23.000Z"
+            "updated": "2022-10-12T02:19:14.000Z"
+        },
+        {
+            "aircraft_icao": "A320",
+            "airline_iata": "WK",
+            "airline_icao": "EDW",
+            "arr_iata": "ZRH",
+            "arr_icao": "LSZH",
+            "arr_terminals": [
+                "1",
+                "2"
+            ],
+            "arr_time": "15:20",
+            "arr_time_utc": "13:20",
+            "counter": 10,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": null,
+            "days": [
+                "tue"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "10:15",
+            "dep_time_utc": "09:15",
+            "duration": 245,
+            "flight_iata": "WK201",
+            "flight_icao": "EDW201",
+            "flight_number": "201",
+            "updated": "2022-10-11T08:31:56.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -18844,7 +19118,7 @@
             ],
             "arr_time": "15:30",
             "arr_time_utc": "13:30",
-            "counter": 37,
+            "counter": 43,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18861,7 +19135,37 @@
             "flight_iata": "WK201",
             "flight_icao": "EDW201",
             "flight_number": "201",
-            "updated": "2022-10-02T14:10:35.000Z"
+            "updated": "2022-10-09T04:01:34.000Z"
+        },
+        {
+            "aircraft_icao": "A320",
+            "airline_iata": "WK",
+            "airline_icao": "EDW",
+            "arr_iata": "ZRH",
+            "arr_icao": "LSZH",
+            "arr_terminals": [
+                "1",
+                "2"
+            ],
+            "arr_time": "22:40",
+            "arr_time_utc": "20:40",
+            "counter": 30,
+            "cs_airline_iata": null,
+            "cs_flight_iata": null,
+            "cs_flight_number": null,
+            "days": [
+                "sat"
+            ],
+            "dep_iata": "LPA",
+            "dep_icao": "GCLP",
+            "dep_terminals": null,
+            "dep_time": "17:35",
+            "dep_time_utc": "16:35",
+            "duration": 245,
+            "flight_iata": "WK201",
+            "flight_icao": "EDW201",
+            "flight_number": "201",
+            "updated": "2022-10-08T18:05:42.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -18880,36 +19184,6 @@
             "cs_flight_iata": null,
             "cs_flight_number": null,
             "days": [
-                "sat"
-            ],
-            "dep_iata": "LPA",
-            "dep_icao": "GCLP",
-            "dep_terminals": null,
-            "dep_time": "17:35",
-            "dep_time_utc": "16:35",
-            "duration": 245,
-            "flight_iata": "WK201",
-            "flight_icao": "EDW201",
-            "flight_number": "201",
-            "updated": "2022-10-01T21:28:22.000Z"
-        },
-        {
-            "aircraft_icao": "A320",
-            "airline_iata": "WK",
-            "airline_icao": "EDW",
-            "arr_iata": "ZRH",
-            "arr_icao": "LSZH",
-            "arr_terminals": [
-                "1",
-                "2"
-            ],
-            "arr_time": "22:40",
-            "arr_time_utc": "20:40",
-            "counter": 17,
-            "cs_airline_iata": null,
-            "cs_flight_iata": null,
-            "cs_flight_number": null,
-            "days": [
                 "mon",
                 "thu",
                 "sat"
@@ -18923,7 +19197,7 @@
             "flight_iata": "WK201",
             "flight_icao": "EDW201",
             "flight_number": "201",
-            "updated": "2022-09-22T10:06:05.000Z"
+            "updated": "2022-10-06T20:36:32.000Z"
         },
         {
             "aircraft_icao": "A320",
@@ -18937,7 +19211,7 @@
             ],
             "arr_time": "22:50",
             "arr_time_utc": "20:50",
-            "counter": 36,
+            "counter": 50,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18954,7 +19228,7 @@
             "flight_iata": "WK201",
             "flight_icao": "EDW201",
             "flight_number": "201",
-            "updated": "2022-10-03T15:09:12.000Z"
+            "updated": "2022-10-12T11:04:09.000Z"
         },
         {
             "aircraft_icao": null,
@@ -18969,7 +19243,7 @@
             ],
             "arr_time": "16:50",
             "arr_time_utc": "14:50",
-            "counter": 19,
+            "counter": 27,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -18986,7 +19260,7 @@
             "flight_iata": "X32263",
             "flight_icao": "TUI2263",
             "flight_number": "2263",
-            "updated": "2022-10-02T01:52:17.000Z"
+            "updated": "2022-10-09T15:24:47.000Z"
         },
         {
             "aircraft_icao": null,
@@ -19001,7 +19275,7 @@
             ],
             "arr_time": "23:55",
             "arr_time_utc": "21:55",
-            "counter": 19,
+            "counter": 23,
             "cs_airline_iata": null,
             "cs_flight_iata": null,
             "cs_flight_number": null,
@@ -19019,7 +19293,7 @@
             "flight_iata": "X32263",
             "flight_icao": "TUI2263",
             "flight_number": "2263",
-            "updated": "2022-09-30T21:19:50.000Z"
+            "updated": "2022-10-07T19:37:43.000Z"
         },
         {
             "aircraft_icao": null,
