@@ -1,13 +1,10 @@
-# from asyncore import write
-# import asyncio
+from csv import excel_tab
 from datetime import date, datetime
-# import imp
 import json
 from json import JSONEncoder
 from lib2to3.pgen2.token import GREATEREQUAL
 import string
 import psycopg2
-import psycopg2.extensions as ext
 
 # Conexión a la BDD (importar desde fichero externo?)
 try:
@@ -23,50 +20,71 @@ except Exception as error:
 
 def AddUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
                dni: string, dirPost: string, dirFac: string, contra: string):
+    try:
+        postgres_insert_query = """ INSERT INTO usuario (id, nombre, apellidos, correo, telefono, fecha_nacimiento,
+            dni, direccion_postal, direccion_facturacion, contrasenya) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+        record_to_insert = (id, nombre, apellidos, correo,
+                            telefono, fechaNac, dni, dirPost, dirFac, contra)
+        cursor.execute(postgres_insert_query, record_to_insert)
+        connection.commit()
 
-    postgres_insert_query = """ INSERT INTO usuario (id, nombre, apellidos, correo, telefono, fecha_nacimiento,
-        dni, direccion_postal, direccion_facturacion, contrasenya) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-    record_to_insert = (id, nombre, apellidos, correo,
-                        telefono, fechaNac, dni, dirPost, dirFac, contra)
-    cursor.execute(postgres_insert_query, record_to_insert)
+    except Exception as error:
+        raise error
 
-    connection.commit()
+    finally:
+        if connection:
+            cursor.close()
+            connection.close()
 
-    # Cerrar conexión (a implementar en fichero externo)
-    cursor.close()
-    connection.close()
-    return CrearJson(id, nombre, apellidos, correo, telefono, fechaNac, dni, dirPost, dirFac, contra)
+    usuario = {
+        "id":id, "nombre":nombre, "apellidos":apellidos, "correo": correo, "telefono": telefono, "fechaNacimiento": fechaNac, 
+        "dni": dni, "direccionPostal": dirPost, "direccionFacturacion": dirFac, "contraseña": contra
+    }
+    return usuario
 
 
 def UpdateUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
                   dni: string, dirPost: string, dirFac: string, contra: string):
+    try:
+        sql_update_query = """Update usuario set nombre = %s, apellidos = %s, correo = %s, telefono = %s, fecha_nacimiento = %s,
+            dni = %s, direccion_postal = %s, direccion_facturacion = %s, contrasenya = %s where id = %s"""
+        record_to_insert = (nombre, apellidos, correo, telefono,
+                            fechaNac, dni, dirPost, dirFac, contra, id)
+        cursor.execute(sql_update_query, record_to_insert)
+        connection.commit()
 
-    sql_update_query = """Update usuario set nombre = %s, apellidos = %s, correo = %s, telefono = %s, fecha_nacimiento = %s,
-        dni = %s, direccion_postal = %s, direccion_facturacion = %s, contrasenya = %s where id = %s"""
-    record_to_insert = (nombre, apellidos, correo, telefono,
-                        fechaNac, dni, dirPost, dirFac, contra, id)
-    cursor.execute(sql_update_query, record_to_insert)
+    except Exception as error:
+        raise error
 
-    connection.commit()
+    finally:
+        if connection:
+            cursor.close()
+            connection.close()
 
-    # Cerrar conexión (a implementar en fichero externo)
-    cursor.close()
-    connection.close()
-    return CrearJson(id, nombre, apellidos, correo, telefono, fechaNac, dni, dirPost, dirFac, contra)
+    usuario = {
+        "id":id, "nombre":nombre, "apellidos":apellidos, "correo": correo, "telefono": telefono, "fechaNacimiento": fechaNac, 
+        "dni": dni, "direccionPostal": dirPost, "direccionFacturacion": dirFac, "contraseña": contra
+    }
+    return usuario
 
 
 def DeleteUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
                   dni: string, dirPost: string, dirFac: string, contra: string):
+    try:
+        sql_delete_query = """Delete from usuario where id = %s"""
+        cursor.execute(sql_delete_query, id)
+        connection.commit()
+        
+    except Exception as error:
+        raise error
 
-    sql_delete_query = """Delete from usuario where id = %s"""
-    cursor.execute(sql_delete_query, id)
+    finally: 
+        if connection:
+            cursor.close()
+            connection.close()
 
-    connection.commit()
-
-    # Cerrar conexión (a implementar en fichero externo)
-    cursor.close()
-    connection.close()
-    return CrearJson(id, nombre, apellidos, correo, telefono, fechaNac, dni, dirPost, dirFac, contra)
+    return True
+        
 
 
 def GetUsuario(id: string):
@@ -74,7 +92,6 @@ def GetUsuario(id: string):
         postgreSQL_select_Query = "select * from usuario where id = %s"
         cursor.execute(postgreSQL_select_Query, id)
 
-        # usuario = cursor.fetchall()
         columns = ('id', 'nombre', 'apellidos', 'correo', 'telefono',
                    'fecha_nacimiento', 'dni', 'direccion_postal', 'direccion_facturacion', 'contrasenya')
         results = []
@@ -84,41 +101,13 @@ def GetUsuario(id: string):
 
         return json.dumps(results)
 
-    except (Exception, psycopg2.Error) as error:
-        print("Error while fetching data from PostgreSQL", error)
+    except Exception as error:
+        raise error
 
     finally:
         if connection:
             cursor.close()
             connection.close()
-            print("PostgreSQL connection is closed")
 
-# Método para crear un Json de Return con los datos del Usuario
-
-
-def CrearJson(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
-              dni: string, dirPost: string, dirFac: string, contra: string):
-
-    value = {
-        "id": id,
-        "nombre": nombre,
-        "apellidos": apellidos,
-        "correo": correo,
-        "telefono": telefono,
-        "fecha_nacimiento": fechaNac,
-        "dni": dni,
-        "direccion_postal": dirPost,
-        "direccion_facturacion": dirFac,
-        "contrasenya": contra
-    }
-    return value
-
-
-class DateTimeEncoder(JSONEncoder):
-    # Override the default method
-    def default(self, obj):
-        if isinstance(obj, (datetime.date, datetime)):
-            return obj.isoformat()
-
-
-print(GetUsuario("1"))
+#except (Exception, psycopg2.Error) as error:
+#        print("Error while fetching data from PostgreSQL", error)
