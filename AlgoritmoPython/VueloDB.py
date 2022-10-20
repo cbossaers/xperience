@@ -119,10 +119,10 @@ def GetVueloById(id: string):
                    'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
         results = []
 
-        for usuario in cursor.fetchall():
-            results.append(dict(zip(columns, usuario)))
+        for vuelo in cursor.fetchall():
+            results.append(dict(zip(columns, vuelo)))
 
-        return json.dumps(results)
+        return json.dumps(results, cls=DecimalEncoder)
 
     except Exception as error:
         raise error
@@ -147,8 +147,8 @@ def GetVueloByOriDest(Origen: string, Destino: string):
                    'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
         results = []
 
-        for usuario in cursor.fetchall():
-            results.append(dict(zip(columns, usuario)))
+        for vuelo in cursor.fetchall():
+            results.append(dict(zip(columns, vuelo)))
 
         return json.dumps(results, cls=DecimalEncoder)
 
@@ -175,8 +175,8 @@ def GetVueloByOriFecha(Origen: string, FechaSalida: string, FechaLlegada: string
                    'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
         results = []
 
-        for usuario in cursor.fetchall():
-            results.append(dict(zip(columns, usuario)))
+        for vuelo in cursor.fetchall():
+            results.append(dict(zip(columns, vuelo)))
 
         return json.dumps(results, cls=DecimalEncoder)
 
