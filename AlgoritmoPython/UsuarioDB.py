@@ -7,21 +7,16 @@ import string
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-# Conexión a la BDD (importar desde fichero externo?)
-try:
-    connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.121.110",
-                                  port="5432",
-                                  database="bluesky")
-    cursor = connection.cursor(cursor_factory = RealDictCursor)
-except Exception as error:
-    raise error
-
 
 def AddUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
                dni: string, dirPost: string, dirFac: string, contra: string):
     try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
         postgres_insert_query = """ INSERT INTO usuario (id, nombre, apellidos, correo, telefono, fecha_nacimiento,
             dni, direccion_postal, direccion_facturacion, contrasenya) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
         record_to_insert = (id, nombre, apellidos, correo,
@@ -47,6 +42,12 @@ def AddUsuario(id: int, nombre: string, apellidos: string, correo: string, telef
 def UpdateUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
                   dni: string, dirPost: string, dirFac: string, contra: string):
     try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
         sql_update_query = """Update usuario set nombre = %s, apellidos = %s, correo = %s, telefono = %s, fecha_nacimiento = %s,
             dni = %s, direccion_postal = %s, direccion_facturacion = %s, contrasenya = %s where id = %s"""
         record_to_insert = (nombre, apellidos, correo, telefono,
@@ -71,6 +72,12 @@ def UpdateUsuario(id: int, nombre: string, apellidos: string, correo: string, te
 
 def DeleteUsuario(id: int):
     try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
         sql_delete_query = """Delete from usuario where id = %s"""
         cursor.execute(sql_delete_query, id)
         connection.commit()
@@ -87,6 +94,12 @@ def DeleteUsuario(id: int):
         
 def GetUsuarioByCorreo(correo: string):
     try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
         postgreSQL_select_Query = "select * from usuario where correo = {s}".format(s = correo)
         cursor.execute(postgreSQL_select_Query)
 
@@ -109,6 +122,12 @@ def GetUsuarioByCorreo(correo: string):
 
 def GetUsuarioById(id: string):
     try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
         postgreSQL_select_Query = "select * from usuario where id = %s"
         cursor.execute(postgreSQL_select_Query, id)
 
@@ -131,4 +150,4 @@ def GetUsuarioById(id: string):
 
 #except (Exception, psycopg2.Error) as error:
 #        print("Error while fetching data from PostgreSQL", error)
-print(GetUsuarioByCorreo("'prueba'"))
+#print(GetUsuarioByCorreo("'prueba'"))
