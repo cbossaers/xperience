@@ -1,5 +1,13 @@
 <?php 
+
+    function AddUsuario() {  }
+    function UpdateUsuario() {  }
+    function DeleteUsuario() {  }
+    function GetUsuarioByCorreo() {  }
+    function GetUsuarioById() {  }
+
     class Usuario {
+
         private int $id;
         private string $nombre;
         private string $apellidos;

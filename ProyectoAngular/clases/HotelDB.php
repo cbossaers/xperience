@@ -1,5 +1,9 @@
 <?php 
+
+    function GetHotelById() {  }
+
     class Hotel {
+        
         private int $id;
         private string $tipo;
         private string $chainCode;
