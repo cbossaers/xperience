@@ -2,7 +2,7 @@
 
     function GetHotelById() {  }
 
-    class Hotel {
+    class Hotel { //no la borro por si acaso
         
         private int $id;
         private string $tipo;

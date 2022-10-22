@@ -6,7 +6,7 @@
     function GetUsuarioByCorreo() {  }
     function GetUsuarioById() {  }
 
-    class Usuario {
+    class Usuario { //no la borro por si acaso
 
         private int $id;
         private string $nombre;
