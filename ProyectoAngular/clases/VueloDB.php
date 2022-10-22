@@ -4,23 +4,28 @@
     function UpdateVuelo() {  }
     function DeleteVuelo() {  }
     function GetVueloByFechaPrecio(string $precio, string $fechaSalida, string $fechaLlegada) { 
- 
-    $url = '88.17.26.37:5000';
 
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, 'precio='.$precio.'&fechaSalida='.$fechaSalida.'&fechaLlegada='.$fechaLlegada);
+        $ch = curl_init();
 
-    /*$endpoint = 'http://example.com/endpoint';
-    $params = array('foo' => 'bar');
-    $url = $endpoint . '?' . http_build_query($params);
-    curl_setopt($ch, CURLOPT_URL, $url);*/
+        $url = '88.17.26.37:5000/vuelo';
 
-    $resp = curl_exec($ch);
-    curl_close($ch);
+        $data = array(
+            "precio" => "125",
+            "fechaSalida" => "13/10",
+            "fechaLlegada"=> "18/10"
+        );
         
-    echo $resp;
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+
+        $resp = curl_exec($ch);
+
+        curl_close($ch);
+            
+        echo $resp;
 }
 
 getVueloByFechaPrecio("20","10/04","22/10");
