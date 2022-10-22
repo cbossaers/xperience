@@ -188,5 +188,33 @@ def GetVueloByOriFecha(Origen: string, FechaSalida: string, FechaLlegada: string
             cursor.close()
             connection.close()
 
-#print(GetVueloByOriDest("prueba1", "prueba2"))
-#print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
+def GetVueloByFechaPrecio(FechaSalida: string, FechaLLegada: string, Importe: string):
+    try:
+        connection = psycopg2.connect(user="pi",
+                                  password="pi",
+                                  host="88.17.26.37",
+                                  port="5432",
+                                  database="bluesky")
+        cursor = connection.cursor()
+        postgreSQL_select_Query = "select * from vuelo where fecha_salida = %s and fecha_llegada = %s and precio_total = %s"
+        cursor.execute(postgreSQL_select_Query, (FechaSalida, FechaLLegada, Importe))
+
+        columns = ('id', 'fecha_salida', 'fecha_llegada', 'precio', 'companyia', 'ciudad_salida',
+                   'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
+        results = []
+
+        for vuelo in cursor.fetchall():
+            results.append(dict(zip(columns, vuelo)))
+
+        return json.dumps(results, cls=DecimalEncoder)
+
+    except Exception as error:
+        raise error
+
+    finally:
+        if connection:
+            cursor.close()
+            connection.close()
+
+# print(GetVueloByOriDest("prueba1", "prueba2"))
+# print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
