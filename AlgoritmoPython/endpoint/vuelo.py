@@ -1,38 +1,16 @@
-from flask_restful import Resource, Api, reqparse
+from flask_restful import Resource, Api, reqparse, request
 import pandas as pd
 import ast
 
 class Vuelo(Resource):
     def get(self):
-        data = "Hola Daniel!"
+        data = "Hello Friend!"
         return {'data': data}, 200  # return data and 200 OK
 
     def post(self):
-        parser = reqparse.RequestParser()  # initialize
-        parser.add_argument('userId', required=True)  # add args
-        parser.add_argument('name', required=True)
-        parser.add_argument('city', required=True)
-        args = parser.parse_args()  # parse arguments to dictionary
-
-        # read our CSV
-        data = pd.read_csv('Vuelos.csv')
-
-        if args['userId'] in list(data['userId']):
-            return {
-                'message': f"'{args['userId']}' already exists."
-            }, 409
-        else:
-            # create new dataframe containing new values
-            new_data = pd.DataFrame({
-                'userId': [args['userId']],
-                'name': [args['name']],
-                'city': [args['city']],
-                'Hoteles': [[]]
-            })
-            # add the newly provided values
-            data = data.append(new_data, ignore_index=True)
-            data.to_csv('Vuelos.csv', index=False)  # save back to CSV
-            return {'data': data.to_dict()}, 200  # return data with 200 OK
+        
+        data = request.args.get("name")
+        return {'data': data}, 200  # return data with 200 OK
 
     def put(self):
         parser = reqparse.RequestParser()  # initialize
