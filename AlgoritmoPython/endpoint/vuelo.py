@@ -9,7 +9,7 @@ class Vuelo(Resource):
 
     def post(self):
         
-        data = request.args.get("name")
+        data = request.args.get("fechaSalida")
         return {'data': data}, 200  # return data with 200 OK
 
     def put(self):
