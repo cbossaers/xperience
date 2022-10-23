@@ -10,8 +10,8 @@ class Vuelo(Resource):
 
     def post(self):
         
-        data = request.get_json()
-        return jsonify({'data': data}), 200  # return data with 200 OK
+        data = request.get_data()
+        return {'data': data}, 200  # return data with 200 OK
 
     def put(self):
         parser = reqparse.RequestParser()  # initialize
