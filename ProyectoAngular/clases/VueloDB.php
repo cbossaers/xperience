@@ -25,7 +25,7 @@
         $resp = curl_exec($ch);
 
         curl_close($ch);
-            
-        return json_dcode($resp, true);
+        
+        return json_decode($resp, true);
     }
 ?>
