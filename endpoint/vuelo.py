@@ -1,4 +1,5 @@
-from flask_restful import Resource, Api, reqparse, request
+from flask import jsonify
+from flask_restful import Resource, reqparse, request
 import pandas as pd
 import ast
 
@@ -9,8 +10,8 @@ class Vuelo(Resource):
 
     def post(self):
         
-        data = request.args.get("fechaSalida")
-        return {'data': data}, 200  # return data with 200 OK
+        data = request.get_json()
+        return jsonify({'data': data}), 200  # return data with 200 OK
 
     def put(self):
         parser = reqparse.RequestParser()  # initialize
