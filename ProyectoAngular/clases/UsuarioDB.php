@@ -1,5 +1,13 @@
 <?php 
-    class Usuario {
+
+    function AddUsuario() {  }
+    function UpdateUsuario() {  }
+    function DeleteUsuario() {  }
+    function GetUsuarioByCorreo() {  }
+    function GetUsuarioById() {  }
+
+    class Usuario { //no la borro por si acaso
+
         private int $id;
         private string $nombre;
         private string $apellidos;
