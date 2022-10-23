@@ -1,5 +1,9 @@
 <?php 
-    class Hotel {
+
+    function GetHotelById() {  }
+
+    class Hotel { //no la borro por si acaso
+        
         private int $id;
         private string $tipo;
         private string $chainCode;
