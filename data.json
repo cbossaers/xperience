@@ -1,0 +1,15 @@
+[
+    {
+        "ciudad_llegada": "prueba2",
+        "ciudad_salida": "prueba1",
+        "codigo_vuelo": "12345",
+        "companyia": "FACEBOOK",
+        "fecha_llegada": "2022-03-01",
+        "fecha_salida": "2022-03-01",
+        "id": 1,
+        "precio": "33.000",
+        "precio_base": "66.000",
+        "precio_total": "88.000",
+        "tasas_cantidad": "111.000"
+    }
+]

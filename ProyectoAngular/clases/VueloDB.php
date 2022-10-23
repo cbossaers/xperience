@@ -26,9 +26,6 @@
 
         curl_close($ch);
             
-        echo $resp;
+        return json_dcode($resp, true);
     }
-
-    getVueloByFechaPrecio(20,'10/04','22/10');
-
 ?>
