@@ -1,0 +1,27 @@
+.inicio{
+    width:100%; 
+    height: 40px;
+    background-color: #E8FCFF;
+}
+.divLogo{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.iconoLogo{
+    padding: 4px;
+
+}
+.userLogo{
+    padding: 4px;
+    height: 39px;
+    width: 39px;
+
+}
+
+.divInicoRegistro{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    float: right;
+}
