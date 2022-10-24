@@ -8,8 +8,7 @@ import DALVuelo
 
 class Vuelo(Resource):
     def get(self):
-        data = "Hello Friend!"
-        return {'data': data}, 200  # return data and 200 OK
+        return {'info': 'GET está actualmente deshabilitado'}, 200  # return data and 200 OK
 
     def post(self):
         args = request.args.to_dict()
