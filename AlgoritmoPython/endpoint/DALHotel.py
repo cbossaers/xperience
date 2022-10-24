@@ -9,16 +9,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 from decimal import *
 
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, obj):
-        # 👇️ if passed in object is instance of Decimal
-        # convert it to a string
-        if isinstance(obj, Decimal):
-            return str(obj)
-        # 👇️ otherwise use the default behavior
-        return json.JSONEncoder.default(self, obj)
-
-def GetHotelById(id: string):
+def GetHotelById(id: string):   #¡¡¡¡¡cambiar tipos decimal a float en BD para que funcione!!!!!
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
@@ -31,12 +22,14 @@ def GetHotelById(id: string):
 
         columns = ('id', 'tipo', 'chain_code', 'id_amadeus', 'dupe_id', 'nombre',
                    'num_estrellas', 'codigo_ciudad', 'latitud', 'longitud')
-        results = []
+        results = {}
 
         for hotel in cursor.fetchall():
-            results.append(dict(zip(columns, hotel)))
-
-        return json.dumps(results, cls=DecimalEncoder)
+            results[hotel[0]] = dict()
+            for i in range(len(hotel)):
+                results[hotel[0]][columns[i]] = hotel[i]
+            
+        return results
 
     except Exception as error:
         raise error

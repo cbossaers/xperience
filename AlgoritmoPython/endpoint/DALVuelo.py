@@ -27,8 +27,7 @@ def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numer
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
-        postgres_insert_query = """ INSERT INTO vuelo (id, fecha_salida, fecha_llegada, precio, companyia, ciudad_salida,
-            ciudad_llegada, codigo_vuelo, precio_total, precio_base, tasas_cantidad) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+        postgres_insert_query = """ INSERT INTO vuelo VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
         record_to_insert = (id, fecha_salida, fecha_llegada, precio,
                             companyia, ciudad_salida, ciudad_llegada, codigo_vuelo, precio_total, precio_base, tasas_cantidad)
         cursor.execute(postgres_insert_query, record_to_insert)
@@ -160,7 +159,7 @@ def GetVueloByOriDest(Origen: string, Destino: string):
             cursor.close()
             connection.close()
 
-def GetVueloByOriFecha(Origen: string, FechaSalida: string, FechaLlegada: string):
+def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
@@ -169,16 +168,19 @@ def GetVueloByOriFecha(Origen: string, FechaSalida: string, FechaLlegada: string
                                   database="bluesky")
         cursor = connection.cursor()
         postgreSQL_select_Query = "select * from vuelo where ciudad_salida = %s and fecha_salida = %s and fecha_llegada = %s"
-        cursor.execute(postgreSQL_select_Query, (Origen, FechaSalida, FechaLlegada))
+        cursor.execute(postgreSQL_select_Query, (origen, fechaSalida, fechaLlegada))
 
         columns = ('id', 'fecha_salida', 'fecha_llegada', 'precio', 'companyia', 'ciudad_salida',
                    'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
-        results = []
+
+        results = {}
 
         for vuelo in cursor.fetchall():
-            results.append(dict(zip(columns, vuelo)))
-
-        return json.dumps(results, cls=DecimalEncoder)
+            results[vuelo[0]] = dict()
+            for i in range(len(vuelo)):
+                results[vuelo[0]][columns[i]] = vuelo[i]
+            
+        return results 
 
     except Exception as error:
         raise error
@@ -188,7 +190,7 @@ def GetVueloByOriFecha(Origen: string, FechaSalida: string, FechaLlegada: string
             cursor.close()
             connection.close()
 
-def GetVueloByFechaPrecio(FechaSalida: string, FechaLLegada: string, Importe: string):
+def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
@@ -196,17 +198,20 @@ def GetVueloByFechaPrecio(FechaSalida: string, FechaLLegada: string, Importe: st
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
-        postgreSQL_select_Query = "select * from vuelo where fecha_salida = %s and fecha_llegada = %s and precio_total = %s"
-        cursor.execute(postgreSQL_select_Query, (FechaSalida, FechaLLegada, Importe))
+        postgreSQL_select_Query = "select * from vuelo where fecha_salida = %s and fecha_llegada = %s and precio_total <= %s"
+        cursor.execute(postgreSQL_select_Query, (fechaSalida, fechaLLegada, importe))
 
         columns = ('id', 'fecha_salida', 'fecha_llegada', 'precio', 'companyia', 'ciudad_salida',
-                   'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
-        results = []
+                'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
+ 
+        results = {}
 
         for vuelo in cursor.fetchall():
-            results.append(dict(zip(columns, vuelo)))
-
-        return json.dumps(results, cls=DecimalEncoder)
+            results[vuelo[0]] = dict()
+            for i in range(len(vuelo)):
+                results[vuelo[0]][columns[i]] = vuelo[i]
+            
+        return results 
 
     except Exception as error:
         raise error
@@ -218,3 +223,7 @@ def GetVueloByFechaPrecio(FechaSalida: string, FechaLLegada: string, Importe: st
 
 # print(GetVueloByOriDest("prueba1", "prueba2"))
 # print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
+#x = GetVueloByFechaPrecio('2022-03-01','2022-03-01',100)
+#filename = "./AlgoritmoPython/endpoint/data.json"
+#with open(filename, "w") as outfile:
+#    json.dump(x, outfile, indent=4)

@@ -105,12 +105,14 @@ def GetUsuarioByCorreo(correo: string):
 
         columns = ('id', 'nombre', 'apellidos', 'correo', 'telefono',
                    'fecha_nacimiento', 'dni', 'direccion_postal', 'direccion_facturacion', 'contrasenya')
-        results = []
-        
-        for usuario in cursor.fetchall():
-            results.append(dict(zip(columns, usuario)))
+        results = {}
 
-        return json.dumps(results)
+        for usuario in cursor.fetchall():
+            results[usuario[0]] = dict()
+            for i in range(len(usuario)):
+                results[usuario[0]][columns[i]] = usuario[i]
+            
+        return results
 
     except Exception as error:
         raise error
@@ -133,12 +135,14 @@ def GetUsuarioById(id: string):
 
         columns = ('id', 'nombre', 'apellidos', 'correo', 'telefono',
                    'fecha_nacimiento', 'dni', 'direccion_postal', 'direccion_facturacion', 'contrasenya')
-        results = []
+        results = {}
 
         for usuario in cursor.fetchall():
-            results.append(dict(zip(columns, usuario)))
-
-        return json.dumps(results)
+            results[usuario[0]] = dict()
+            for i in range(len(usuario)):
+                results[usuario[0]][columns[i]] = usuario[i]
+            
+        return results
 
     except Exception as error:
         raise error
