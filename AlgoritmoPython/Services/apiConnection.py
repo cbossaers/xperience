@@ -74,6 +74,3 @@ def getFlight(originLocationCode, destinationLocationCode, departureDate, adults
         return response.result
     except ResponseError as error:
         return error
-
-print(getFlight('SYD', 'BKK', '2022-11-01', 2))
-# print(getHabitaciones('MAD', 2))
