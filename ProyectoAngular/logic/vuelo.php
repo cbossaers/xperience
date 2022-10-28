@@ -24,5 +24,6 @@
         
         return json_decode($resp, true);
     }
+    GetVueloByFechaPrecio(100,"2022-03-01","2022-03-01");
 
 ?>
