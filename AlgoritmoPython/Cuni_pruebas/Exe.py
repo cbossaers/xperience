@@ -6,7 +6,8 @@ vuelta = datetime.datetime.today()
 presupuesto = 66
 origen = 'AGP'
 
-cargarViajes()
+CargarViajes()
+Destinos(3)
 #paquetes(origen,ida,vuelta,presupuesto)
 
 pepe = [0,0,1,2,3,4]

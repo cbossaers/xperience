@@ -6,18 +6,25 @@ import os, json
 import datetime
 
 
-path_to_json = 'AlgoritmoPython/airportDataJson/'
+path_to_json = 'AlgoritmoPython/seleccionAeropuertos/airportDestinations'
 json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 frecuencia = dict()
 sitio = dict()
 dias_=['mon','tue','wed','thu','fri','sat','sun']
+diasNormalizados=['L','M','X','J','V','S','D']
 
-def dayToNumber(lista : list) :
+def DayToNumber(lista : list) :
    for idx, x in enumerate(lista) :
       lista[idx] = dias_.index(x)
    return sorted(lista)
 
-def cargarViajes() :
+def DayNormalizado(lista : list) :
+   for idx, x in enumerate(lista) :
+      lista[idx] = diasNormalizados[x]
+   return lista
+
+
+def CargarViajes() :
    for pos_json in json_files:
     with open(os.path.join(path_to_json, pos_json)) as json_file:
       json_text = json.load(json_file)
@@ -26,7 +33,7 @@ def cargarViajes() :
          frecuencia[origen] = dict()
          for x in json_text['response']:
             destino = x['arr_iata']
-            dia = dayToNumber(x['days'])
+            dia = DayToNumber(x['days'])
             precio = 666
             if sitio.get(destino) == None :
                sitio[destino] = dict()
@@ -43,7 +50,7 @@ def cargarViajes() :
       json.dump(frecuencia, f, indent=4, sort_keys=True) 
 
 
-def paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto : int) :
+def Paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto : int) :
    with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as json_file:
       json_text = json.load(json_file)
    ida = fecha_ida.weekday() 
@@ -56,8 +63,29 @@ def paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto 
    with open("AlgoritmoPython\Cuni_pruebas\prueba.json", "w") as f:
       json.dump(destinos, f, indent=4, sort_keys=True)       
 
+def Destinos(n : int) :
+   with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as json_file:
+      json_text = json.load(json_file)
+   with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as desti:
+      destinosList = json.load(desti)   
+   destinos = []
+   for origen in json_text.keys():
+      cont = 1
+      destinosOrigen = json_text[origen].keys()
+      for destino in destinosList.keys():
+         if destino in destinosOrigen and origen != destino:
+            dias = json_text[origen][destino]['dias']
+            dias = DayNormalizado(dias)
+            destinos.append(
+               {"Origen" : origen, "Destino" : destino, "Dias" : dias}
+            )
+            if cont == n :
+               break
+            cont+= 1
+   with open("AlgoritmoPython\Cuni_pruebas\destinos.json", "w") as f:
+      json.dump(destinos, f, indent=2)       
 
-def media(x:list) :
+def Media(x:list) :
    return sum(x) / len(x)
 
 
