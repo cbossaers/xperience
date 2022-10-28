@@ -31,6 +31,7 @@ def CargarViajes() :
       if len(json_text['response']) > 2 :
          origen = json_text['response'][0]['dep_iata']
          frecuencia[origen] = dict()
+         sitio = dict()        
          for x in json_text['response']:
             destino = x['arr_iata']
             dia = DayToNumber(x['days'])
@@ -66,14 +67,14 @@ def Paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto 
 def Destinos(n : int) :
    with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as json_file:
       json_text = json.load(json_file)
-   with open('AlgoritmoPython\Cuni_pruebas\prueba_frec.json') as desti:
+   with open('AlgoritmoPython/seleccionAeropuertos/frecuenciaDestinos.json') as desti:
       destinosList = json.load(desti)   
    destinos = []
    for origen in json_text.keys():
       cont = 1
       destinosOrigen = json_text[origen].keys()
       for destino in destinosList.keys():
-         if destino in destinosOrigen and origen != destino:
+         if destino in destinosOrigen :
             dias = json_text[origen][destino]['dias']
             dias = DayNormalizado(dias)
             destinos.append(

@@ -7,7 +7,7 @@ presupuesto = 66
 origen = 'AGP'
 
 CargarViajes()
-Destinos(3)
+Destinos(1)
 #paquetes(origen,ida,vuelta,presupuesto)
 
 pepe = [0,0,1,2,3,4]

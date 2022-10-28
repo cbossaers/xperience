@@ -1,33 +1,7 @@
 [
   {
     "Origen": "AGP",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "AGP",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "AGP",
-    "Destino": "MAD",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
@@ -40,33 +14,7 @@
   },
   {
     "Origen": "ALC",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "ALC",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "ALC",
-    "Destino": "MAD",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
@@ -79,33 +27,7 @@
   },
   {
     "Origen": "BCN",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "BCN",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "BCN",
-    "Destino": "MAD",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
@@ -118,33 +40,7 @@
   },
   {
     "Origen": "MAD",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "MAD",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "MAD",
-    "Destino": "BCN",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
@@ -157,33 +53,7 @@
   },
   {
     "Origen": "SVQ",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "SVQ",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "SVQ",
-    "Destino": "BCN",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
@@ -196,33 +66,7 @@
   },
   {
     "Origen": "VLC",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "VLC",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "VLC",
-    "Destino": "BCN",
+    "Destino": "PMI",
     "Dias": [
       "L",
       "M",
