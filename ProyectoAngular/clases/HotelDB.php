@@ -2,7 +2,7 @@
 
     function GetHotelById(string $id) {
         
-        $data = http_build_query(array('id' => $id)); #hace falta array?
+        $data = http_build_query(array('id' => $id));
 
         $ch = curl_init();
 

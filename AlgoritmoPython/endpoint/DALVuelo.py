@@ -222,7 +222,7 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
             connection.close()
 
 # print(GetVueloByOriDest("prueba1", "prueba2"))
-# print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
+print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
 #x = GetVueloByFechaPrecio('2022-03-01','2022-03-01',100)
 #filename = "./AlgoritmoPython/endpoint/data.json"
 #with open(filename, "w") as outfile:

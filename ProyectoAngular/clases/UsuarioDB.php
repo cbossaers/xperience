@@ -7,7 +7,7 @@
     function DeleteUsuario() {  }
     function GetUsuarioByCorreo(string $correo) {
         
-        $data = http_build_query(array('correo' => $correo)); #hace falta array?
+        $data = http_build_query(array('correo' => $correo));
 
         $ch = curl_init();
 
@@ -27,7 +27,7 @@
     }
     function GetUsuarioById(string $id) {
 
-        $data = http_build_query(array('id' => $id,)); #hace falta array?
+        $data = http_build_query(array('id' => $id,));
 
         $ch = curl_init();
 
