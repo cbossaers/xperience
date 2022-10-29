@@ -1,6 +1,8 @@
 import datetime
 from Funciones import *
 
+airp = ['MAD', 'BCN', 'AGP', 'ALC', 'SVQ', 'VLC']
+
 ida = datetime.datetime(2022, 11, 14)
 vuelta = datetime.datetime.today()
 presupuesto = 66
