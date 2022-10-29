@@ -1,5 +1,4 @@
 from operator import index
-import string
 from textwrap import indent
 import json
 import os, json
@@ -10,7 +9,7 @@ path_to_json = 'AlgoritmoPython/seleccionAeropuertos/airportDestinations'
 json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 dias_=['mon','tue','wed','thu','fri','sat','sun']
 diasNormalizados=['L','M','X','J','V','S','D']
-airp = ['MAD', 'BCN', 'AGP', 'ALC', 'SVQ', 'VLC']
+
 
 def SortSemana(lista : list) :
    d = [] 
