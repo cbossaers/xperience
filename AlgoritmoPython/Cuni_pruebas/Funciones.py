@@ -40,7 +40,7 @@ def Paquetes(origen, fecha_ida : datetime, fecha_vuelta : datetime, presupuesto 
    with open("AlgoritmoPython\Cuni_pruebas\prueba.json", "w") as f:
       json.dump(destinos, f, indent=4, sort_keys=True)
 
-def ProcesarJson(json_text, destinosArray,t) :
+def ProcesarJson(json_text, destinosArray) :
     sitio = dict()        
     for x in json_text['response']:
         destino = x['arr_iata']
