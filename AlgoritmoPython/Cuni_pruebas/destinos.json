@@ -1,236 +1,69 @@
 [
-  {
-    "Origen": "AGP",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "AGP",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "AGP",
-    "Destino": "MAD",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "ALC",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "ALC",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "ALC",
-    "Destino": "MAD",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "BCN",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "BCN",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "BCN",
-    "Destino": "MAD",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "MAD",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "MAD",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "MAD",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "SVQ",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "SVQ",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "SVQ",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "VLC",
-    "Destino": "AGP",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "VLC",
-    "Destino": "ALC",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  },
-  {
-    "Origen": "VLC",
-    "Destino": "BCN",
-    "Dias": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ]
-  }
+    "ACE",
+    "AGA",
+    "AMS",
+    "ARN",
+    "BCN",
+    "BER",
+    "BFS",
+    "BHX",
+    "BIO",
+    "BLL",
+    "BRS",
+    "BRU",
+    "CDG",
+    "CMN",
+    "CPH",
+    "CRL",
+    "DTM",
+    "DUB",
+    "DUS",
+    "EDI",
+    "EIN",
+    "EMA",
+    "FCO",
+    "FMM",
+    "FRA",
+    "GLA",
+    "GOT",
+    "HAM",
+    "HEL",
+    "IBZ",
+    "IST",
+    "KRK",
+    "LBA",
+    "LGG",
+    "LGW",
+    "LHR",
+    "LIS",
+    "LPA",
+    "LPL",
+    "LTN",
+    "MAD",
+    "MAN",
+    "MLN",
+    "MUC",
+    "NCE",
+    "NDR",
+    "ORK",
+    "ORY",
+    "OSL",
+    "OVD",
+    "PIK",
+    "PMI",
+    "PRG",
+    "RAK",
+    "SCQ",
+    "SNN",
+    "SOF",
+    "STN",
+    "TFN",
+    "TNG",
+    "TRF",
+    "TRN",
+    "TSF",
+    "TTU",
+    "VIE",
+    "VLC",
+    "ZRH"
 ]
