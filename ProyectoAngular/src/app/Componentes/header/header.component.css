@@ -1,27 +1,23 @@
-.inicio{
-    width:100%; 
-    height: 40px;
-    background-color: #E8FCFF;
-}
-.divLogo{
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-}
-.iconoLogo{
-    padding: 4px;
 
+.navbar{
+    overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: white;
 }
-.userLogo{
-    padding: 4px;
-    height: 39px;
-    width: 39px;
-
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+.easy{
+    color: #1C9AEE;
+    display: inline;
+    font-size:30px;
 }
-
-.divInicoRegistro{
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    float: right;
+.travel{
+    color: #1C9AEE;
+    display: inline;
+    font-weight:bold;
+    font-size:30px;
 }
