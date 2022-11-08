@@ -1,12 +1,10 @@
-from textwrap import indent
+import Service
 from amadeus import Client, ResponseError
-import json
 
 amadeus = Client(
     client_id='H60c8yIe6mIkrrgNCc48AvkxmRTjpjRR',
     client_secret='gfqji5m9gPlPtIqi'
 )
-
 
 def getHabitaciones(cityCode, adults):
     hoteles = getHotelByCity(cityCode)
@@ -25,9 +23,7 @@ def getHabitaciones(cityCode, adults):
             if (list == []):
                 list.append(getOfertas(hoteles[0:posicion], adults))
             else:
-                list.append(getOfertas(
-                    hoteles[posicion-limit:posicion], adults))
-
+                list.append(getOfertas(hoteles[posicion-limit:posicion], adults))
         count += 1
         limit += 1
         posicion += 1
@@ -36,15 +32,10 @@ def getHabitaciones(cityCode, adults):
     result = {}
     for element in list:
         if(i<len(list)):
-            result = unir_diccionarios(result, list[i])
+            result = Service.unir_diccionarios(result, list[i])
         i += 1
     # return json.dumps(result, indent=2)
     return result
-
-def unir_diccionarios(d1, d2):
-    u = d1.copy()
-    u.update(d2)
-    return u
 
 def getHotelByCity(cityCode):
     try:
