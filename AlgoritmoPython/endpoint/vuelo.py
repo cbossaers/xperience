@@ -11,7 +11,7 @@ class Vuelo(Resource):
         return {'info': 'GET está actualmente deshabilitado'}, 200  # return data and 200 OK
 
     def post(self):
-        args = request.args.to_dict()
+        args = request.json
         x = DALVuelo.GetVueloByFechaPrecio(args["fechaSalida"], args["fechaLlegada"], args["precio"])
         return x, 200  # return data with 200 OK
 
