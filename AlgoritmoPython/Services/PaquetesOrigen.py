@@ -25,7 +25,7 @@ def getHabitacion(origen, presupuesto, fechaida, fechavuelta, adultos):
                 if newHab:
                     if limit < 2:
                         vuelosIda = getVuelosFechas(vuelosIdaDestino, fechaida)
-                        vuelosVuelta = getVuelosFechas(vuelosVueltaDestino, fechaida)
+                        vuelosVuelta = getVuelosFechas(vuelosVueltaDestino, fechavuelta)
                         if vuelosIda and vuelosVuelta:
                             habitaciones = addHabitaciones(habitaciones,
                                                     newHab, fechaida, fechavuelta, presupuesto, vuelosIda, vuelosVuelta)
@@ -35,12 +35,11 @@ def getHabitacion(origen, presupuesto, fechaida, fechavuelta, adultos):
 
 def getVuelosFechas(vuelosDestino, fechaida):
     vuelos = dict()
-    for vuelo in vuelosDestino:
-        for data in vuelo["data"]:
-            for itineraries in data["itineraries"]:
-                for segments in itineraries["segments"]:
-                    if fechaida in segments["at"]:
-                        vuelos = Service.unir_diccionarios(vuelos, vuelo)
+    for vuelo in vuelosDestino["data"]:
+        for itineraries in vuelo["itineraries"]:
+            for segments in itineraries["segments"]:
+                if fechaida in segments["departure"]["at"]:
+                    vuelos = Service.unir_diccionarios(vuelos, vuelo)
     return vuelos
 
 
@@ -61,10 +60,19 @@ def addHabitaciones(habitaciones, newHab, fechaida, fechavuelta, presupuesto, vu
 
 def precioPaquete(nocheHabitacion, duracion, vuelosIda, vuelosVuelta, presupuesto, newHab):
     paquetes = dict()
-    for vueloIda in vuelosIda:
-        for vueloVuelta in vuelosVuelta:
-            precio = float(nocheHabitacion) * (duracion - 1) + vueloIda + vueloVuelta
+    # for vueloIda in vuelosIda:
+    for vueloIda in vuelosIda["data"]:
+        # for vueloVuelta in vuelosVuelta:
+        for vueloVuelta in vuelosVuelta["data"]:
+            print(vueloIda["price"]["total"])
+            print(vueloVuelta["price"]["total"])
+            precio = float(nocheHabitacion) * (duracion - 1) + vueloIda["price"]["total"] + vueloVuelta["price"]["total"]
             if precio <= presupuesto:
+                # CREAR HABITACION
+                # CREAR VUELO IDA
+                # CREAR VUELO VUELTA
+                # CREAR PAQUETE
+                # Buscar por código de 
                 paquetes = Service.unir_diccionarios(paquetes, vueloIda)
                 paquetes = Service.unir_diccionarios(paquetes, vueloVuelta)
                 paquetes = Service.unir_diccionarios(paquetes, newHab)
@@ -107,4 +115,4 @@ def addOrginAndDestination(listPlaces, json):
     return listPlaces
 
 
-print(getHabitacion('MAD', 600, '2022-11-15', '2022-11-22', 2))
+print(getHabitacion('MAD', 600, '2022-11-16', '2022-11-22', 2))
