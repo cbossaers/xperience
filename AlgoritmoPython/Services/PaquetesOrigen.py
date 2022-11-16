@@ -60,10 +60,8 @@ def addHabitaciones(habitaciones, newHab, fechaida, fechavuelta, presupuesto, vu
 
 def precioPaquete(nocheHabitacion, duracion, vuelosIda, vuelosVuelta, presupuesto, newHab):
     paquetes = dict()
-    # for vueloIda in vuelosIda:
-    for vueloIda in vuelosIda["data"]:
-        # for vueloVuelta in vuelosVuelta:
-        for vueloVuelta in vuelosVuelta["data"]:
+    for vueloIda in vuelosIda:
+        for vueloVuelta in vuelosVuelta:
             print(vueloIda["price"]["total"])
             print(vueloVuelta["price"]["total"])
             precio = float(nocheHabitacion) * (duracion - 1) + vueloIda["price"]["total"] + vueloVuelta["price"]["total"]
