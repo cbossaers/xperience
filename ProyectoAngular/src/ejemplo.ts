@@ -1,9 +1,4 @@
-type CreateUserResponse = {
-  name: string;
-  job: string;
-  id: string;
-  createdAt: string;
-};
+
 
 async function createUser() {
   try {
