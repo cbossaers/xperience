@@ -1,12 +1,12 @@
-async function GetVueloByFechaPrecio() {
+async function GetVueloByFechaPrecio(precio: number, fechaSalida: Date, fechaLlegada: Date) {
     try {
       // 👇️ const response: Response
       const response = await fetch('http://88.17.26.37:5000/vuelo', {
         method: 'POST',
         body: JSON.stringify({
-          precio: '100',
-          fechaSalida: '2022-03-01',
-          fechaLlegada: '2022-03-01',
+          precio: precio,
+          fechaSalida: fechaSalida,
+          fechaLlegada: fechaLlegada,
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ async function GetVueloByFechaPrecio() {
         throw new Error(`Error! status: ${response.status}`);
       }
   
-      // 👇️ const result: CreateUserResponse
+      // 👇️ const result: GetVueloByFechaPrecioResponse
       const result = await response.json()
   
       console.log('result is: ', JSON.stringify(result, null, 4));

@@ -1,10 +1,10 @@
-async function GetHotelById() {
+async function GetHotelById(id: string) {
     try {
       // 👇️ const response: Response
       const response = await fetch('http://88.17.26.37:5000/hotel', {
         method: 'POST',
         body: JSON.stringify({
-          id: '1',
+          id: id,
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -16,7 +16,7 @@ async function GetHotelById() {
         throw new Error(`Error! status: ${response.status}`);
       }
   
-      // 👇️ const result: CreateUserResponse
+      // 👇️ const result: GetHotelByIdResponse
       const result = await response.json()
   
       console.log('result is: ', JSON.stringify(result, null, 4));
