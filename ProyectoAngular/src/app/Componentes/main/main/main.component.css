@@ -51,15 +51,16 @@
 }
 .buscar{
     display: inline-block;
-    align:left;
-    width: 6%;
-    height: 100%;
+    width: 16%;
+    height: 32px;
 }
 
 .botonBuscar {
     background-color: #aeecf2;
-    align:right;
-    width: 90px;
+    float: right;
+    width: 95px;
+    height: 32px;
+    margin-top: 10px;
     transition-duration: 0.4s;
     border: 0;
     border-top-left-radius: 5px;
@@ -84,19 +85,30 @@
     margin-bottom: 50px;
 }
 .viaje1{
-    width: 33%;
+    width: 33.33%;
     display: inline-block;
     align:left;
 }
 .viaje2{
-    width: 33%;
+    width: 33.33%;
     display: inline-block;
-    align:center;
+    text-align: center;
+    
 }
 .viaje3{
-    width: 33%;
+    width: 33.33%;
     display: inline-block;
-    align:right;
+    
+}
+.medio{
+    margin:0px auto;
+    width: 300px;
+    
+}
+.derecha{
+    float: right;
+    width: 300px;
+    
 }
 .imagenesV{
     border-radius: 6px;
@@ -105,9 +117,11 @@
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
+    text-align: left;
 }
 .precioViaje{
     font-size: 18px;
     color: grey;
     margin-top: 20px;
+    text-align: left;
 }

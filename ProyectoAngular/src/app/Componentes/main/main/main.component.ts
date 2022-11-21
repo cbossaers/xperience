@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  modalSwitch:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
     
   }
-
+ 
+  openModal(){
+    this.modalSwitch=true;
+  }
 }

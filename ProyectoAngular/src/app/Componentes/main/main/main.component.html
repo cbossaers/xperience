@@ -21,18 +21,22 @@
                 </div>
             </div>
         </div>
-        <div class="fEspeciales">
+        <div class="presupuesto">
+            <div><p>Origen</p></div>
             <div class="">
                 <div class="desp">
-                    <input type="text" value="500€" class="despegable">
+                    <input type="text" value="Valencia" class="despegable">
                 </div>
             </div>
         </div>
         <div class="buscar">
-            <button class="botonBuscar">
+            <button class="botonBuscar" (click)="openModal()">
                 Buscar
             </button>
         </div>
+    </div>
+    <div class="" *ngIf="modalSwitch==true">
+        <app-vista-viaje></app-vista-viaje>
     </div>
     <div class="viajes">
         <section class="seccion">
@@ -41,15 +45,19 @@
                 <p class="tituloViaje">Venecia</p>
                 <p class="precioViaje">Desde 300€</p>
             </div>
-            <div class="viaje2">
-                <img src="\assets\images\paris.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">Paris</p>
-                <p class="precioViaje">Desde 170€</p>
-            </div>
+                <div class="viaje2">
+                    <div class="medio">
+                        <img src="\assets\images\paris.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                        <p class="tituloViaje">Paris</p>
+                        <p class="precioViaje">Desde 170€</p>
+                    </div>
+                </div>
             <div class="viaje3">
-                <img src="\assets\images\Estocolmo.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">Estocolmo</p>
-                <p class="precioViaje">Desde 400€</p>
+                <div class="derecha">
+                    <img src="\assets\images\Estocolmo.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                    <p class="tituloViaje">Estocolmo</p>
+                    <p class="precioViaje">Desde 400€</p>
+                </div>
             </div>
         </section>
         <section class="seccion">
@@ -59,15 +67,19 @@
                 <p class="precioViaje">Desde 195€</p>
             </div>
             <div class="viaje2">
+                <div class="medio">
                 <img src="\assets\images\Tokio.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
                 <p class="tituloViaje">Tokio</p>
                 <p class="precioViaje">Desde 500€</p>
+                </div>
             </div>
             <div class="viaje3">
-                <img src="\assets\images\Londres.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">Londres</p>
-                <p class="precioViaje">Desde 280€</p>
+                <div class="derecha">
+                    <img src="\assets\images\Londres.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                    <p class="tituloViaje">Londres</p>
+                    <p class="precioViaje">Desde 280€</p>
+                </div>
             </div>
         </section>
-    </div>
+    </div>  
 </div>
