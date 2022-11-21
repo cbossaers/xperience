@@ -1,23 +1,7 @@
-from Services import Service
-from csv import excel_tab
-from datetime import date, datetime
-import json
-from json import JSONEncoder
-from lib2to3.pgen2.token import GREATEREQUAL
 import string
 from unicodedata import numeric
 import psycopg2
-from psycopg2.extras import RealDictCursor
 from decimal import *
-
-# class DecimalEncoder(json.JSONEncoder):
-#     def default(self, obj):
-#         # 👇️ if passed in object is instance of Decimal
-#         # convert it to a string
-#         if isinstance(obj, Decimal):
-#             return str(obj)
-#         # 👇️ otherwise use the default behavior
-#         return json.JSONEncoder.default(self, obj)
 
 def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numeric, companyia: string, ciudad_salida: string,
             ciudad_llegada: string, codigo_vuelo: string, precio_total: numeric, precio_base: numeric, tasas_cantidad: numeric):
@@ -28,7 +12,7 @@ def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numer
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
-        postgres_insert_query = """ INSERT INTO vuelo VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+        postgres_insert_query = " INSERT INTO vuelo VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         record_to_insert = (id, fecha_salida, fecha_llegada, precio,
                             companyia, ciudad_salida, ciudad_llegada, codigo_vuelo, precio_total, precio_base, tasas_cantidad)
         cursor.execute(postgres_insert_query, record_to_insert)
@@ -120,10 +104,14 @@ def GetVueloById(id: string):
         results = []
 
         for vuelo in cursor.fetchall():
-            results.append(dict(zip(columns, vuelo)))
+            aux = dict()
 
-        # return json.dumps(results, cls=DecimalEncoder)
-        return json.dumps(results, cls=Service.DecimalEncoder)
+            for i in range(len(vuelo)):
+                aux[columns[i]] = vuelo[i]
+
+            results.append(aux)
+            
+        return results 
 
     except Exception as error:
         raise error
@@ -149,10 +137,14 @@ def GetVueloByOriDest(Origen: string, Destino: string):
         results = []
 
         for vuelo in cursor.fetchall():
-            results.append(dict(zip(columns, vuelo)))
+            aux = dict()
 
-        # return json.dumps(results, cls=DecimalEncoder)
-        return json.dumps(results, cls=Service.DecimalEncoder)
+            for i in range(len(vuelo)):
+                aux[columns[i]] = vuelo[i]
+
+            results.append(aux)
+            
+        return results 
 
     except Exception as error:
         raise error
@@ -176,12 +168,15 @@ def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string
         columns = ('id', 'fecha_salida', 'fecha_llegada', 'precio', 'companyia', 'ciudad_salida',
                    'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
 
-        results = {}
+        results = []
 
         for vuelo in cursor.fetchall():
-            results[vuelo[0]] = dict()
+            aux = dict()
+
             for i in range(len(vuelo)):
-                results[vuelo[0]][columns[i]] = vuelo[i]
+                aux[columns[i]] = vuelo[i]
+
+            results.append(aux)
             
         return results 
 
@@ -207,12 +202,15 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
         columns = ('id', 'fecha_salida', 'fecha_llegada', 'precio', 'companyia', 'ciudad_salida',
                 'ciudad_llegada', 'codigo_vuelo', 'precio_total', 'precio_base', 'tasas_cantidad')
  
-        results = {}
+        results = []
 
         for vuelo in cursor.fetchall():
-            results[vuelo[0]] = dict()
+            aux = dict()
+
             for i in range(len(vuelo)):
-                results[vuelo[0]][columns[i]] = vuelo[i]
+                aux[columns[i]] = vuelo[i]
+
+            results.append(aux)
             
         return results 
 
@@ -227,6 +225,7 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
 # print(GetVueloByOriDest("prueba1", "prueba2"))
 #print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
 #x = GetVueloByFechaPrecio('2022-03-01','2022-03-01',100)
+#print(x)
 #filename = "./AlgoritmoPython/endpoint/data.json"
 #with open(filename, "w") as outfile:
 #    json.dump(x, outfile, indent=4)
