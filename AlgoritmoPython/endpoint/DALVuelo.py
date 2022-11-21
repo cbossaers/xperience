@@ -23,7 +23,7 @@ def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numer
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -53,7 +53,7 @@ def UpdateVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: nu
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -83,7 +83,7 @@ def DeleteVuelo(id: int):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -107,7 +107,7 @@ def GetVueloById(id: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -135,7 +135,7 @@ def GetVueloByOriDest(Origen: string, Destino: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -163,7 +163,7 @@ def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -194,7 +194,7 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()

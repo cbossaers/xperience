@@ -1,14 +1,7 @@
-type CreateUserResponse = {
-  name: string;
-  job: string;
-  id: string;
-  createdAt: string;
-};
-
 async function createUser() {
   try {
     // 👇️ const response: Response
-    const response = await fetch('http://88.17.26.37:5000/vuelo', {
+    const response = await fetch('http://192.168.1.33:5000/vuelo', {
       method: 'POST',
       body: JSON.stringify({
         precio: '100',
