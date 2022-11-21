@@ -1,6 +1,5 @@
 async function GetHotelById(id: string) {
     try {
-      // 👇️ const response: Response
       const response = await fetch('http://88.17.26.37:5000/hotel', {
         method: 'POST',
         body: JSON.stringify({
@@ -13,22 +12,22 @@ async function GetHotelById(id: string) {
       });
   
       if (!response.ok) {
-        throw new Error(`Error! status: ${response.status}`);
+        throw new Error('Error! status: ${response.status}');
       }
-  
-      // 👇️ const result: GetHotelByIdResponse
+
       const result = await response.json()
   
       console.log('result is: ', JSON.stringify(result, null, 4));
   
       return result;
+
     } catch (error) {
       if (error instanceof Error) {
-        console.log('error message: ', error.message);
+        console.log('Error message: ', error.message);
         return error.message;
       } else {
-        console.log('unexpected error: ', error);
+        console.log('Unexpected error: ', error);
         return 'An unexpected error occurred';
       }
     }
-  }
+}
