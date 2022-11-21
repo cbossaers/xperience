@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-async function createUser() {
-  try {
-    // 👇️ const response: Response
-    const response = await fetch('http://192.168.1.33:5000/vuelo', {
-=======
 type CreateUserResponse = {
   name: string;
   job: string;
@@ -15,7 +9,6 @@ async function obtenerVuelo() {
   try {
     // 👇️ const response: Response
     const response = await fetch('http://88.17.114.199:5000/vuelo', {
->>>>>>> 4a87dba757d8b9d73a6f73f3e761cd9b259c440b
       method: 'POST',
       body: JSON.stringify({
         precio: '100',
