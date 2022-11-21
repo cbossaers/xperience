@@ -1,7 +1,7 @@
 async function GetUsuarioByCorreo(correo: string) {
     try {
       const response = await fetch('http://88.17.26.37:5000/user', {
-        method: 'POST',
+        method: 'GET',
         body: JSON.stringify({
           correo: correo,
         }),
@@ -111,7 +111,7 @@ async function GetUsuarioByCorreo(correo: string) {
   async function DeleteUsuario(correo: string) {
     try {
       const response = await fetch('http://88.17.26.37:5000/user', {
-        method: 'POST',
+        method: 'DELETE',
         body: JSON.stringify({
           correo: correo,
         }),
