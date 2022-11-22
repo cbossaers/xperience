@@ -1,157 +1,72 @@
-from csv import excel_tab
-from datetime import date, datetime
-import json
-from json import JSONEncoder
-from lib2to3.pgen2.token import GREATEREQUAL
+from datetime import date
+import numbers
 import string
-import psycopg2
-from psycopg2.extras import RealDictCursor
+import psycopg
+import json
+from psycopg.rows import dict_row
 
+#temporalmente está aquí para no tener que escribirlo cada vez
+conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
 
-def AddUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
-               dni: string, dirPost: string, dirFac: string, contra: string):
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        postgres_insert_query = """ INSERT INTO usuario (id, nombre, apellidos, correo, telefono, fecha_nacimiento,
-            dni, direccion_postal, direccion_facturacion, contrasenya) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-        record_to_insert = (id, nombre, apellidos, correo,
-                            telefono, fechaNac, dni, dirPost, dirFac, contra)
-        cursor.execute(postgres_insert_query, record_to_insert)
-        connection.commit()
+def AddUsuario(correo: string, contr: string, nombre: string, apellidos: string, telefono: numbers = None, 
+    fechaNacimiento: date = None, dni: string = None, dirPost: string = None, dirFac: string = None):
 
-    except Exception as error:
-        raise error
+    with psycopg.connect(conndata) as conn:
+        with conn.cursor() as cur:
 
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
+            SQL = """INSERT INTO usuario VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+            ON CONFLICT (correo) 
+            DO UPDATE SET 
+                contrasenya = excluded.contrasenya,
+                nombre = excluded.nombre,
+                apellidos = excluded.apellidos,
+                telefono = excluded.telefono,
+                fechaNacimiento = excluded.fechaNacimiento,
+                dni = excluded.dni,
+                direccionPostal = excluded.direccionPostal,
+                direccionFacturacion = excluded.direccionFacturacion"""
 
-    usuario = {
-        "id":id, "nombre":nombre, "apellidos":apellidos, "correo": correo, "telefono": telefono, "fechaNacimiento": fechaNac, 
-        "dni": dni, "direccionPostal": dirPost, "direccionFacturacion": dirFac, "contraseña": contra
-    }
-    return usuario
+            data = (correo, contr, nombre, apellidos, telefono, fechaNacimiento, dni, dirPost, dirFac)
 
+            try:
+                cur.execute(SQL,data)
+                conn.commit()
 
-def UpdateUsuario(id: int, nombre: string, apellidos: string, correo: string, telefono: string, fechaNac: string,
-                  dni: string, dirPost: string, dirFac: string, contra: string):
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        sql_update_query = """Update usuario set nombre = %s, apellidos = %s, correo = %s, telefono = %s, fecha_nacimiento = %s,
-            dni = %s, direccion_postal = %s, direccion_facturacion = %s, contrasenya = %s where id = %s"""
-        record_to_insert = (nombre, apellidos, correo, telefono,
-                            fechaNac, dni, dirPost, dirFac, contra, id)
-        cursor.execute(sql_update_query, record_to_insert)
-        connection.commit()
+            except Exception as error:
+                raise error
 
-    except Exception as error:
-        raise error
+def DeleteUsuario(correo: string):
 
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
+    with psycopg.connect(conndata) as conn:
+        with conn.cursor() as cur:
 
-    usuario = {
-        "id":id, "nombre":nombre, "apellidos":apellidos, "correo": correo, "telefono": telefono, "fechaNacimiento": fechaNac, 
-        "dni": dni, "direccionPostal": dirPost, "direccionFacturacion": dirFac, "contraseña": contra
-    }
-    return usuario
+            SQL = "DELETE FROM usuario WHERE correo = %s"
+            data = (correo,)
 
+            try:
+                cur.execute(SQL,data)
+                conn.commit()
 
-def DeleteUsuario(id: int):
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        sql_delete_query = """Delete from usuario where id = %s"""
-        cursor.execute(sql_delete_query, id)
-        connection.commit()
+            except Exception as error:
+                raise error
         
-    except Exception as error:
-        raise error
+def GetUsuario(correo: string):
+    with psycopg.connect(conndata, row_factory=dict_row) as conn:
+        with conn.cursor() as cur:
 
-    finally: 
-        if connection:
-            cursor.close()
-            connection.close()
+            SQL = "SELECT * FROM usuario WHERE correo = %s"
 
-    return True
-        
-def GetUsuarioByCorreo(correo: string):
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        postgreSQL_select_Query = "select * from usuario where correo = {s}".format(s = correo)
-        cursor.execute(postgreSQL_select_Query)
+            data = (correo,)
 
-        columns = ('id', 'nombre', 'apellidos', 'correo', 'telefono',
-                   'fecha_nacimiento', 'dni', 'direccion_postal', 'direccion_facturacion', 'contrasenya')
-        results = {}
+            try:
+                cur.execute(SQL,data)
 
-        for usuario in cursor.fetchall():
-            results[usuario[0]] = dict()
-            for i in range(len(usuario)):
-                results[usuario[0]][columns[i]] = usuario[i]
-            
-        return results
+                return json.dumps(cur.fetchall(), indent=4)
 
-    except Exception as error:
-        raise error
+            except Exception as error:
+                raise error
 
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
 
-def GetUsuarioById(id: string):
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        postgreSQL_select_Query = "select * from usuario where id = %s"
-        cursor.execute(postgreSQL_select_Query, id)
-
-        columns = ('id', 'nombre', 'apellidos', 'correo', 'telefono',
-                   'fecha_nacimiento', 'dni', 'direccion_postal', 'direccion_facturacion', 'contrasenya')
-        results = {}
-
-        for usuario in cursor.fetchall():
-            results[usuario[0]] = dict()
-            for i in range(len(usuario)):
-                results[usuario[0]][columns[i]] = usuario[i]
-            
-        return results
-
-    except Exception as error:
-        raise error
-
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
-
-#except (Exception, psycopg2.Error) as error:
-#        print("Error while fetching data from PostgreSQL", error)
-#print(GetUsuarioByCorreo("'prueba'"))
+#AddUsuario('CORREO5', 'lalalala','Manolo','Ayuso Cervera')
+#DeleteUsuario("CORREO5")
+#print(GetUsuario('CORREO3'))
