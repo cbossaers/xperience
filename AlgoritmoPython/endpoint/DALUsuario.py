@@ -10,7 +10,6 @@ from lib2to3.pgen2.token import GREATEREQUAL
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-
 def AddUsuario(correo: string, contr: string, nombre: string, apellidos: string, telefono: numbers, fechaNacimiento: Date, dni: string, dirPost: string, dirFac: string):
     try:
         connection = psycopg2.connect(user="pi",
