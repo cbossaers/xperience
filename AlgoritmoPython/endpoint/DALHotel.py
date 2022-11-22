@@ -9,7 +9,8 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 from decimal import *
 
-def GetHotelById(id: string):
+
+def GetHotelById(id: string):   #¡¡¡¡¡cambiar tipos decimal a float en BD para que funcione!!!!!
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
