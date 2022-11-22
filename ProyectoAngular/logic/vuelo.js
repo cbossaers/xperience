@@ -79,4 +79,4 @@ function GetVueloByFechaPrecio(precio, fechaSalida, fechaLlegada) {
         });
     });
 }
-GetVueloByFechaPrecio(500, new Date("1/3/2022"), new Date("1/3/2022"));
+GetVueloByFechaPrecio(500, "2022-03-01", "2022-03-01");

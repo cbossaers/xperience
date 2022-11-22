@@ -1,42 +1,32 @@
-import string
-from unicodedata import numeric
-import psycopg2
-from decimal import *
+import psycopg
+import datetime
+from psycopg.rows import dict_row
 
-def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numeric, companyia: string, ciudad_salida: string,
-            ciudad_llegada: string, codigo_vuelo: string, precio_total: numeric, precio_base: numeric, tasas_cantidad: numeric):
+#temporalmente está aquí para no tener que escribirlo cada vez
+conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
+
+def AddVuelo(codigo: str, fecha_salida: str, fecha_llegada: str, precio: float, companyia: str, ciudad_salida: str,
+            ciudad_llegada: str, precio_total: float, precio_base: float, tasas_cantidad: float):
+
+        with psycopg.connect(conndata, row_factory=dict_row) as conn:
+            with conn.cursor() as cur:
+
+                SQL = """INSERT INTO vuelo2 VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+                ON CONFLICT (codigo,fecha_salida) DO NOTHING"""
+
+                data = (codigo, fecha_salida, fecha_llegada, precio, companyia, ciudad_salida, ciudad_llegada, precio_total, precio_base, tasas_cantidad)
+
+                try:
+                    cur.execute(SQL,data)
+                    conn.commit()
+
+                except Exception as error:
+                    raise error
+
+def UpdateVuelo(id: int, fecha_salida: str, fecha_llegada: str, precio: float, companyia: str, ciudad_salida: str,
+            ciudad_llegada: str, codigo_vuelo: str, precio_total: float, precio_base: float, tasas_cantidad: float):
     try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.114.199",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        postgres_insert_query = " INSERT INTO vuelo VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-        record_to_insert = (id, fecha_salida, fecha_llegada, precio,
-                            companyia, ciudad_salida, ciudad_llegada, codigo_vuelo, precio_total, precio_base, tasas_cantidad)
-        cursor.execute(postgres_insert_query, record_to_insert)
-        connection.commit()
-
-    except Exception as error:
-        raise error
-
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
-
-    vuelo = {
-        "id": id, "fecha_salida": fecha_salida, "fecha_llegada": fecha_llegada, "precio": precio, "companyia": companyia, "ciudad_salida": ciudad_salida, 
-        "ciudad_llegada": ciudad_llegada, "codigo_vuelo": codigo_vuelo, "precio_total": precio_total, "precio_base": precio_base, "tasas_cantidad": tasas_cantidad
-    }
-    return vuelo
-
-
-def UpdateVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numeric, companyia: string, ciudad_salida: string,
-            ciudad_llegada: string, codigo_vuelo: string, precio_total: numeric, precio_base: numeric, tasas_cantidad: numeric):
-    try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -63,10 +53,9 @@ def UpdateVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: nu
     }
     return vuelo
 
-
 def DeleteVuelo(id: int):
     try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -86,11 +75,9 @@ def DeleteVuelo(id: int):
 
     return True
         
-
-
-def GetVueloById(id: string):
+def GetVueloBy(id: str):
     try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -121,9 +108,9 @@ def GetVueloById(id: string):
             cursor.close()
             connection.close()
 
-def GetVueloByOriDest(Origen: string, Destino: string):
+def GetVueloByOriDest(Origen: str, Destino: str):
     try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -154,9 +141,9 @@ def GetVueloByOriDest(Origen: string, Destino: string):
             cursor.close()
             connection.close()
 
-def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string):
+def GetVueloByOriFecha(origen: str, fechaSalida: str, fechaLlegada: str):
     try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -188,9 +175,24 @@ def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string
             cursor.close()
             connection.close()
 
-def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: string):
+def GetVueloByFechaPrecio(fechaSalida: str, fechaLLegada: str, importe: str):
+    with psycopg.connect(conndata) as conn:
+            with conn.cursor() as cur:
+
+                SQL = """INSERT INTO vuelo2 VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+                ON CONFLICT (codigo,fecha_salida) DO NOTHING"""
+
+                data = (codigo, fecha_salida, fecha_llegada, precio, companyia, ciudad_salida, ciudad_llegada, precio_total, precio_base, tasas_cantidad)
+
+                try:
+                    cur.execute(SQL,data)
+                    conn.commit()
+
+                except Exception as error:
+                    raise error
+    
     try:
-        connection = psycopg2.connect(user="pi",
+        connection = psycopg.connect(user="pi",
                                   password="pi",
                                   host="88.17.114.199",
                                   port="5432",
@@ -229,3 +231,4 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
 #filename = "./AlgoritmoPython/endpoint/data.json"
 #with open(filename, "w") as outfile:
 #    json.dump(x, outfile, indent=4)
+#AddVuelo('FR2986',datetime.datetime(2022,11,29,11,5), datetime.datetime(2022,11,29,18,0),184.4,'Ryanair','Valencia','Oslo',156.85,100,20)
