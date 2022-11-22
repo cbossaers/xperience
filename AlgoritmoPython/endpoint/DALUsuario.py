@@ -36,7 +36,6 @@ def AddUsuario(correo: string, contr: string, nombre: string, apellidos: string,
                 raise error
 
 def DeleteUsuario(correo: string):
-
     with psycopg.connect(conndata) as conn:
         with conn.cursor() as cur:
 
@@ -61,7 +60,7 @@ def GetUsuario(correo: string):
             try:
                 cur.execute(SQL,data)
 
-                return json.dumps(cur.fetchall(), indent=4)
+                return json.dumps(cur.fetchall(), indent=4, default=str)
 
             except Exception as error:
                 raise error
