@@ -5,6 +5,8 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   background-color: white;
+  margin-left: 10%;
+    margin-right: 10%;
 }
 .navbar a:hover {
     background: #ddd;

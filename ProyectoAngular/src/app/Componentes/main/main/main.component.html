@@ -30,15 +30,12 @@
             </div>
         </div>
         <div class="buscar">
-            <button class="botonBuscar" (click)="openModal()">
+            <button class="botonBuscar" (click)="enviardatos()">
                 Buscar
             </button>
         </div>
     </div>
-    <div class="" *ngIf="modalSwitch==true">
-        <app-vista-viaje></app-vista-viaje>
-    </div>
-    <div class="viajes">
+    <div class="viajes" *ngIf="modalSwitch1">
         <section class="seccion">
             <div class="viaje1">
                 <img src="\assets\images\itinerario-venecia.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
@@ -82,4 +79,41 @@
             </div>
         </section>
     </div>  
+</div>
+
+<div class="general2">
+    <div *ngIf="modalSwitch2" class="viajesN">
+        <div *ngFor="let element of resultados" class="ngf">
+            <div class="viaje1N">
+                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.precio_total,element.ciudad_salida,element.ciudad_llegada,element.companyia,element.fecha_salida, element.fecha_llegada)" alt="Venecia" width="300" height="150" class="imagenesV">
+                <p class="tituloViaje">{{element.ciudad_llegada}}</p>
+                <p class="precioViaje">{{element.precio_total}}€</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="datosViaje" *ngIf="modalSwitch3">
+        <h1>Datos del viaje a {{ciudadLlegada}}</h1>
+        <p class="tituloViaje">Salida desde {{ciudadSalida}}</p>
+        <p class="precioViaje">Compañia: {{compa}}</p>
+        <p class="precioViaje">Precio: {{precioTotal}}</p>
+        <p class="precioViaje">Salida dia: {{fechaS}}</p>
+        <p class="precioViaje">LLegada dia: {{fechaLL}}</p>
+        <button class="botonComprar" (click)="compraViaje()">
+            Comprar
+        </button>
+    </div>
+
+    <div class="compraViaje" *ngIf="modalSwitch4" >
+        <form action="ejemplo.php" method="get" class="formCompra">
+            <p class="precioViaje">Nombre: <input type="text" placeholder="Nombre" class="despegable2"></p>
+            <p class="precioViaje">Apellidos <input type="text" placeholder="Apellidos" class="despegable2"></p>
+            <p class="precioViaje">Fecha de nacimiento: <input type="date" placeholder="Apellidos" name="trip-start" min="1920-01-01" max="2025-12-31" class="despegable2"></p>
+            <p class="precioViaje">DNI <input type="text" placeholder="DNI"class="despegable2"></p>
+            <p class="precioViaje">Correo electronico <input type="text" placeholder="Correo Electronico" class="despegable2"></p>
+        </form>
+        <button class="botonFinalizar" >
+            Finalizar  
+        </button>
+    </div>
 </div>
