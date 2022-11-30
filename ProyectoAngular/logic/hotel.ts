@@ -1,6 +1,6 @@
 async function GetHotelById(id: string) {
     try {
-      const response = await fetch('http://88.17.26.37:5000/hotel', {
+      const response = await fetch('http://88.17.114.199:9879/hotel', {
         method: 'POST',
         body: JSON.stringify({
           id: id,
