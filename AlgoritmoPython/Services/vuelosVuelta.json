@@ -1,0 +1,159 @@
+{
+    "type": "flight-offer",
+    "id": "112",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "lastTicketingDate": "2022-11-22",
+    "numberOfBookableSeats": 3,
+    "itineraries": [
+        {
+            "duration": "PT21H50M",
+            "segments": [
+                {
+                    "departure": {
+                        "iataCode": "AMS",
+                        "at": "2022-11-22T22:00:00"
+                    },
+                    "arrival": {
+                        "iataCode": "DXB",
+                        "terminal": "3",
+                        "at": "2022-11-23T07:45:00"
+                    },
+                    "carrierCode": "EK",
+                    "number": "150",
+                    "aircraft": {
+                        "code": "388"
+                    },
+                    "operating": {
+                        "carrierCode": "EK"
+                    },
+                    "duration": "PT6H45M",
+                    "id": "199",
+                    "numberOfStops": 0,
+                    "blacklistedInEU": false
+                },
+                {
+                    "departure": {
+                        "iataCode": "DXB",
+                        "terminal": "3",
+                        "at": "2022-11-23T14:40:00"
+                    },
+                    "arrival": {
+                        "iataCode": "MAD",
+                        "terminal": "4S",
+                        "at": "2022-11-23T19:50:00"
+                    },
+                    "carrierCode": "EK",
+                    "number": "143",
+                    "aircraft": {
+                        "code": "77W"
+                    },
+                    "operating": {
+                        "carrierCode": "EK"
+                    },
+                    "duration": "PT8H10M",
+                    "id": "200",
+                    "numberOfStops": 0,
+                    "blacklistedInEU": false
+                }
+            ]
+        }
+    ],
+    "price": {
+        "currency": "EUR",
+        "total": "3334.12",
+        "base": "2926.00",
+        "fees": [
+            {
+                "amount": "0.00",
+                "type": "SUPPLIER"
+            },
+            {
+                "amount": "0.00",
+                "type": "TICKETING"
+            }
+        ],
+        "grandTotal": "3334.12"
+    },
+    "pricingOptions": {
+        "fareType": [
+            "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+    },
+    "validatingAirlineCodes": [
+        "EK"
+    ],
+    "travelerPricings": [
+        {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+                "currency": "EUR",
+                "total": "1667.06",
+                "base": "1463.00"
+            },
+            "fareDetailsBySegment": [
+                {
+                    "segmentId": "199",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "RLRZFNL1",
+                    "brandedFare": "ECOFLXPLUS",
+                    "class": "R",
+                    "includedCheckedBags": {
+                        "weight": 35,
+                        "weightUnit": "KG"
+                    }
+                },
+                {
+                    "segmentId": "200",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "RRRZFES1",
+                    "brandedFare": "ECOFLXPLUS",
+                    "class": "R",
+                    "includedCheckedBags": {
+                        "weight": 35,
+                        "weightUnit": "KG"
+                    }
+                }
+            ]
+        },
+        {
+            "travelerId": "2",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+                "currency": "EUR",
+                "total": "1667.06",
+                "base": "1463.00"
+            },
+            "fareDetailsBySegment": [
+                {
+                    "segmentId": "199",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "RLRZFNL1",
+                    "brandedFare": "ECOFLXPLUS",
+                    "class": "R",
+                    "includedCheckedBags": {
+                        "weight": 35,
+                        "weightUnit": "KG"
+                    }
+                },
+                {
+                    "segmentId": "200",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "RRRZFES1",
+                    "brandedFare": "ECOFLXPLUS",
+                    "class": "R",
+                    "includedCheckedBags": {
+                        "weight": 35,
+                        "weightUnit": "KG"
+                    }
+                }
+            ]
+        }
+    ]
+}
