@@ -1,3 +1,4 @@
+from Services import Service
 from csv import excel_tab
 from datetime import date, datetime
 import json
@@ -9,21 +10,21 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 from decimal import *
 
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, obj):
-        # 👇️ if passed in object is instance of Decimal
-        # convert it to a string
-        if isinstance(obj, Decimal):
-            return str(obj)
-        # 👇️ otherwise use the default behavior
-        return json.JSONEncoder.default(self, obj)
+# class DecimalEncoder(json.JSONEncoder):
+#     def default(self, obj):
+#         # 👇️ if passed in object is instance of Decimal
+#         # convert it to a string
+#         if isinstance(obj, Decimal):
+#             return str(obj)
+#         # 👇️ otherwise use the default behavior
+#         return json.JSONEncoder.default(self, obj)
 
 def AddVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: numeric, companyia: string, ciudad_salida: string,
             ciudad_llegada: string, codigo_vuelo: string, precio_total: numeric, precio_base: numeric, tasas_cantidad: numeric):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -53,7 +54,7 @@ def UpdateVuelo(id: int, fecha_salida: string, fecha_llegada: string, precio: nu
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -83,7 +84,7 @@ def DeleteVuelo(id: int):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -107,7 +108,7 @@ def GetVueloById(id: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -121,7 +122,8 @@ def GetVueloById(id: string):
         for vuelo in cursor.fetchall():
             results.append(dict(zip(columns, vuelo)))
 
-        return json.dumps(results, cls=DecimalEncoder)
+        # return json.dumps(results, cls=DecimalEncoder)
+        return json.dumps(results, cls=Service.DecimalEncoder)
 
     except Exception as error:
         raise error
@@ -135,7 +137,7 @@ def GetVueloByOriDest(Origen: string, Destino: string):
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -149,7 +151,8 @@ def GetVueloByOriDest(Origen: string, Destino: string):
         for vuelo in cursor.fetchall():
             results.append(dict(zip(columns, vuelo)))
 
-        return json.dumps(results, cls=DecimalEncoder)
+        # return json.dumps(results, cls=DecimalEncoder)
+        return json.dumps(results, cls=Service.DecimalEncoder)
 
     except Exception as error:
         raise error
@@ -163,7 +166,7 @@ def GetVueloByOriFecha(origen: string, fechaSalida: string, fechaLlegada: string
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -194,7 +197,7 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
     try:
         connection = psycopg2.connect(user="pi",
                                   password="pi",
-                                  host="88.17.26.37",
+                                  host="88.17.114.199",
                                   port="5432",
                                   database="bluesky")
         cursor = connection.cursor()
@@ -223,7 +226,7 @@ def GetVueloByFechaPrecio(fechaSalida: string, fechaLLegada: string, importe: st
 
 # print(GetVueloByOriDest("prueba1", "prueba2"))
 #print(GetVueloByOriFecha("prueba1", "2022-03-01", "2022-03-01"))
-x = GetVueloByFechaPrecio('2022-03-01','2022-03-01',100)
-filename = "./AlgoritmoPython/endpoint/data.json"
-with open(filename, "w") as outfile:
-    json.dump(x, outfile, indent=4)
+#x = GetVueloByFechaPrecio('2022-03-01','2022-03-01',100)
+#filename = "./AlgoritmoPython/endpoint/data.json"
+#with open(filename, "w") as outfile:
+#    json.dump(x, outfile, indent=4)

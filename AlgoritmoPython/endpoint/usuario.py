@@ -4,15 +4,15 @@ import pandas as pd
 import ast
 import json
 
-import DALVuelo
+import DALUsuario
 
-class Vuelo(Resource):
+class Usuario(Resource):
     def get(self):
         return {'info': 'GET está actualmente deshabilitado'}, 200  # return data and 200 OK
 
     def post(self):
         args = request.json
-        x = DALVuelo.GetVueloByFechaPrecio(args["fechaSalida"], args["fechaLlegada"], args["precio"])
+        x = DALUsuario.GetVueloByFechaPrecio(args["fechaSalida"], args["fechaLlegada"], args["precio"])
         return x, 200  # return data with 200 OK
 
     def put(self):
@@ -48,23 +48,6 @@ class Vuelo(Resource):
             }, 404
 
     def delete(self):
-        parser = reqparse.RequestParser()  # initialize
-        parser.add_argument('userId', required=True)  # add userId arg
-        args = parser.parse_args()  # parse arguments to dictionary
-        
-        # read our CSV
-        data = pd.read_csv('Vuelos.csv')
-        
-        if args['userId'] in list(data['userId']):
-            # remove data entry matching given userId
-            data = data[data['userId'] != args['userId']]
-            
-            # save back to CSV
-            data.to_csv('Vuelos.csv', index=False)
-            # return data and 200 OK
-            return {'data': data.to_dict()}, 200
-        else:
-            # otherwise we return 404 because userId does not exist
-            return {
-                'message': f"'{args['userId']}' user not found."
-            }, 404
+        args = request.json
+        DALUsuario.DeleteUsuario(args["correo"])
+        return 200  # return data with 200 OK
