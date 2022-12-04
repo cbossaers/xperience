@@ -23,3 +23,19 @@
     font-weight:bold;
     font-size:30px;
 }
+
+.botonLogin {
+  color: #1C9AEE;
+  border: 5px solid #1C9AEE;
+  font-weight:bold;
+  float: right;
+  width: 95px;
+  height: 32px;
+  margin-right: 10%;
+  transition-duration: 0.4s;
+}
+
+.botonLogin:hover {
+  background-color: white;
+  color: #aeecf2;
+  }
