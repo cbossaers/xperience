@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwitchService } from 'src/app/services/switch.service';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +10,15 @@ export class LoginComponent {
 
 
 
-  constructor() {}
+  constructor(private modalSS:SwitchService) {}
+  
 
   login() {
     //console.log(this.email);
     //console.log(this.password);
+  }
+
+  closeLogin() {
+    this.modalSS.$modal.emit(false);
   }
 }

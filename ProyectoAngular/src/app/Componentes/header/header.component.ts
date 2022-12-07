@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwitchService } from 'src/app/services/switch.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  modalSwitch: boolean = false;
 
-  ngOnInit(): void {
+  constructor(private modalSS:SwitchService) { }
+
+  ngOnInit() {
+    this.modalSS.$modal.subscribe((valor)=> {this.modalSwitch = valor})
+  }
+
+  openLogin() {
+    this.modalSwitch = true;
   }
 
 }
