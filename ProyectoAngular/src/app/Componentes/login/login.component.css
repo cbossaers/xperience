@@ -34,7 +34,7 @@
     border: 1;
     background: #ffffff;
   }
-  .custom-form button {
+  .entrar {
     letter-spacing: 0.15em;
     border: none;
     font-size: 0.875rem;
@@ -47,3 +47,7 @@
     border-radius: 1.5rem;
     cursor: pointer;
   }
+  .cerrar {
+    border: none;
+  }
+  
