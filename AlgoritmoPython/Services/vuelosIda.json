@@ -1,0 +1,161 @@
+{
+    "type": "flight-offer",
+    "id": "58",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "lastTicketingDate": "2022-11-16",
+    "numberOfBookableSeats": 7,
+    "itineraries": [
+        {
+            "duration": "PT25H30M",
+            "segments": [
+                {
+                    "departure": {
+                        "iataCode": "MAD",
+                        "terminal": "1",
+                        "at": "2022-11-16T14:55:00"
+                    },
+                    "arrival": {
+                        "iataCode": "MEX",
+                        "terminal": "2",
+                        "at": "2022-11-16T19:45:00"
+                    },
+                    "carrierCode": "AM",
+                    "number": "2",
+                    "aircraft": {
+                        "code": "789"
+                    },
+                    "operating": {
+                        "carrierCode": "AM"
+                    },
+                    "duration": "PT11H50M",
+                    "id": "63",
+                    "numberOfStops": 0,
+                    "blacklistedInEU": false
+                },
+                {
+                    "departure": {
+                        "iataCode": "MEX",
+                        "terminal": "2",
+                        "at": "2022-11-16T22:35:00"
+                    },
+                    "arrival": {
+                        "iataCode": "AMS",
+                        "at": "2022-11-17T16:25:00"
+                    },
+                    "carrierCode": "AM",
+                    "number": "25",
+                    "aircraft": {
+                        "code": "789"
+                    },
+                    "operating": {
+                        "carrierCode": "AM"
+                    },
+                    "duration": "PT10H50M",
+                    "id": "64",
+                    "numberOfStops": 0,
+                    "blacklistedInEU": false
+                }
+            ]
+        }
+    ],
+    "price": {
+        "currency": "EUR",
+        "total": "7048.84",
+        "base": "6358.00",
+        "fees": [
+            {
+                "amount": "0.00",
+                "type": "SUPPLIER"
+            },
+            {
+                "amount": "0.00",
+                "type": "TICKETING"
+            }
+        ],
+        "grandTotal": "7048.84",
+        "additionalServices": [
+            {
+                "amount": "208.00",
+                "type": "CHECKED_BAGS"
+            }
+        ]
+    },
+    "pricingOptions": {
+        "fareType": [
+            "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+        "AM"
+    ],
+    "travelerPricings": [
+        {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+                "currency": "EUR",
+                "total": "3524.42",
+                "base": "3179.00"
+            },
+            "fareDetailsBySegment": [
+                {
+                    "segmentId": "63",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "BLXN6ICI",
+                    "brandedFare": "CLASICA",
+                    "class": "B",
+                    "includedCheckedBags": {
+                        "quantity": 0
+                    }
+                },
+                {
+                    "segmentId": "64",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "BNNN69CI",
+                    "brandedFare": "CLASICA",
+                    "class": "B",
+                    "includedCheckedBags": {
+                        "quantity": 0
+                    }
+                }
+            ]
+        },
+        {
+            "travelerId": "2",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+                "currency": "EUR",
+                "total": "3524.42",
+                "base": "3179.00"
+            },
+            "fareDetailsBySegment": [
+                {
+                    "segmentId": "63",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "BLXN6ICI",
+                    "brandedFare": "CLASICA",
+                    "class": "B",
+                    "includedCheckedBags": {
+                        "quantity": 0
+                    }
+                },
+                {
+                    "segmentId": "64",
+                    "cabin": "ECONOMY",
+                    "fareBasis": "BNNN69CI",
+                    "brandedFare": "CLASICA",
+                    "class": "B",
+                    "includedCheckedBags": {
+                        "quantity": 0
+                    }
+                }
+            ]
+        }
+    ]
+}
