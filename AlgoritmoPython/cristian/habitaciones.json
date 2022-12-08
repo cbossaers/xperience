@@ -1,0 +1,89 @@
+[
+    {
+        "available": true,
+        "hotel": {
+            "chainCode": "RT",
+            "cityCode": "PAR",
+            "dupeId": "700027695",
+            "hotelId": "RTPAR001",
+            "latitude": 48.84978,
+            "longitude": 2.28284,
+            "name": "Novotel Paris Centre Tour Eiffel",
+            "type": "hotel"
+        },
+        "offers": [
+            {
+                "boardType": "ROOM_ONLY",
+                "checkInDate": "2022-12-08",
+                "checkOutDate": "2022-12-09",
+                "guests": {
+                    "adults": 2
+                },
+                "id": "9UURVMCZAP",
+                "policies": {
+                    "cancellation": {
+                        "deadline": "2022-12-07T00:00:00+01:00"
+                    },
+                    "guarantee": {
+                        "acceptedPayments": {
+                            "creditCards": [
+                                "AX",
+                                "CA",
+                                "DC",
+                                "EC",
+                                "IK",
+                                "JC",
+                                "VI"
+                            ],
+                            "methods": [
+                                "TRAVEL_AGENT_ID",
+                                "CREDIT_CARD"
+                            ]
+                        }
+                    },
+                    "holdTime": {
+                        "deadline": "2022-12-08T18:00:00"
+                    },
+                    "paymentType": "guarantee"
+                },
+                "price": {
+                    "currency": "EUR",
+                    "total": "215.00",
+                    "variations": {
+                        "average": {
+                            "base": "215.00"
+                        },
+                        "changes": [
+                            {
+                                "base": "215.00",
+                                "endDate": "2022-12-09",
+                                "startDate": "2022-12-08",
+                                "total": "215.00"
+                            }
+                        ]
+                    }
+                },
+                "rateCode": "1KD",
+                "rateFamilyEstimated": {
+                    "code": "BAR",
+                    "type": "P"
+                },
+                "room": {
+                    "description": {
+                        "lang": "EN",
+                        "text": "FLEX - RO B2C-Room only\nStandard Room with a double bed"
+                    },
+                    "type": "B1D",
+                    "typeEstimated": {
+                        "bedType": "DOUBLE",
+                        "beds": 1,
+                        "category": "STANDARD_ROOM"
+                    }
+                },
+                "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/9UURVMCZAP"
+            }
+        ],
+        "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=RTPAR001&adults=2",
+        "type": "hotel-offers"
+    }
+]
