@@ -56,7 +56,3 @@ def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: d
 #ObtenerHoteles("LON",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
 #ObtenerPuntuacion()
 #ObtenerHabitaciones(datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
-
-print(datetime.datetime.now())
-ObtenerHabitacionesDeCiudad("LON", datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
-print(datetime.datetime.now())
