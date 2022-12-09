@@ -48,6 +48,17 @@ def getHotelByCity(cityCode):
     except ResponseError as error:
         return error
 
+def getHotelRating(hotelIds):
+    try:
+        response = amadeus.get(
+            '/v1/e-reputation/hotel-sentiments', hotelIds=hotelIds)
+        lista = []
+        for element in response.result["data"]:
+            if element["overallRating"] >= 30:
+                lista.append(element)
+        return lista
+    except ResponseError as error:
+        return error
 
 def getOfertas(idsHoteles, adults):
     try:
