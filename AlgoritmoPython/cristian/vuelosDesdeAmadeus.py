@@ -53,4 +53,4 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
     except ResponseError as error:
         raise error
 
-ObtenerVuelos("VLC","BRU",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
+ObtenerVuelos("VLC","LGW",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
