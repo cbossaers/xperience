@@ -85,9 +85,12 @@
     <div *ngIf="modalSwitch2" class="viajesN">
         <div *ngFor="let element of resultados" class="ngf">
             <div class="viaje1N">
-                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.precio_total,element.ciudad_salida,element.ciudad_llegada,element.companyia,element.fecha_salida, element.fecha_llegada)" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">{{element.ciudad_llegada}}</p>
-                <p class="precioViaje">{{element.precio_total}}€</p>
+                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.precio_total,element.ciudad_salida,element.ciudad_llegada,element.companyia,element.fecha_salida, element.fecha_llegada)" alt="Venecia" class="imageViaje">
+                <div class="textViaje">
+                    <p class="tituloViaje2">{{element.ciudad_llegada}}</p>
+                    <p class="precioViaje2">Desde <span class="red">{{element.precio_total}}€</span></p>
+                </div>
+                
             </div>
         </div>
         
