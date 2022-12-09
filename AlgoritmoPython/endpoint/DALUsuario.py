@@ -1,6 +1,4 @@
 from datetime import date
-import numbers
-import string
 import psycopg
 import json
 from psycopg.rows import dict_row
@@ -8,8 +6,8 @@ from psycopg.rows import dict_row
 #temporalmente está aquí para no tener que escribirlo cada vez
 conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
 
-def AddUsuario(correo: string, contr: string, nombre: string, apellidos: string, telefono: numbers = None, 
-    fechaNacimiento: date = None, dni: string = None, dirPost: string = None, dirFac: string = None):
+def AddUsuario(correo: str, contr: str, nombre: str, apellidos: str, telefono: int = None, 
+    fechaNacimiento: date = None, dni: str = None, dirPost: str = None, dirFac: str = None):
 
     with psycopg.connect(conndata) as conn:
         with conn.cursor() as cur:
@@ -35,7 +33,7 @@ def AddUsuario(correo: string, contr: string, nombre: string, apellidos: string,
             except Exception as error:
                 raise error
 
-def DeleteUsuario(correo: string):
+def DeleteUsuario(correo: str):
     with psycopg.connect(conndata) as conn:
         with conn.cursor() as cur:
 
@@ -49,7 +47,7 @@ def DeleteUsuario(correo: string):
             except Exception as error:
                 raise error
         
-def GetUsuario(correo: string):
+def GetUsuario(correo: str):
     with psycopg.connect(conndata, row_factory=dict_row) as conn:
         with conn.cursor() as cur:
 
