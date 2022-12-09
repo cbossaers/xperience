@@ -1,6 +1,6 @@
 async function GetUsuarioByCorreo(correo: string) {
     try {
-      const response = await fetch('http://88.17.26.37:5000/user', {
+      const response = await fetch('http://88.17.114.199:9879/user', {
         method: 'POST',
         body: JSON.stringify({
           correo: correo,

@@ -1,42 +1,63 @@
-from csv import excel_tab
-from datetime import date, datetime
+import psycopg
+import datetime
 import json
-from json import JSONEncoder
-from lib2to3.pgen2.token import GREATEREQUAL
-import string
-from unicodedata import numeric
-import psycopg2
-from psycopg2.extras import RealDictCursor
-from decimal import *
+from psycopg.rows import dict_row
 
-def GetHotelById(id: string):   #¡¡¡¡¡cambiar tipos decimal a float en BD para que funcione!!!!!
-    try:
-        connection = psycopg2.connect(user="pi",
-                                  password="pi",
-                                  host="88.17.26.37",
-                                  port="5432",
-                                  database="bluesky")
-        cursor = connection.cursor()
-        postgreSQL_select_Query = "select * from hotel where id = %s"
-        cursor.execute(postgreSQL_select_Query, id)
+conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
 
-        columns = ('id', 'tipo', 'chain_code', 'id_amadeus', 'dupe_id', 'nombre',
-                   'num_estrellas', 'codigo_ciudad', 'latitud', 'longitud')
-        results = {}
+def AddHotel(id: int, tipo: str, chaincode: str, amadeusid: int, dupeid: str, nombre: str, estrellas: int, ciudad: str, latitud: float, longitud: float):
 
-        for hotel in cursor.fetchall():
-            results[hotel[0]] = dict()
-            for i in range(len(hotel)):
-                results[hotel[0]][columns[i]] = hotel[i]
-            
-        return results
+    with psycopg.connect(conndata) as conn:
+        with conn.cursor() as cur:
 
-    except Exception as error:
-        raise error
+            SQL = """INSERT INTO hotel VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+            ON CONFLICT (id) 
+            DO UPDATE SET 
+                tipo = excluded.tipo,
+                chaincode = excluded.chaincode,
+                amadeusid = excluded.amadeusid,
+                dupeid = excluded.dupeid,
+                nombre = excluded.nombre,
+                estrellas = excluded.estrellas,
+                ciudad = excluded.ciudad,
+                latitud = excluded.latitud,
+                longitud = excluded.longitud"""
 
-    finally:
-        if connection:
-            cursor.close()
-            connection.close()
+            data = (id, tipo, chaincode, amadeusid, dupeid, nombre, estrellas, ciudad, latitud, longitud)
 
-print(GetHotelById("1"))
+            try:
+                cur.execute(SQL,data)
+                conn.commit()
+
+            except Exception as error:
+                raise error
+
+def DeleteHotel(id: int):
+    with psycopg.connect(conndata) as conn:
+        with conn.cursor() as cur:
+
+            SQL = "DELETE FROM hotel WHERE id = %s"
+            data = (id,)
+
+            try:
+                cur.execute(SQL,data)
+                conn.commit()
+
+            except Exception as error:
+                raise error
+
+def GetHotel(id: str):
+    with psycopg.connect(conndata, row_factory=dict_row) as conn:
+        with conn.cursor() as cur:
+
+            SQL = "SELECT * FROM hotel WHERE id = %s"
+
+            data = (id,)
+
+            try:
+                cur.execute(SQL,data)
+
+                return json.dumps(cur.fetchall(), indent=4, default=str)
+
+            except Exception as error:
+                raise error
