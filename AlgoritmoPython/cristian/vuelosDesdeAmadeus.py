@@ -2,10 +2,9 @@ import json
 import datetime
 from amadeus import Client, ResponseError
 
-
 amadeus = Client(
-    client_id='wT3u7CqcHTTLTgE39MajqwbOTwagAKVP',
-    client_secret='BvzgQ8YlLU1zmDp3',
+    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
+    client_secret='dpBQ1LE6xJtVvPyB'
 )
 
 def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
@@ -47,10 +46,9 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
     try:
         response = amadeus.shopping.flight_offers_search.post(data)
         
-        with open("./algoritmoPython/cristian/vuelo.json", "w") as outfile:
-            json.dump(response.data, outfile, indent=4, sort_keys=True)
+        return response.data
 
     except ResponseError as error:
         raise error
 
-ObtenerVuelos("VLC","BRU",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
+print(ObtenerVuelos("MAD","LHR",datetime.datetime(2023,3,15),datetime.datetime(2023,3,23)))
