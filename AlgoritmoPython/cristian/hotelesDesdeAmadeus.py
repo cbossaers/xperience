@@ -1,58 +1,58 @@
-import json
 import datetime
 from amadeus import Client, ResponseError
+from pprint import pprint
+from multiprocessing import Pool
+from itertools import repeat
+import json
+import time
 
 amadeus = Client(
-    client_id='wT3u7CqcHTTLTgE39MajqwbOTwagAKVP',
-    client_secret='BvzgQ8YlLU1zmDp3'
+    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
+    client_secret='dpBQ1LE6xJtVvPyB'
 )
 
 def ObtenerHoteles(destino: str):
     try:
         response =  amadeus.reference_data.locations.hotels.by_city.get(cityCode=destino, ratings=[3])
-        
-        with open("./algoritmoPython/cristian/hotel.json", "w") as outfile:
-            json.dump(response.data, outfile, indent=4, sort_keys=True)
+
+        res = []
+
+        for elem in response.data:
+            res.append(elem["hotelId"])
+
+        res = [res[i:i+10] for i in range(0,len(res),10)]
+        return res
 
     except ResponseError as error:
         raise error
 
-def ObtenerHabitaciones(fechaIda: datetime, fechaVuelta: datetime):
-    with open('./algoritmoPython/cristian/hotel.json') as hoteles:
-        listahoteles = json.load(hoteles)
-    
+def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
     listahab = []
 
-    i = 0
-    for hotel in listahoteles:
-        try:
-            hotel_offers = amadeus.shopping.hotel_offers_search.get(
-                hotelIds=hotel["hotelId"], adults=1, checkInDate=str(fechaIda.date()), checkOutDate=str(fechaVuelta.date()))
-            
-            if(hotel_offers.data != []): 
-                listahab.append(hotel_offers.data)
-                i+=1
-            if(i>1): break
-        except Exception: 0
-        
-    with open("./algoritmoPython/cristian/habitaciones.json", "w") as outfile:
-        json.dump(listahab, outfile, indent=4, sort_keys=True)
-
-
-def ObtenerPuntuacion():
     try:
-        response = amadeus.e_reputation.hotel_sentiments.get(hotelIds = 'ALLON591')
-        print(response.data)
-    except ResponseError as error:
-        raise error
+        hotel_offers = amadeus.shopping.hotel_offers_search.get(
+            hotelIds=hoteles, adults=1, checkInDate=str(fechaIda.date()), checkOutDate=str(fechaVuelta.date()))
+        
+        if(hotel_offers.data != []): 
+            listahab.append(hotel_offers.data)
+
+    except Exception: 0
+
+    if listahab == []: listahab.append("")
+
+    return listahab
 
 def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: datetime):
-    ObtenerHoteles(destino)
-    ObtenerHabitaciones(fechaIda, fechaVuelta)
+    if __name__ == '__main__':
+        hoteles = ObtenerHoteles(destino)
 
-    with open('./algoritmoPython/cristian/habitaciones.json') as habitaciones:
-        return json.load(habitaciones)
+        res = []
 
-#ObtenerHoteles("LON",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
-#ObtenerPuntuacion()
-#ObtenerHabitaciones(datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
+        with Pool() as pool:
+            res = pool.starmap(ObtenerHabitaciones, zip(hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))))
+
+        habitaciones = [r[0] for r in res]
+
+        return habitaciones
+
+ObtenerHabitacionesDeCiudad("PAR", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))
