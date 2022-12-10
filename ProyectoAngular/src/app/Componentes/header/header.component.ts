@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { SwitchService } from 'src/app/services/switch.service';
 
 @Component({
@@ -8,16 +8,17 @@ import { SwitchService } from 'src/app/services/switch.service';
 })
 export class HeaderComponent implements OnInit {
 
-  modalSwitch: boolean = false;
+  loginSwitch: boolean = false;
+  @Output() eventologin = new EventEmitter<boolean>();
 
   constructor(private modalSS:SwitchService) { }
 
   ngOnInit() {
-    this.modalSS.$modal.subscribe((valor)=> {this.modalSwitch = valor})
+    this.modalSS.$login.subscribe((valor)=> {this.loginSwitch = valor})
   }
 
   openLogin() {
-    this.modalSwitch = true;
+    this.modalSS.$login.emit(true);
   }
 
 }

@@ -8,10 +8,10 @@
             <div class="navbar">
                     <p class="easy">EASY</p><p class="travel">TRAVEL</p>
             </div>
-            <div >
+            <div *ngIf="!loginSwitch">
                 <button class="botonLogin" (click)="openLogin()">Log in</button>
             </div>
-            <div *ngIf="modalSwitch == true">
+            <div *ngIf="loginSwitch">
                 <app-login></app-login>
             </div>
     </body>

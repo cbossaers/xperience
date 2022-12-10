@@ -8,10 +8,7 @@ import { SwitchService } from 'src/app/services/switch.service';
 })
 export class LoginComponent {
 
-
-
   constructor(private modalSS:SwitchService) {}
-  
 
   login() {
     //console.log(this.email);
@@ -19,6 +16,6 @@ export class LoginComponent {
   }
 
   closeLogin() {
-    this.modalSS.$modal.emit(false);
+    this.modalSS.$login.emit(false);
   }
 }

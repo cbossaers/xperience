@@ -7,5 +7,5 @@ export class SwitchService {
 
   constructor() { }
 
-  $modal = new EventEmitter<any>();
+  $login = new EventEmitter<any>();
 }

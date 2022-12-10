@@ -1,5 +1,7 @@
 
 <div class="cuerpo">
     <app-header></app-header>
-    <app-main></app-main>>
+    <div *ngIf="mainSwitch">
+        <app-main></app-main>>
+    </div>
 </div>
