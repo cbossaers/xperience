@@ -1,0 +1,1461 @@
+{
+    "data": [
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "BWAMS718",
+                "chainCode": "BW",
+                "dupeId": "700045139",
+                "name": "Best Western Dam Square Inn",
+                "cityCode": "AMS",
+                "latitude": 52.37427,
+                "longitude": 4.89272
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "R8A6M5NVIW",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "AAA",
+                    "rateFamilyEstimated": {
+                        "code": "AAA",
+                        "type": "C"
+                    },
+                    "commission": {
+                        "percentage": "10"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "A2T",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM",
+                            "beds": 2,
+                            "bedType": "SINGLE"
+                        },
+                        "description": {
+                            "text": "AAA CAA RATE \n2 SINGLE BEDS,NONSMOKE,COFFEE MAKER,AIR COND,\nCONTINENTAL BREAKFAST",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "161.10",
+                        "total": "178.38",
+                        "taxes": [
+                            {
+                                "code": "TOTAL_TAX",
+                                "amount": "17.28",
+                                "currency": "EUR",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "161.10"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "161.10"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "description": {
+                                "text": "NON-REFUNDABLE RATE"
+                            },
+                            "type": "FULL_STAY"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/R8A6M5NVIW"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=BWAMS718&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "CPAMS6AC",
+                "chainCode": "CP",
+                "dupeId": "700147206",
+                "name": "CROWNE PLAZA AMSTERDAM SOUTH",
+                "cityCode": "AMS",
+                "latitude": 52.3359,
+                "longitude": 4.86944
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "BPBHPJRMEZ",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "57J",
+                    "rateFamilyEstimated": {
+                        "code": "BAR",
+                        "type": "P"
+                    },
+                    "boardType": "ROOM_ONLY",
+                    "room": {
+                        "type": "*RH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "BEST FLEXIBLE RATE\nStandard Room When you arrive at the hotel we\nwill do our best to meet your room type",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "189.00",
+                        "total": "205.23",
+                        "taxes": [
+                            {
+                                "code": "MISCELLANEOUS",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_PRODUCT",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "SERVICE_CHARGE",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_PRODUCT",
+                                "amount": "3.00",
+                                "currency": "EUR",
+                                "included": false
+                            },
+                            {
+                                "code": "SERVICE_CHARGE",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_PRODUCT",
+                                "percentage": "7.00",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "189.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "189.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "AX",
+                                    "VI",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-12-02T16:00:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/BPBHPJRMEZ"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=CPAMS6AC&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "CYAMSCYC",
+                "chainCode": "CY",
+                "dupeId": "700032825",
+                "name": "Courtyard by Marriott Amsterdam Airport",
+                "cityCode": "AMS",
+                "latitude": 52.3211,
+                "longitude": 4.66427
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "X648NGMQ3W",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "S9R",
+                    "rateFamilyEstimated": {
+                        "code": "SRS",
+                        "type": "C"
+                    },
+                    "room": {
+                        "type": "XMI",
+                        "typeEstimated": {
+                            "category": "DELUXE_ROOM",
+                            "beds": 2,
+                            "bedType": "QUEEN"
+                        },
+                        "description": {
+                            "text": "Marriott Senior Discount, includes\nDeluxe Room, 2 Queen(s), Mini fridge, 30sqm/323\nsqft, Wireless internet, complimentary, Coffee/",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "101.00",
+                        "total": "114.07",
+                        "variations": {
+                            "average": {
+                                "base": "101.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "101.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "amount": "114.07",
+                            "deadline": "2022-12-01T23:59:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/X648NGMQ3W"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=CYAMSCYC&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HIAMS09F",
+                "chainCode": "HI",
+                "dupeId": "700163057",
+                "name": "HOLIDAY INN EXP SOUTH",
+                "cityCode": "AMS",
+                "latitude": 52.32577,
+                "longitude": 4.86733
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "5D7LP0VK78",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "57J",
+                    "rateFamilyEstimated": {
+                        "code": "BAR",
+                        "type": "P"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "*RH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "BEST FLEXIBLE RATE\nStandard Room When you arrive at the hotel we\nwill do our best to meet your room type",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "149.00",
+                        "total": "159.43",
+                        "taxes": [
+                            {
+                                "code": "MISCELLANEOUS",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_PRODUCT",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "SERVICE_CHARGE",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_PRODUCT",
+                                "percentage": "7.00",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "149.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "149.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "AX",
+                                    "VI",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-12-02T11:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/5D7LP0VK78"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HIAMS09F&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HLAMS228",
+                "chainCode": "HL",
+                "dupeId": "700024368",
+                "name": "HILTON AMSTERDAM",
+                "cityCode": "AMS",
+                "latitude": 52.3509,
+                "longitude": 4.8754
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "6E9ZYLUVB0",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "rateFamilyEstimated": {
+                        "code": "GOV",
+                        "type": "C"
+                    },
+                    "commission": {
+                        "percentage": "8"
+                    },
+                    "room": {
+                        "type": "A05",
+                        "typeEstimated": {
+                            "category": "DELUXE_ROOM",
+                            "beds": 1,
+                            "bedType": "KING"
+                        },
+                        "description": {
+                            "text": "GOVERNMENT RATE ON DUTY TRAVEL\nKING DELUXE ROOM\nSPACIOUS ROOM VIEW OF THE CITY\nLARGE DESK WIRELESS INTERNET IN ROOM SAFE",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "217.36",
+                        "total": "238.58",
+                        "taxes": [
+                            {
+                                "code": "TOTAL_TAX",
+                                "pricingFrequency": "PER_STAY",
+                                "pricingMode": "PER_PRODUCT",
+                                "amount": "21.22",
+                                "currency": "EUR",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "217.36"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "217.36"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "CA",
+                                    "AX",
+                                    "DC",
+                                    "DS",
+                                    "JC",
+                                    "CU"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "description": {
+                                "text": "Plus Taxes and fees where appropriate."
+                            },
+                            "amount": "217.36",
+                            "deadline": "2022-12-01T23:59:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/6E9ZYLUVB0"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HLAMS228&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HLAMS350",
+                "chainCode": "HL",
+                "dupeId": "700148348",
+                "name": "DOUBLETREE AMSTERDAM CENTRAAL",
+                "cityCode": "AMS",
+                "latitude": 52.37662,
+                "longitude": 4.91019
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "ABA76JNIJS",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "rateFamilyEstimated": {
+                        "code": "BAR",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "10"
+                    },
+                    "room": {
+                        "type": "A03",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM",
+                            "beds": 1,
+                            "bedType": "QUEEN"
+                        },
+                        "description": {
+                            "text": "FLEXIBLE RATE\nQUEEN GUEST ROOM\nFREE WIFI FLAT SCREEN TV\nAIRCONDITIONING WALK-IN SHOWER",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "298.00",
+                        "total": "324.86",
+                        "taxes": [
+                            {
+                                "code": "TOTAL_TAX",
+                                "pricingFrequency": "PER_STAY",
+                                "pricingMode": "PER_PRODUCT",
+                                "amount": "26.86",
+                                "currency": "EUR",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "298.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "298.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "CA",
+                                    "AX",
+                                    "DC",
+                                    "DS",
+                                    "JC",
+                                    "CU"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "description": {
+                                "text": "Plus Taxes and fees where appropriate."
+                            },
+                            "amount": "298.00",
+                            "deadline": "2022-12-01T23:59:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/ABA76JNIJS"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HLAMS350&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSAEE",
+                "chainCode": "HS",
+                "dupeId": "700082163",
+                "name": "Hogerhuys",
+                "cityCode": "AMS",
+                "latitude": 52.2404,
+                "longitude": 4.4341
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "VTCSZ84WND",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "Event-Rate\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "9999.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "6.00",
+                                "included": true
+                            },
+                            {
+                                "code": "TOURISM_TAX",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_OCCUPANT",
+                                "amount": "2.20",
+                                "currency": "EUR",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "9999.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "9999.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA",
+                                    "AX"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/VTCSZ84WND"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSAEE&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSAHI",
+                "chainCode": "HS",
+                "dupeId": "700132262",
+                "name": "Het Rechthuis",
+                "cityCode": "AMS",
+                "latitude": 52.23128,
+                "longitude": 4.82948
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "3WXYAA5TBK",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "rateFamilyEstimated": {
+                        "code": "RAC",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "HRS-Rate\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "119.50",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "TOURISM_TAX",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_OCCUPANT",
+                                "amount": "1.00",
+                                "currency": "EUR",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "119.50"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "119.50"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T22:59:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/3WXYAA5TBK"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSAHI&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSAJM",
+                "chainCode": "HS",
+                "dupeId": "700077636",
+                "name": "A - Train Hotel",
+                "cityCode": "AMS",
+                "latitude": 52.37846,
+                "longitude": 4.89642
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "J9A6U0RISV",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "PRO",
+                    "rateFamilyEstimated": {
+                        "code": "PRO",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "Hot Deal\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "155.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "CITY_TAX",
+                                "percentage": "7.00",
+                                "included": true
+                            },
+                            {
+                                "code": "TOURISM_TAX",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_OCCUPANT",
+                                "amount": "3.00",
+                                "currency": "EUR",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "155.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "155.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "deposit": {
+                            "amount": "155.00",
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "DC",
+                                    "DN",
+                                    "VI",
+                                    "MC",
+                                    "CA",
+                                    "AX",
+                                    "JC"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "deposit",
+                        "cancellation": {
+                            "description": {
+                                "text": "The cancellation policy only applies for bookings with deposit."
+                            },
+                            "amount": "155.00",
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/J9A6U0RISV"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSAJM&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSAKX",
+                "chainCode": "HS",
+                "dupeId": "700006552",
+                "name": "Hotel de Boei",
+                "cityCode": "AMS",
+                "latitude": 52.61794,
+                "longitude": 4.62113
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "R91M60BNFA",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "Event-Rate\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "85.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "9.00",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "85.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "85.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA",
+                                    "AX"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/R91M60BNFA"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSAKX&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSALC",
+                "chainCode": "HS",
+                "dupeId": "700097082",
+                "name": "Bridges House",
+                "cityCode": "AMS",
+                "latitude": 52.01003,
+                "longitude": 4.35745
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "VYYIFVOXR2",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "ROOM_ONLY",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "TradeFair-Rate\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "120.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "6.00",
+                                "included": true
+                            },
+                            {
+                                "code": "TOURISM_TAX",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_OCCUPANT",
+                                "amount": "2.90",
+                                "currency": "EUR",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "120.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "120.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/VYYIFVOXR2"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSALC&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSALZ",
+                "chainCode": "HS",
+                "dupeId": "700004771",
+                "name": "Astoria",
+                "cityCode": "AMS",
+                "latitude": 52.24076,
+                "longitude": 4.43367
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "OPEJ1DQ49H",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "PRO",
+                    "rateFamilyEstimated": {
+                        "code": "PRO",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "Hot Deal\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "TOURISM_TAX",
+                                "pricingFrequency": "PER_NIGHT",
+                                "pricingMode": "PER_OCCUPANT",
+                                "amount": "2.22",
+                                "currency": "EUR",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "126.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "126.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA",
+                                    "AX"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "amount": "126.00",
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/OPEJ1DQ49H"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSALZ&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSAMV",
+                "chainCode": "HS",
+                "dupeId": "700182547",
+                "name": "Vossius Vondelpark",
+                "cityCode": "AMS",
+                "latitude": 52.36125,
+                "longitude": 4.88163
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "KUDX7BYUY9",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "PRO",
+                    "rateFamilyEstimated": {
+                        "code": "RAC",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "ROOM_ONLY",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "COMFORT_ROOM"
+                        },
+                        "description": {
+                            "text": "Standard Double or Twin Room - Extra-person charges may apply an\nStandard room 1 Double Bed or 2 Twin Beds151 sq feet Internet - Free WiFi Entertainment - 26-inch LCD TV with cable channelsFood - Drink - Coffee-tea makerSleep - Blackout drapes-curtains Bathroom - Private bathroom, shower, free toiletries, and a hair dryerPractical - Laptop-compatible safe, desk, and phoneComfort - Daily housekeepingNon-Smoking",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "139.00",
+                        "total": "139.00",
+                        "variations": {
+                            "average": {
+                                "base": "139.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "139.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA",
+                                    "AX",
+                                    "JC"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/KUDX7BYUY9"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSAMV&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HSAMSANG",
+                "chainCode": "HS",
+                "dupeId": "700048736",
+                "name": "Mozart",
+                "cityCode": "AMS",
+                "latitude": 52.3635,
+                "longitude": 4.88633
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "6NG8XZ85N2",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "commission": {
+                        "percentage": "4.00"
+                    },
+                    "boardType": "ROOM_ONLY",
+                    "room": {
+                        "type": "ROH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "Event-Rate\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "total": "535.00",
+                        "taxes": [
+                            {
+                                "code": "VALUE_ADDED_TAX",
+                                "percentage": "9.00",
+                                "included": true
+                            },
+                            {
+                                "code": "CITY_TAX",
+                                "percentage": "7.00",
+                                "included": true
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "total": "535.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "total": "535.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "MC",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-11-30T10:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/6NG8XZ85N2"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HSAMSANG&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "HXAMS182",
+                "chainCode": "HX",
+                "dupeId": "700191617",
+                "name": "HMPTN BY HILTON AMSTERDAM AIRPT SCHIPOL",
+                "cityCode": "AMS",
+                "latitude": 52.29525,
+                "longitude": 4.70275
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "P5GLACIGPT",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "RAC",
+                    "rateFamilyEstimated": {
+                        "code": "BAR",
+                        "type": "P"
+                    },
+                    "commission": {
+                        "percentage": "10"
+                    },
+                    "boardType": "BREAKFAST",
+                    "room": {
+                        "type": "A01",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM",
+                            "beds": 1,
+                            "bedType": "QUEEN"
+                        },
+                        "description": {
+                            "text": "FLEXIBLE RATE\nQUEEN ROOM\nHDTV/FREE WI-FI/HOT BREAKFAST INCLUDED\nWORK AREA",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "101.00",
+                        "total": "107.11",
+                        "taxes": [
+                            {
+                                "code": "TOTAL_TAX",
+                                "pricingFrequency": "PER_STAY",
+                                "pricingMode": "PER_PRODUCT",
+                                "amount": "6.11",
+                                "currency": "EUR",
+                                "included": false
+                            }
+                        ],
+                        "variations": {
+                            "average": {
+                                "base": "101.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "101.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "VI",
+                                    "CA",
+                                    "AX",
+                                    "DC",
+                                    "DS",
+                                    "JC",
+                                    "CU"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "description": {
+                                "text": "Plus Taxes and fees where appropriate."
+                            },
+                            "amount": "101.00",
+                            "deadline": "2022-12-02T17:59:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/P5GLACIGPT"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HXAMS182&adults=2"
+        },
+        {
+            "type": "hotel-offers",
+            "hotel": {
+                "type": "hotel",
+                "hotelId": "ICAMSICA",
+                "chainCode": "IC",
+                "dupeId": "700004507",
+                "name": "INTERCONTINENTAL AMSTEL AMS",
+                "cityCode": "AMS",
+                "latitude": 52.36052,
+                "longitude": 4.90515
+            },
+            "available": true,
+            "offers": [
+                {
+                    "id": "6FY9SP0DDC",
+                    "checkInDate": "2022-12-02",
+                    "checkOutDate": "2022-12-03",
+                    "rateCode": "57J",
+                    "rateFamilyEstimated": {
+                        "code": "BAR",
+                        "type": "P"
+                    },
+                    "boardType": "ROOM_ONLY",
+                    "room": {
+                        "type": "*RH",
+                        "typeEstimated": {
+                            "category": "STANDARD_ROOM"
+                        },
+                        "description": {
+                            "text": "BEST FLEXIBLE RATE\nClassic Room When you arrive at the hotel we\nwill do our best to meet your room type",
+                            "lang": "EN"
+                        }
+                    },
+                    "guests": {
+                        "adults": 2
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "base": "599.00",
+                        "total": "599.00",
+                        "variations": {
+                            "average": {
+                                "base": "599.00"
+                            },
+                            "changes": [
+                                {
+                                    "startDate": "2022-12-02",
+                                    "endDate": "2022-12-03",
+                                    "base": "599.00"
+                                }
+                            ]
+                        }
+                    },
+                    "policies": {
+                        "guarantee": {
+                            "acceptedPayments": {
+                                "creditCards": [
+                                    "AX",
+                                    "VI",
+                                    "CA"
+                                ],
+                                "methods": [
+                                    "CREDIT_CARD"
+                                ]
+                            }
+                        },
+                        "paymentType": "guarantee",
+                        "cancellation": {
+                            "numberOfNights": 1,
+                            "deadline": "2022-12-02T11:19:00+01:00"
+                        }
+                    },
+                    "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers/6FY9SP0DDC"
+                }
+            ],
+            "self": "https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=ICAMSICA&adults=2"
+        }
+    ]
+}
