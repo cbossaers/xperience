@@ -6,27 +6,10 @@ from pprint import pprint
 from multiprocessing import Pool
 from itertools import repeat
 
-def CrearPaquete(origen: str, fechaIda: datetime, fechaVuelta: datetime):
-
-    if __name__ == '__main__':
-        arg1 = list(repeat(origen,10))
-        arg2 = ["PAR", "LON", "AMS", "FCO", "BER", "BRU", "CDG", "MUC", "ARN", "PMI"]
-        arg3 = list(repeat(datetime.datetime(2023,1,15), 10))
-        arg4 = list(repeat(datetime.datetime(2023,1,23), 10))
-
-        res = []
-        with Pool(processes=10) as pool:
-            res = pool.starmap(CrearPaquete, zip(arg1,arg2,arg3,arg4))
-
-        res_list1 = [r[0] for r in res]
-
-        print("------------------------")
-        print(res_list1)
+def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
 
     habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
-
-    paquetes = []
 
     result = {
         "destino": destino,
@@ -44,21 +27,25 @@ def CrearPaquete(origen: str, fechaIda: datetime, fechaVuelta: datetime):
         "habitacion": habitacion["offers"][0]["room"]["typeEstimated"]["bedType"] + " " + habitacion["offers"][0]["room"]["typeEstimated"]["category"]
     }
     
-    paquetes.append(result)
+    return result
 
 #CrearPaquete("VLC","PAR",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
 
-if __name__ == '__main__':
-    args1 = list(repeat("VLC",10))
-    args2 = ["PAR", "LON", "AMS", "FCO", "BER", "BRU", "CDG", "MUC", "ARN", "PMI"]
-    args3 = list(repeat(datetime.datetime(2023,1,15), 10))
-    args4 = list(repeat(datetime.datetime(2023,1,23),10))
+def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
+    if __name__ == '__main__':
+        arg1 = list(repeat(origen,10))
+        arg2 = ["PAR", "LON", "AMS", "FCO", "BER", "BRU", "CDG", "MUC", "ARN", "PMI"]
+        arg3 = list(repeat(fechaIda, 10))
+        arg4 = list(repeat(fechaVuelta, 10))
 
-    res = []
-    with Pool(processes=10) as pool:
-        res = pool.starmap(CrearPaquete, zip(args1,args2,args3,args4))
+        res = []
 
-    res_list1 = [r[0] for r in res]
+        with Pool() as pool:
+            res = pool.starmap(CrearPaquete, zip(arg1,arg2,arg3,arg4))
 
-    print("------------------------")
-    print(res_list1)
+        res_list1 = [r[0] for r in res]
+
+        with open("./algoritmoPython/cristian/vuelo.json", "w") as outfile:
+            json.dump(res_list1, outfile, indent=4, sort_keys=True)
+
+GenerarPaquetes("VLC", datetime.datetime(2023,3,1), datetime.datetime(2023,3,8))

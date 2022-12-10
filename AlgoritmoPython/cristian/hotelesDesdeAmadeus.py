@@ -40,16 +40,16 @@ def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
     return listahab
 
 def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: datetime):
-    if __name__ == '__main__':
-        hoteles = ObtenerHoteles(destino)
+    #if __name__ == '__main__':
+    hoteles = ObtenerHoteles(destino)
 
-        res = []
+    res = []
 
-        with Pool() as pool:
-            res = pool.starmap(ObtenerHabitaciones, zip(hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))))
+    with Pool() as pool:
+        res = pool.starmap(ObtenerHabitaciones, zip(hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))))
 
-        habitaciones = [r[0] for r in res]
+    habitaciones = [r[0] for r in res]
 
-        return habitaciones
+    return habitaciones
 
-ObtenerHabitacionesDeCiudad("PAR", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))
+#ObtenerHabitacionesDeCiudad("PAR", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))

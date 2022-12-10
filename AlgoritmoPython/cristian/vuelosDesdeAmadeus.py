@@ -1,4 +1,3 @@
-import json
 import datetime
 from amadeus import Client, ResponseError
 
@@ -51,4 +50,4 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
     except ResponseError as error:
         raise error
 
-print(ObtenerVuelos("MAD","NYC",datetime.datetime(2022,12,27),datetime.datetime(2022,12,30)))
+#print(ObtenerVuelos("VLC","LON",datetime.datetime(2023,3,1),datetime.datetime(2023,3,8)))
