@@ -6,7 +6,7 @@ import { SwitchService } from 'src/app/services/switch.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent{
 
   loginSwitch: boolean = false;
   @Output() eventologin = new EventEmitter<boolean>();

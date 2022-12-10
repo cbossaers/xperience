@@ -20,7 +20,6 @@ import { LoginComponent } from './Componentes/login/login.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
