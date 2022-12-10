@@ -41,7 +41,7 @@ function GetVueloByFechaPrecio(precio, fechaSalida, fechaLlegada) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, , 4]);
-                    return [4 /*yield*/, fetch('http://88.17.114.199:5000/vuelo', {
+                    return [4 /*yield*/, fetch('http://88.17.26.37:5000/vuelo', {
                             method: 'POST',
                             body: JSON.stringify({
                                 precio: precio,
@@ -79,4 +79,3 @@ function GetVueloByFechaPrecio(precio, fechaSalida, fechaLlegada) {
         });
     });
 }
-GetVueloByFechaPrecio(500, "2022-03-01", "2022-03-01");

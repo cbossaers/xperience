@@ -1,6 +1,6 @@
-async function GetVueloByFechaPrecio(precio: number, fechaSalida: string, fechaLlegada: string) {
+async function GetVueloByFechaPrecio(precio: number, fechaSalida: Date, fechaLlegada: Date) {
     try {
-      const response = await fetch('http://88.17.114.199:5000/vuelo', {
+      const response = await fetch('http://88.17.114.199:9879/vuelo', {
         method: 'POST',
         body: JSON.stringify({
           precio: precio,
@@ -33,5 +33,3 @@ async function GetVueloByFechaPrecio(precio: number, fechaSalida: string, fechaL
       }
     }
 }
-
-GetVueloByFechaPrecio(500,"2022-03-01", "2022-03-01")

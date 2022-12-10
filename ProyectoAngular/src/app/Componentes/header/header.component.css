@@ -1,0 +1,25 @@
+
+.navbar{
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: rgb(250, 250, 250);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.navbar a:hover {
+  background-color: white;
+    color: black;
+  }
+.easy{
+    color: #1C9AEE;
+    display: inline;
+    font-size:30px;
+}
+.travel{
+    color: #1C9AEE;
+    display: inline;
+    font-weight:bold;
+    font-size:30px;
+}
