@@ -1,4 +1,4 @@
-from textwrap import indent
+import Service
 from amadeus import Client, ResponseError
 import json
 
@@ -7,44 +7,42 @@ amadeus = Client(
     client_secret='gfqji5m9gPlPtIqi'
 )
 
-
 def getHabitaciones(cityCode, adults):
     hoteles = getHotelByCity(cityCode)
     count = 0
     limit = 0
     posicion = 0
-    list = []
+    list = dict()
     
     for element in hoteles:
         if (count != len(hoteles)):
             if (limit == 108):
-                list.append(getOfertas(
-                    hoteles[posicion-limit:posicion], adults))
+                # ofertas = getOfertas(hoteles[posicion-limit:posicion], adults)
+                h = hoteles[109:120]
+                ofertas = getOfertas(h, adults)
+                print(ofertas)
+                
+                if(ofertas == 400):
+                    list = Service.unir_diccionarios(list,ofertas)
                 limit = 0
         else:
-            if (list == []):
-                list.append(getOfertas(hoteles[0:posicion], adults))
+            if list:
+                list = Service.unir_diccionarios(list, getOfertas(hoteles[0:posicion], adults))
             else:
-                list.append(getOfertas(
-                    hoteles[posicion-limit:posicion], adults))
-
+                list = Service.unir_diccionarios(list, getOfertas(hoteles[posicion-limit:posicion], adults))
         count += 1
         limit += 1
         posicion += 1
     
-    i = 0
-    result = {}
-    for element in list:
-        if(i<len(list)):
-            result = unir_diccionarios(result, list[i])
-        i += 1
-    # return json.dumps(result, indent=2)
-    return result
+    # i = 0
+    # result = dict()
+    # for element in list:
+    #     if(i<len(list)):
+    #         result = Service.unir_diccionarios(result, list[i])
+    #     i += 1
 
-def unir_diccionarios(d1, d2):
-    u = d1.copy()
-    u.update(d2)
-    return u
+    # return json.dumps(result, indent=2)
+    return list
 
 def getHotelByCity(cityCode):
     try:
@@ -57,6 +55,17 @@ def getHotelByCity(cityCode):
     except ResponseError as error:
         return error
 
+def getHotelRating(hotelIds):
+    try:
+        response = amadeus.get(
+            '/v1/e-reputation/hotel-sentiments', hotelIds=hotelIds)
+        lista = []
+        for element in response.result["data"]:
+            if element["overallRating"] >= 30:
+                lista.append(element)
+        return lista
+    except ResponseError as error:
+        return error
 
 def getOfertas(idsHoteles, adults):
     try:
@@ -75,5 +84,13 @@ def getFlight(originLocationCode, destinationLocationCode, departureDate, adults
     except ResponseError as error:
         return error
 
-print(getFlight('SYD', 'BKK', '2022-11-01', 2))
-# print(getHabitaciones('MAD', 2))
+
+
+# with open('vuelosIda.json', 'w') as file:
+#     json.dump(getFlight('MAD', 'AMS', '2023-02-01', 2), file, indent=4)
+
+# with open('vuelosVuelta.json', 'w') as file:
+#     json.dump(getFlight('AMS', 'MAD', '2023-02-12', 2), file, indent=4)
+
+# with open('habitaciones.json', 'w') as file:
+#     json.dump(getHabitaciones('AMS', 2), file, indent=4)

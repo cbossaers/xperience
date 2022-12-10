@@ -5,12 +5,13 @@ from psycopg.rows import dict_row
 
 conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
 
-def AddHotel(id: int, tipo: str, chaincode: str, amadeusid: int, dupeid: str, nombre: str, estrellas: int, ciudad: str, latitud: float, longitud: float):
+def AddHabitacion(id: int, hotelid: int, fechaLlegada: datetime, descripcion: str, categoria: str, numCamas: int, tipoCama: str, 
+    precioTotal: float, precioBase: float, precioTasas: float, fechaSalida: datetime, policiesid: int):
 
     with psycopg.connect(conndata) as conn:
         with conn.cursor() as cur:
 
-            SQL = """INSERT INTO hotel VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+            SQL = """INSERT INTO hotel VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
             ON CONFLICT (id) 
             DO UPDATE SET 
                 tipo = excluded.tipo,
@@ -23,7 +24,7 @@ def AddHotel(id: int, tipo: str, chaincode: str, amadeusid: int, dupeid: str, no
                 latitud = excluded.latitud,
                 longitud = excluded.longitud"""
 
-            data = (id, tipo, chaincode, amadeusid, dupeid, nombre, estrellas, ciudad, latitud, longitud)
+            data = (id, hotelid, fechaLlegada, descripcion, categoria, numCamas, tipoCama, precioTotal, precioBase, precioTasas, fechaSalida, policiesid)
 
             try:
                 cur.execute(SQL,data)
@@ -32,11 +33,11 @@ def AddHotel(id: int, tipo: str, chaincode: str, amadeusid: int, dupeid: str, no
             except Exception as error:
                 raise error
 
-def DeleteHotel(id: int):
+def DeleteHabitacion(id: int):
     with psycopg.connect(conndata) as conn:
         with conn.cursor() as cur:
 
-            SQL = "DELETE FROM hotel WHERE id = %s"
+            SQL = "DELETE FROM habitacion WHERE id = %s"
             data = (id,)
 
             try:
@@ -46,13 +47,29 @@ def DeleteHotel(id: int):
             except Exception as error:
                 raise error
 
-def GetHotel(id: str):
+def GetHabitacion(id: str):
     with psycopg.connect(conndata, row_factory=dict_row) as conn:
         with conn.cursor() as cur:
 
-            SQL = "SELECT * FROM hotel WHERE id = %s"
+            SQL = "SELECT * FROM habitacion WHERE id = %s"
 
             data = (id,)
+
+            try:
+                cur.execute(SQL,data)
+
+                return json.dumps(cur.fetchall(), indent=4, default=str)
+
+            except Exception as error:
+                raise error
+
+def GetHabitacionesHotel(hotelid: str):
+    with psycopg.connect(conndata, row_factory=dict_row) as conn:
+        with conn.cursor() as cur:
+
+            SQL = "SELECT * FROM habitacion WHERE hotelid = %s"
+
+            data = (hotelid,)
 
             try:
                 cur.execute(SQL,data)

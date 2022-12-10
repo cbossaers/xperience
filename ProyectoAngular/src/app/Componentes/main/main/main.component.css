@@ -1,0 +1,291 @@
+.general{
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.filtros{
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    
+    
+}
+.fechas{
+    width: 40%;
+    height: 100%;
+    left: auto;
+    display: inline-block;
+}
+.despegables{
+    display: inline-block;
+    margin-top: 5px;
+}
+.desp{
+    display: inline-block;
+    margin-right: 5px;
+}
+.desp2{
+    display: inline-block;
+    margin-right: 5px;
+}
+.despegable{
+    background-color: #aeecf2;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+}
+.presupuesto{
+    width: 22%;
+    height: 100%;
+    display: inline-block;
+    align:left;
+    
+}
+.fEspeciales{
+    width: 22%;
+    height: 100%;
+    display: inline-block;
+    align:left;
+    
+}
+.buscar{
+    display: inline-block;
+    width: 16%;
+    height: 32px;
+}
+
+.botonBuscar {
+    background-color: #aeecf2;
+    float: right;
+    width: 95px;
+    height: 32px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.botonBuscar:hover {
+    background-color: white; /* Green */
+    color: #aeecf2;
+    
+   
+}
+.viajes{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.seccion{
+    margin-bottom: 50px;
+}
+
+
+.viaje1{
+    width: 33.33%;
+    display: inline-block;
+    float:left;
+    
+}
+.viaje2{
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    
+}
+.viaje3{
+    width: 33.33%;
+    display: inline-block;
+    
+}
+.medio{
+    margin:0px auto;
+    width: 300px;
+    
+}
+.derecha{
+    float: right;
+    width: 300px;
+    
+}
+.imagenesV{
+    border-radius: 6px;
+}
+.tituloViaje{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.general2{
+    width: 90%;
+    padding-left: 10%;
+   
+}
+
+.viajesN{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    text-align: justify;  
+}
+
+.ngf{
+    margin-right: 9.8%;
+    width: 23%;
+    display: inline-block;
+    margin-bottom: 50px;
+    
+}
+.viaje1N{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    align:left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 2px gray;
+   
+}
+
+.imageViaje{
+    width:60%;
+    height:150px; 
+    border-radius: 5px;
+    float: left;
+}
+.textViaje{
+    width:40%;
+    float: right;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.red{
+    color: red;
+}
+
+.tituloViaje2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precioViaje2{
+    font-size: 18px;
+    color: rgb(82, 79, 79);
+    margin-top: 70px;  
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.datosViaje{
+    margin-top: 100px;
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    padding-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
+    background-color: #aeecf2;
+    margin-bottom: 100px;
+}
+.precioViaje{
+    font-size: 18px;
+    color: rgb(82, 79, 79);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.botonComprar {
+    color: #1C9AEE;
+    float: right;
+    width: 95px;
+    height: 32px;
+    margin: 15px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.botonComprar:hover {
+    background-color: white; /* Green */
+    color: #aeecf2;
+    
+}
+
+.compraViaje{
+    margin-top: 100px;
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    padding-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
+    background-color: #F2F6FA;
+    margin-bottom: 100px;
+}
+.despegable2{
+    background-color: #aeecf2;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    float: right;
+}
+
+.botonFinalizar {
+    background-color: #aeecf2;
+    float: right;
+    width: 95px;
+    height: 32px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formCompra{
+    margin-bottom: 20px;
+}
+
+.botonFinalizar:hover {
+    background-color: white; /* Green */
+    color: #aeecf2;
+    
+   
+}
+.imagenesV2{
+    border-radius: 6px;
+    width: 100%;
+
+}
