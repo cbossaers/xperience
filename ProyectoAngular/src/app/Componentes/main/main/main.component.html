@@ -1,20 +1,23 @@
 <div class="general">
-    <div class="filtros">
+    <div class="filtros" *ngIf="modalFiltro">
         <div class="fechas">
-            <div><p>Fechas de viaje</p></div>
+            <div>
+                <p>Fechas de viaje</p>
+            </div>
             <div class="despegables">
                 <div class="desp">
-                    <input type="date" id="start" name="trip-start"
-                    min="2022-11-07" max="2025-12-31" class="despegable">
+                    <input type="date" id="start" name="trip-start" min="2022-11-07" max="2025-12-31"
+                        class="despegable">
                 </div>
                 <div class="desp2">
-                    <input type="date"  name="trip-start"
-                    min="2022-11-07" max="2025-12-31" class="despegable">
+                    <input type="date" name="trip-start" min="2022-11-07" max="2025-12-31" class="despegable">
                 </div>
             </div>
         </div>
         <div class="presupuesto">
-            <div><p>Presupuesto</p></div>
+            <div>
+                <p>Presupuesto</p>
+            </div>
             <div class="">
                 <div class="desp">
                     <input type="text" value="500€" class="despegable">
@@ -22,7 +25,9 @@
             </div>
         </div>
         <div class="presupuesto">
-            <div><p>Origen</p></div>
+            <div>
+                <p>Origen</p>
+            </div>
             <div class="">
                 <div class="desp">
                     <input type="text" value="Valencia" class="despegable">
@@ -38,17 +43,18 @@
     <div class="viajes" *ngIf="modalSwitch1">
         <section class="seccion">
             <div class="viaje1">
-                <img src="\assets\images\itinerario-venecia.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                <img src="\assets\images\itinerario-venecia.jpg" alt="Venecia" width="300" height="150"
+                    class="imagenesV">
                 <p class="tituloViaje">Venecia</p>
                 <p class="precioViaje">Desde 300€</p>
             </div>
-                <div class="viaje2">
-                    <div class="medio">
-                        <img src="\assets\images\paris.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
-                        <p class="tituloViaje">Paris</p>
-                        <p class="precioViaje">Desde 170€</p>
-                    </div>
+            <div class="viaje2">
+                <div class="medio">
+                    <img src="\assets\images\paris.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                    <p class="tituloViaje">Paris</p>
+                    <p class="precioViaje">Desde 170€</p>
                 </div>
+            </div>
             <div class="viaje3">
                 <div class="derecha">
                     <img src="\assets\images\Estocolmo.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
@@ -65,9 +71,9 @@
             </div>
             <div class="viaje2">
                 <div class="medio">
-                <img src="\assets\images\Tokio.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">Tokio</p>
-                <p class="precioViaje">Desde 500€</p>
+                    <img src="\assets\images\Tokio.jpg" alt="Venecia" width="300" height="150" class="imagenesV">
+                    <p class="tituloViaje">Tokio</p>
+                    <p class="precioViaje">Desde 500€</p>
                 </div>
             </div>
             <div class="viaje3">
@@ -78,42 +84,147 @@
                 </div>
             </div>
         </section>
-    </div>  
+    </div>
 </div>
 
 <div class="general2">
     <div *ngIf="modalSwitch2" class="viajesN">
         <div *ngFor="let element of resultados" class="ngf">
             <div class="viaje1N">
-                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.precio_total,element.ciudad_salida,element.ciudad_llegada,element.companyia,element.fecha_salida, element.fecha_llegada)" alt="Venecia" width="300" height="150" class="imagenesV">
-                <p class="tituloViaje">{{element.ciudad_llegada}}</p>
-                <p class="precioViaje">{{element.precio_total}}€</p>
+                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.destino, element.duracionIda, element.duracionVuelta, 
+                element.habitacion, element.hotelNombre, element.llegadaIda, element.llegadaVuelta, element.precioHotel, element.precioIda, 
+                element.precioTotal, element.precioVuelta, element.salidaIda, element.salidaVuelta)" alt="Venecia"
+                    class="imageViaje">
+                <div class="textViaje">
+                    <p class="tituloViaje2">{{element.ciudad_llegada}}</p>
+                    <p class="precioViaje2">Desde <span class="red">{{element.precio_total}}€</span></p>
+                </div>
+
             </div>
         </div>
-        
-    </div>
-    <div class="datosViaje" *ngIf="modalSwitch3">
-        <h1>Datos del viaje a {{ciudadLlegada}}</h1>
-        <p class="tituloViaje">Salida desde {{ciudadSalida}}</p>
-        <p class="precioViaje">Compañia: {{compa}}</p>
-        <p class="precioViaje">Precio: {{precioTotal}}</p>
-        <p class="precioViaje">Salida dia: {{fechaS}}</p>
-        <p class="precioViaje">LLegada dia: {{fechaLL}}</p>
-        <button class="botonComprar" (click)="compraViaje()">
-            Comprar
-        </button>
     </div>
 
-    <div class="compraViaje" *ngIf="modalSwitch4" >
-        <form action="ejemplo.php" method="get" class="formCompra">
-            <p class="precioViaje">Nombre: <input type="text" placeholder="Nombre" class="despegable2"></p>
-            <p class="precioViaje">Apellidos <input type="text" placeholder="Apellidos" class="despegable2"></p>
-            <p class="precioViaje">Fecha de nacimiento: <input type="date" placeholder="Apellidos" name="trip-start" min="1920-01-01" max="2025-12-31" class="despegable2"></p>
-            <p class="precioViaje">DNI <input type="text" placeholder="DNI"class="despegable2"></p>
-            <p class="precioViaje">Correo electronico <input type="text" placeholder="Correo Electronico" class="despegable2"></p>
-        </form>
-        <button class="botonFinalizar" >
-            Finalizar  
-        </button>
+    <div class="datosViaje" *ngIf="modalSwitch3">
+        <img class="imagenDatos" src="\assets\images\vuelo.jpg" />
+        <h1 class="tituloViajeCompra">Datos del viaje a Amsterdam</h1>
+        <div>
+            <h3 class="inline">Ida</h3>
+            <p class="fecha"> 2022-03-01 </p>
+            <h4 class="precio">40,35 €</h4>
+        </div>
+        <div>
+            <img class="imagenTiempo" src="\assets\images\reloj.png" />
+            <p class="inline"> 16:40h </p>
+            <img class="imagenLinea" src="\assets\images\linea.png" />
+            <img class="imagenTiempo" src="\assets\images\reloj.png" />
+            <p class="inline"> 19:20h </p>
+        </div>
+        <div>
+            <p class="aeropuertoI"> Aeropuerto de Valencia </p>
+            <p class="aeropuertoD"> Aeropuerto de Amsterdam </p>
+        </div>
+
+        <img class="imagenLineaGris" src="\assets\images\lineaGris.png" />
+
+        <div>
+            <h3 class="inline">Vuelta</h3>
+            <p class="fecha"> 2022-03-07 </p>
+            <h4 class="precio">41,90 €</h4>
+        </div>
+        <div>
+            <img class="imagenTiempo" src="\assets\images\reloj.png" />
+            <p class="inline"> 18:35h </p>
+            <img class="imagenLinea" src="\assets\images\linea.png" />
+            <img class="imagenTiempo" src="\assets\images\reloj.png" />
+            <p class="inline"> 21:10h </p>
+        </div>
+        <div>
+            <p class="aeropuertoI"> Aeropuerto de Amsterdam </p>
+            <p class="aeropuertoD"> Aeropuerto de Valencia </p>
+        </div>
+
+        <div class="fondoHotel">
+            <h3 class="tituloHotel">HOTEL ROYAL BERGERE</h3>
+            <h4 class="precio">41,90 €</h4>
+            <p class="habitacion">Habitación: DOUBLE SUPERIOR_ROOM</p>
+            <h3 class="precioTotal"><b> Total 158,25 € </b></h3>
+        </div>
+
+        <button class="botonComprar" (click)="compraViaje()"> Comprar </button>
+    </div>
+
+    <div class="datosViaje" *ngIf="modalSwitch4">
+        <img style="float:right; width: 20px; height: 20px;" (click)="enviardatos()" src="\assets\images\eliminar.png" />
+        <div>
+            <img class="imagenDatos" src="\assets\images\vuelo.jpg" />
+            <h1 class="tituloViajeCompra">Empieza la reserva!</h1>
+            <div>
+                <h3 class="inline">Pasajero {{ numPasajeros }}</h3>
+                <p class="fecha"> Adulto </p> <button type="reset" id="limpiar" class="anyadir"
+                    (click)="anyadirPasajero()">+ Añadir</button>
+                <img class="imagenLineaGris" src="\assets\images\lineaGris.png" />
+            </div>
+
+
+            <form name="formulPasajeros" method="post">
+                <div>
+                    <label class="formPasajero" for="titulo">Sr / Sra / Srta</label>
+                    <label class="formPasajero" for="nombre" style="margin-left: 36px;">Nombre</label>
+                    <label class="formPasajero" for="apellidos" style="margin-left: 157px;">Apellidos</label>
+                </div>
+                <div>
+                    <select class="inputPasajero" required>
+                        <option value="none">Ninguno</option>
+                        <option value="Sr">Sr</option>
+                        <option value="Sra">Sra</option>
+                        <option value="Srta">Srta</option>
+                    </select>
+                    <input class="inputPasajero" type="text" id="nombre" name="nombre"
+                        style="width: 150px; margin-left: 50px;" required>
+                    <input class="inputPasajero" type="text" id="apellidos" name="apellidos"
+                        style="width: 280px; margin-left: 50px;" required>
+                </div>
+                <div>
+                    <label class="formPasajero" for="fechaNacimiento">Fecha de nacimiento</label>
+                    <label class="formPasajero" for="dni" style="margin-left: 32px;">DNI</label>
+                    <label class="formPasajero" for="nacionalidad" style="margin-left: 204px;">Nacionalidad</label>
+                </div>
+
+                <div>
+                    <input class="inputPasajero" type="date" id="fechaNacimiento" name="fechaNacimiento"
+                        min="2022-11-07" max="2025-12-31">
+                    <input class="inputPasajero" type="text" id="dni" name="dni" style="margin-left: 70px;" required>
+                    <input class="inputPasajero" type="text" id="nacionalidad" name="nacionalidad"
+                        style="margin-left: 50px;" required>
+                </div>
+
+                <div>
+                    <label class="formPasajero" for="direccion">Dirección</label>
+                    <label class="formPasajero" for="codPostal" style="margin-left: 346px;">Código postal</label>
+                </div>
+
+                <div>
+                    <input class="inputPasajero" type="text" id="direccion" name="direccion" style="width: 350px;"
+                        required>
+                    <input class="inputPasajero" type="text" id="codPostal" name="codPostal" style="margin-left: 50px;"
+                        required>
+                </div>
+
+                <div>
+                    <label class="formPasajero" for="email">E-mail</label>
+                    <label class="formPasajero" for="telefono" style="margin-left: 265px;">Teléfono</label>
+                </div>
+
+                <div>
+                    <input class="inputPasajero" type="text" id="email" name="email" style="width: 250px;" required>
+                    <input class="inputPasajero" type="text" id="telefono" name="telefono" style="margin-left: 50px;"
+                        required>
+                </div>
+            </form>
+
+            <!-- Falta aplicar la función para que acceda a la pasarela de pago -->
+            <button class="botonComprar"> Realizar pago </button>
+        </div>
+
     </div>
 </div>
