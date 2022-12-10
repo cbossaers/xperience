@@ -1,10 +1,7 @@
 import datetime
 from amadeus import Client, ResponseError
-from pprint import pprint
 from multiprocessing import Pool
 from itertools import repeat
-import json
-import time
 
 amadeus = Client(
     client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
