@@ -8,21 +8,23 @@ conndata = "dbname=bluesky user=pi password=pi host=88.17.114.199 port=5432"
 def AddHabitacion(id: int, hotelid: int, fechaLlegada: datetime, descripcion: str, categoria: str, numCamas: int, tipoCama: str, 
     precioTotal: float, precioBase: float, precioTasas: float, fechaSalida: datetime, policiesid: int):
 
-    with psycopg.connect(conndata) as conn:
+    with psycopg.connect(conndata) as conn: #hecho
         with conn.cursor() as cur:
 
-            SQL = """INSERT INTO hotel VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) 
+            SQL = """INSERT INTO habitacion VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
             ON CONFLICT (id) 
             DO UPDATE SET 
-                tipo = excluded.tipo,
-                chaincode = excluded.chaincode,
-                amadeusid = excluded.amadeusid,
-                dupeid = excluded.dupeid,
-                nombre = excluded.nombre,
-                estrellas = excluded.estrellas,
-                ciudad = excluded.ciudad,
-                latitud = excluded.latitud,
-                longitud = excluded.longitud"""
+                hotelid = excluded.hotelid,
+                fechallegada = excluded.fechallegada,
+                descripcion = excluded.descripcion,
+                categoria = excluded.categoria,
+                numcamas = excluded.numcamas,
+                tipocama = excluded.tipocama,
+                preciototal = excluded.preciototal,
+                preciobase = excluded.preciobase,
+                preciotasas = excluded.preciotasas
+                fechasalida = excluded.fechasalida
+                policiesid = excluded.policiesid"""
 
             data = (id, hotelid, fechaLlegada, descripcion, categoria, numCamas, tipoCama, precioTotal, precioBase, precioTasas, fechaSalida, policiesid)
 

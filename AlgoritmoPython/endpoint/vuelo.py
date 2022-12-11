@@ -3,6 +3,7 @@ from flask_restful import Resource, Api, reqparse, request
 import pandas as pd
 import ast
 import json
+
 import DALVuelo
 
 class Vuelo(Resource):
@@ -15,7 +16,16 @@ class Vuelo(Resource):
         return x, 200  # return data with 200 OK
 
     def put(self):
-        return True
+        args = request.json
+        DALVuelo.AddVuelo(args["codigo"],args["origen"],args["destino"],args["fechaSalida"],args["fechaLlegada"],args["companyia"],args["precio"],args["preciototal"],args["preciobase"],args["preciotasas"])
+        return 200  # return data with 200 OK
+
+    def patch(self):
+        args = request.json
+        DALVuelo.UpdateVuelo(args["codigo"],args["fechaSalida"],args["fechaLlegada"])
+        return 200  # return data with 200 OK   
 
     def delete(self):
-        return True
+        args = request.json
+        DALVuelo.DeleteVuelo(args["codigo"],args["fechaSalida"])
+        return 200  # return data with 200 OK
