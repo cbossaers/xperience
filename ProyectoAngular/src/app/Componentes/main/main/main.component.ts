@@ -47,18 +47,19 @@ export class MainComponent implements OnInit {
     this.resultados = GetVueloByFechaPrecio(1500,'2022-03-01','2022-03-01');
     console.log(this.resultados);*/
   }
+  
 
   async enviardatos() {
-    let salida = '2022-03-01';
-    let llegada = '2022-03-01';
-
+    let salida = '10/05/23 00:00:00';
+    let llegada = '16/05/23 00:00:00';
+    let Origen = 'MAD';
     try {
-      const response = await fetch('http://88.17.114.199:9879/vuelo', {
+      const response = await fetch('http://88.17.114.199:9876/paq', {
         method: 'POST',
         body: JSON.stringify({
-          precio: 1500,
-          fechaSalida: salida,
-          fechaLlegada: llegada,
+          origen: Origen,
+          fechaIda: salida,
+          fechaVuelta: llegada,
         }),
         headers: {
           'Content-Type': 'application/json',
