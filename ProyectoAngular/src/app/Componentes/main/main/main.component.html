@@ -1,40 +1,46 @@
 <div class="general">
     <div class="filtros">
-        <div class="fechas">
-            <div><p>Fechas de viaje</p></div>
-            <div class="despegables">
-                <div class="desp">
-                    <input type="date" id="start" name="trip-start"
-                    min="2022-11-07" max="2025-12-31" class="despegable">
-                </div>
-                <div class="desp2">
-                    <input type="date"  name="trip-start"
-                    min="2022-11-07" max="2025-12-31" class="despegable">
-                </div>
-            </div>
-        </div>
-        <div class="presupuesto">
-            <div><p>Presupuesto</p></div>
-            <div class="">
-                <div class="desp">
-                    <input type="text" value="500€" class="despegable">
+        <form [formGroup]="miFormulario">
+            <div class="fechas">
+                <div><p>Fechas de viaje</p></div>
+                <div class="despegables">
+                    <div class="desp">
+                        <input type="date" id="start" name="trip-start"
+                        min="2022-11-07" max="2025-12-31" class="despegable">
+                    </div>
+                    <div class="desp2">
+                        <input type="date"  name="trip-start"
+                        min="2022-11-07" max="2025-12-31" class="despegable">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="presupuesto">
-            <div><p>Origen</p></div>
-            <div class="">
-                <div class="desp">
-                    <input type="text" value="Valencia" class="despegable">
+            <div class="presupuesto">
+                <div><p>Presupuesto</p></div>
+                <div class="">
+                    <div class="desp">
+                        <input type="text" value="500€" class="despegable" id="prep" formControlName="Presupuesto">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="buscar">
-            <button class="botonBuscar" (click)="enviardatos()">
-                Buscar
-            </button>
-        </div>
+            <div class="presupuesto">
+                <div><p>Origen</p></div>
+                <div class="">
+                    <div class="desp">
+                        <input type="text" value="Valencia" class="despegable">
+                    </div>
+                </div>
+            </div>
+            <div class="buscar">
+                <button class="botonBuscar" (click)="enviardatos()">
+                    Buscar
+                </button>
+            </div>
+        </form>
     </div>
+    <!--<button class="botonBuscar" (click)="enviarInfo()">
+        Prueba
+    </button>
+    {{miFormulario.value | json}}-->
     <div class="viajes" *ngIf="modalSwitch1">
         <section class="seccion">
             <div class="viaje1">

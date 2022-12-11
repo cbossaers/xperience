@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl,FormGroup,Validators } from '@angular/forms';
 import  viajees from 'src/assets/json/viajes.json';
 
 
@@ -22,6 +23,7 @@ export class MainComponent implements OnInit {
   ciudadSalida:string="cs";
   compa:string="compa";
   fechaS:string="salidaF";
+  precioP:string="200";
   fechaLL:string="salidF";
   resultados:any = viajees;
   valores:JSON = viajees;
@@ -29,6 +31,10 @@ export class MainComponent implements OnInit {
   modalSwitch2:boolean = false;
   modalSwitch3:boolean = false;
   modalSwitch4:boolean = false;
+
+  miFormulario = new FormGroup({
+    Presupuesto : new FormControl('',Validators.required)
+  });
 
   constructor() {
   }
@@ -111,6 +117,9 @@ export class MainComponent implements OnInit {
     this.modalSwitch3=false;
     this.modalSwitch4=true;
   }
-  
+  enviarInfo(){
+    const user = this.miFormulario.value;
+    alert(user.Presupuesto);
+  }
 }
 
