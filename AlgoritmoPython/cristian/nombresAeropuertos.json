@@ -23,7 +23,7 @@
         "foto": "https://a.cdn-hotels.com/gdcs/production178/d1699/8f999c57-cf7b-47cf-9252-8e3513ef570d.jpg?impolicy=fcrop&w=800&h=533&q=medium",
         "nombre": "Bruselas"
     },
-    "CDG": {
+    "PAR": {
         "foto": "https://viajes.nationalgeographic.com.es/medio/2022/07/13/paris_37bc088a_1280x720.jpg",
         "nombre": "Paris"
     },
@@ -31,7 +31,7 @@
         "foto": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dublin-1520287124.jpg",
         "nombre": "Dublin"
     },
-    "FCO": {
+    "ROM": {
         "foto": "https://assets.buendiatours.com/s3fs-public/styles/highlight_large/public/2022-03/roma-coliseo-que-ver-en-roma_roma-guia-viaje_buendia-tours.jpg?VersionId=7tEtGNDNSgwq25cAYnwAwKPU9vFV22E_&itok=2qZldgwf",
         "nombre": "Roma"
     },
@@ -47,9 +47,9 @@
         "foto": "https://destinoysabor.com/blog/wp-content/uploads/2021/05/Dalt-Vila-Imagen-de-Ibiza-Marathon-1050x483.jpg",
         "nombre": "Ibiza"
     },
-    "LGW": {
+    "LON": {
         "foto": "https://www.visitbritain.com/sites/default/files/styles/consumer_campaigns_hero_mobile/public/consumer/paragraphs-bundles/image-banner/london_skyline_vb34141644.jpg?itok=eKyhb8l8",
-        "nombre": "Londres-LGW"
+        "nombre": "Londres"
     },
     "LHR": {
         "foto": "https://www.euroresidentes.com/viajes/viajar/wp-content/uploads/sites/3/2006/06/londres.jpg",

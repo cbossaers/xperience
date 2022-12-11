@@ -1,0 +1,42 @@
+[
+    null,
+    null,
+    null,
+    null,
+    {
+        "destino": "Berlin",
+        "duracionIda": "PT3H",
+        "duracionVuelta": "PT3H5M",
+        "foto": "https://cdn2.hometogo.net/assets/media/pics/1200_628/611a5609415e7.jpg",
+        "hotelNombre": "Best Western Hotel am Spittelmarkt",
+        "llegadaIda": "2023-05-11T22:45:00",
+        "llegadaVuelta": "2023-05-17T22:55:00",
+        "precioHotel": 1350.0,
+        "precioIda": 68.1870962222289,
+        "precioTotal": 1412.995,
+        "precioVuelta": 57.80290377777109,
+        "salidaIda": "2023-05-11T19:45:00",
+        "salidaVuelta": "2023-05-17T19:50:00"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+        "destino": "Zurich",
+        "duracionIda": "PT2H15M",
+        "duracionVuelta": "PT2H20M",
+        "foto": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/09/24/15377887462313.jpg",
+        "hotelNombre": "BEST WESTERN HOTEL ZURCHERHOF",
+        "llegadaIda": "2023-05-11T10:10:00",
+        "llegadaVuelta": "2023-05-17T13:30:00",
+        "precioHotel": 702.0,
+        "precioIda": 39.86491512803246,
+        "precioTotal": 758.955,
+        "precioVuelta": 74.04508487196753,
+        "salidaIda": "2023-05-11T07:55:00",
+        "salidaVuelta": "2023-05-17T11:10:00"
+    },
+    null,
+    null
+]

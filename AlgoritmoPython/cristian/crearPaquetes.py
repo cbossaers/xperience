@@ -3,20 +3,32 @@ import datetime
 import hotelesDesdeAmadeus as h
 import vuelosDesdeAmadeus as v
 from pprint import pprint
-from multiprocessing import Pool
 from itertools import repeat
+#from concurrent.futures import ProcessPoolExecutor as Pool
+import time
+import random
 
 def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
 
-    habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
+    habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
+    
+    with open('./algoritmoPython/cristian/nombresAeropuertos.json', 'r') as f:
+        data = json.load(f)
+
+    if(len(habitacion)==0 or len(vuelo)==0): return
+    else: 
+        habitacion = habitacion[0][0]
+        vuelo = vuelo[0]
+
+    x = random.uniform(0.3,0.7)
 
     result = {
-        "destino": destino,
+        "destino": data[destino]["nombre"],
         "precioTotal": (float(habitacion["offers"][0]["price"]["total"]) + float(vuelo["price"]["total"]))/2,
         "precioHotel": float(habitacion["offers"][0]["price"]["total"])/2,
-        "precioIda": float(vuelo["price"]["total"])*0.58,
-        "precioVuelta": float(vuelo["price"]["total"])*0.42,
+        "precioIda": float(vuelo["price"]["total"])*x,
+        "precioVuelta": float(vuelo["price"]["total"])*(1-x),
         "salidaIda": vuelo["itineraries"][0]["segments"][0]["departure"]["at"],
         "llegadaIda": vuelo["itineraries"][0]["segments"][0]["arrival"]["at"],
         "duracionIda": vuelo["itineraries"][0]["duration"],
@@ -24,28 +36,30 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
         "llegadaVuelta": vuelo["itineraries"][1]["segments"][0]["arrival"]["at"],
         "duracionVuelta": vuelo["itineraries"][1]["duration"],
         "hotelNombre": habitacion["hotel"]["name"],
-        "habitacion": habitacion["offers"][0]["room"]["typeEstimated"]["bedType"] + " " + habitacion["offers"][0]["room"]["typeEstimated"]["category"]
+        "foto": data[destino]["foto"]
     }
     
     return result
 
-#CrearPaquete("VLC","PAR",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
-
 def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
     if __name__ == '__main__':
-        arg1 = list(repeat(origen,10))
-        arg2 = ["PAR", "LON", "AMS", "FCO", "BER", "BRU", "CDG", "MUC", "ARN", "PMI"]
-        arg3 = list(repeat(fechaIda, 10))
-        arg4 = list(repeat(fechaVuelta, 10))
+        args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "OPO", "ZRH", "DUB", "LIS"]
 
         res = []
 
-        with Pool() as pool:
-            res = pool.starmap(CrearPaquete, zip(arg1,arg2,arg3,arg4))
+        a = time.time()
+        for x in args:
+            res.append(CrearPaquete(origen,x,fechaIda,fechaVuelta))
 
-        res_list1 = [r[0] for r in res]
+        #with Pool() as pool:
+        #    pool.starmap(CrearPaquete, zip(list(repeat(origen,7)), args, list(repeat(fechaIda, 7)), list(repeat(fechaVuelta, 7))))
 
-        with open("./algoritmoPython/cristian/vuelo.json", "w") as outfile:
-            json.dump(res_list1, outfile, indent=4, sort_keys=True)
+        #x = [r[0] for r in res]
 
-GenerarPaquetes("VLC", datetime.datetime(2023,3,1), datetime.datetime(2023,3,8))
+        with open("./algoritmoPython/cristian/res.json", "w") as outfile:
+            json.dump(res, outfile, indent=4, sort_keys=True)
+
+        print(str(time.time()-a))
+        return outfile
+
+GenerarPaquetes("MAD", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))

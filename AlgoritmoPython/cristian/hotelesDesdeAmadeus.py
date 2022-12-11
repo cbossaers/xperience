@@ -1,7 +1,9 @@
 import datetime
 from amadeus import Client, ResponseError
-from multiprocessing import Pool
+from concurrent.futures import ProcessPoolExecutor as Pool
 from itertools import repeat
+from pprint import pprint
+import json
 
 amadeus = Client(
     client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
@@ -17,7 +19,7 @@ def ObtenerHoteles(destino: str):
         for elem in response.data:
             res.append(elem["hotelId"])
 
-        res = [res[i:i+10] for i in range(0,len(res),10)]
+        res = [res[i:i+20] for i in range(0,len(res),20)]
         return res
 
     except ResponseError as error:
@@ -41,15 +43,16 @@ def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
 
 def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: datetime):
     #if __name__ == '__main__':
-    hoteles = ObtenerHoteles(destino)
+        hoteles = ObtenerHoteles(destino)
 
-    res = []
+        res = []
 
-    with Pool() as pool:
-        res = pool.starmap(ObtenerHabitaciones, zip(hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))))
+        with Pool() as pool:
+            for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
+                res.append(x)
 
-    habitaciones = [r[0] for r in res]
+        habitaciones = list(filter(None, res[0]))
 
-    return habitaciones
+        return habitaciones
 
-#ObtenerHabitacionesDeCiudad("PAR", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))
+#pprint(ObtenerHabitacionesDeCiudad("LON", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16)))
