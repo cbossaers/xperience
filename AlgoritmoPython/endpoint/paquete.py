@@ -4,23 +4,23 @@ import pandas as pd
 import ast
 import json
 
-import DALUsuario
+import DALPaquete
 
-class Usuario(Resource):
-    def get(self):# hacer
+class Paquete(Resource):
+    def get(self):
         return {'info': 'GET está actualmente deshabilitado'}, 200  # return data and 200 OK
 
-    def post(self):
+    def post(self): # hacer
         args = request.json
-        x = DALUsuario.GetUsuario(args["correo"])
+        x = DALPaquete.GetPaquete(args["id"])
         return x, 200  # return data with 200 OK
 
     def put(self):
         args = request.json
-        DALUsuario.AddUsuario(args["correo"],args["contr"],args["nombre"],args["apellidos"],args["telefono"],args["fechaNacimiento"],args["dni"],args["dirPost"],args["dirFac"])
+        DALPaquete.AddPaquete(args["id"],args["id_habitacion"],args["id_vuelo_ida"],args["id_vuelo_vuelta"])
         return 200  # return data with 200 OK
 
     def delete(self):
         args = request.json
-        DALUsuario.DeleteUsuario(args["correo"])
+        DALPaquete.DeletePaquete(args["id"])
         return 200  # return data with 200 OK
