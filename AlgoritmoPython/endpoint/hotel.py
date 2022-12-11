@@ -12,11 +12,18 @@ class Hotel(Resource):
     
     def post(self):
         args = request.json
-        x = DALHotel.GetHotelById(args["id"])
+        x = DALHotel.GetHotel(args["id"])
         return x, 200  # return data with 200 OK
     
     def patch(self):
         return True
-    
+
+    def put(self):
+        args = request.json
+        DALHotel.AddHotel(args["id"],args["tipo"],args["chaincode"],args["amadeusid"],args["dupeid"],args["nombre"],args["estrellas"],args["ciudad"],args["latitud"],args["longitud"])
+        return 200  # return data with 200 OK
+
     def delete(self):
-        return True
+        args = request.json
+        DALHotel.DeleteHotel(args["id"])
+        return 200  # return data with 200 OK
