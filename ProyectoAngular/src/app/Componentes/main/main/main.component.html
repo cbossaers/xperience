@@ -1,5 +1,5 @@
 <div class="general">
-    <div class="filtros">
+    <div class="filtros" *ngIf="modalFiltro">
         <form [formGroup]="miFormulario">
             <div class="fechas">
                 <div><p>Fechas de viaje</p></div>
@@ -92,13 +92,13 @@
     <div *ngIf="modalSwitch2" class="viajesN">
         <div *ngFor="let element of resultados" class="ngf">
             <div class="viaje1N">
-                <img src="\assets\images\vuelo.jpg" (click)="datosViaje(element.destino, element.duracionIda, element.duracionVuelta, 
+                <img src="{{element.foto}}" (click)="datosViaje(element.destino, element.duracionIda, element.duracionVuelta, 
                 element.habitacion, element.hotelNombre, element.llegadaIda, element.llegadaVuelta, element.precioHotel, element.precioIda, 
-                element.precioTotal, element.precioVuelta, element.salidaIda, element.salidaVuelta)" alt="Venecia"
+                element.precioTotal, element.precioVuelta, element.salidaIda, element.salidaVuelta,element.foto)" alt="Venecia"
                     class="imageViaje">
                 <div class="textViaje">
-                    <p class="tituloViaje2">{{element.ciudad_llegada}}</p>
-                    <p class="precioViaje2">Desde <span class="red">{{element.precio_total}}€</span></p>
+                    <p class="tituloViaje2">{{element.destino}}</p>
+                    <p class="precioViaje2">Desde <span class="red">{{element.precioTotal}}€</span></p>
                 </div>
 
             </div>
@@ -106,12 +106,12 @@
     </div>
 
     <div class="datosViaje" *ngIf="modalSwitch3">
-        <img class="imagenDatos" src="\assets\images\vuelo.jpg" />
-        <h1 class="tituloViajeCompra">Datos del viaje a Amsterdam</h1>
+        <img class="imagenDatos" src="{{foto}}" />
+        <h1 class="tituloViajeCompra">Datos del viaje a {{destino}}</h1>
         <div>
             <h3 class="inline">Ida</h3>
-            <p class="fecha"> 2022-03-01 </p>
-            <h4 class="precio">40,35 €</h4>
+            <p class="fecha"> 2023-03-01 </p>
+            <h4 class="precio">{{precioIda}} €</h4>
         </div>
         <div>
             <img class="imagenTiempo" src="\assets\images\reloj.png" />
@@ -122,15 +122,15 @@
         </div>
         <div>
             <p class="aeropuertoI"> Aeropuerto de Valencia </p>
-            <p class="aeropuertoD"> Aeropuerto de Amsterdam </p>
+            <p class="aeropuertoD"> Aeropuerto de {{destino}} </p>
         </div>
 
         <img class="imagenLineaGris" src="\assets\images\lineaGris.png" />
 
         <div>
             <h3 class="inline">Vuelta</h3>
-            <p class="fecha"> 2022-03-07 </p>
-            <h4 class="precio">41,90 €</h4>
+            <p class="fecha"> 2023-03-07 </p>
+            <h4 class="precio">{{precioVuelta}} €</h4>
         </div>
         <div>
             <img class="imagenTiempo" src="\assets\images\reloj.png" />
@@ -146,9 +146,9 @@
 
         <div class="fondoHotel">
             <h3 class="tituloHotel">HOTEL ROYAL BERGERE</h3>
-            <h4 class="precio">41,90 €</h4>
+            <h4 class="precio">{{precioHotel}} €</h4>
             <p class="habitacion">Habitación: DOUBLE SUPERIOR_ROOM</p>
-            <h3 class="precioTotal"><b> Total 158,25 € </b></h3>
+            <h3 class="precioTotal"><b> Total {{precioTotal}} € </b></h3>
         </div>
 
         <button class="botonComprar" (click)="compraViaje()"> Comprar </button>
@@ -157,7 +157,7 @@
     <div class="datosViaje" *ngIf="modalSwitch4">
         <img style="float:right; width: 20px; height: 20px;" (click)="enviardatos()" src="\assets\images\eliminar.png" />
         <div>
-            <img class="imagenDatos" src="\assets\images\vuelo.jpg" />
+            <img class="imagenDatos" src="{{foto}}" />
             <h1 class="tituloViajeCompra">Empieza la reserva!</h1>
             <div>
                 <h3 class="inline">Pasajero {{ numPasajeros }}</h3>
@@ -224,7 +224,47 @@
             </form>
 
             <!-- Falta aplicar la función para que acceda a la pasarela de pago -->
-            <button class="botonComprar"> Realizar pago </button>
+            <button class="botonComprar" (click)="realizarPago()"> Realizar pago </button>
+        </div>
+
+    </div>
+
+    <div class="datosViaje" *ngIf="modalSwitch5">
+        <img style="float:right; width: 20px; height: 20px;" (click)="enviardatos()" src="\assets\images\eliminar.png" />
+        <div>
+            <img class="imagenDatos" src="{{foto}}" />
+            <h1 class="tituloViajeCompra">Pasarela de pago</h1>
+
+            <form name="formulPasajeros" method="post">
+                <div>
+                    <label class="formPasajero" for="nombre">Nombre del titular</label>
+                </div>
+                <div>
+                    <input class="inputPasajero" type="text" id="nombre" name="nombre"
+                        style="width: 150px;" required>
+                </div>
+                <div>
+                    <label class="formPasajero" for="fechaExpiracion">Fecha de expiración</label>
+                    <label class="formPasajero" for="cvc" style="margin-left: 32px;">CVC</label>
+                </div>
+
+                <div>
+                    <input class="inputPasajero" type="date" id="fechaNacimiento" name="fechaNacimiento"
+                        min="2022-11-07" max="2025-12-31">
+                    <input class="inputPasajero" type="text" id="cvc" name="cvc" style="margin-left: 70px;" required>
+                </div>
+
+                <div>
+                    <label class="formPasajero" for="numeroTarjeta">Número de la tarjeta</label>
+                </div>
+
+                <div>
+                    <input class="inputPasajero" type="text" id="numeroTarjeta" name="numeroTarjeta" style="width: 350px;" required>
+                </div>
+            </form>
+
+            <!-- Falta aplicar la función para que acceda a la pasarela de pago -->
+            <button class="botonComprar"> Finalizar </button>
         </div>
 
     </div>
