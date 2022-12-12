@@ -1,34 +1,38 @@
-.general{
+.general {
     padding-top: 100px;
     margin-left: 10%;
     margin-right: 10%;
 }
-.filtros{
+
+.filtros {
     width: 100%;
     height: 80px;
     display: inline-block;
-    
-    
 }
-.fechas{
+
+.fechas {
     width: 40%;
     height: 100%;
     left: auto;
     display: inline-block;
 }
-.despegables{
+
+.despegables {
     display: inline-block;
     margin-top: 5px;
 }
-.desp{
+
+.desp {
     display: inline-block;
     margin-right: 5px;
 }
-.desp2{
+
+.desp2 {
     display: inline-block;
     margin-right: 5px;
 }
-.despegable{
+
+.despegable {
     background-color: #aeecf2;
     border: 0;
     border-top-left-radius: 5px;
@@ -39,20 +43,21 @@
     height: 30px;
     text-align: center;
 }
-.presupuesto{
+
+.presupuesto {
     width: 22%;
     height: 100%;
     display: inline-block;
-    align:left;
-    
+    align: left;
 }
-.fEspeciales{
+
+.fEspeciales {
     width: 22%;
     height: 100%;
     display: inline-block;
-    align:left;
-    
+    align: left;
 }
+
 .buscar{
     display: inline-block;
     width: 16%;
@@ -72,55 +77,55 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 .botonBuscar:hover {
     background-color: white; /* Green */
     color: #aeecf2;
-    
-   
 }
-.viajes{
+
+.viajes {
     width: 100%;
     height: 100%;
     display: inline-block;
     margin-top: 50px;
 }
 
-.seccion{
+.seccion {
     margin-bottom: 50px;
 }
 
-
-.viaje1{
+.viaje1 {
     width: 33.33%;
     display: inline-block;
-    float:left;
-    
+    float: left;
 }
-.viaje2{
+
+.viaje2 {
     width: 33.33%;
     display: inline-block;
     text-align: center;
-    
 }
-.viaje3{
+
+.viaje3 {
     width: 33.33%;
     display: inline-block;
-    
 }
-.medio{
+
+.medio {
     margin:0px auto;
     width: 300px;
-    
 }
-.derecha{
+
+.derecha {
     float: right;
     width: 300px;
-    
 }
-.imagenesV{
+
+.imagenesV {
     border-radius: 6px;
 }
-.tituloViaje{
+
+.tituloViaje {
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
@@ -128,55 +133,55 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.general2{
+.general2 {
     width: 90%;
     padding-left: 10%;
    
 }
 
-.viajesN{
+.viajesN {
     width: 100%;
     height: 100%;
     margin-top: 50px;
     text-align: justify;  
 }
 
-.ngf{
+.ngf {
     margin-right: 9.8%;
     width: 23%;
     display: inline-block;
     margin-bottom: 50px;
-    
 }
-.viaje1N{
+
+.viaje1N {
     width: 100%;
     height: 100%;
     display: inline-block;
-    align:left;
+    align: left;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 2px 2px 2px gray;
-   
 }
 
-.imageViaje{
+.imageViaje {
     width:60%;
     height:150px; 
     border-radius: 5px;
     float: left;
 }
-.textViaje{
-    width:40%;
+
+.textViaje {
+    width: 40%;
     float: right;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-  
 }
-.red{
+
+.red {
     color: red;
 }
 
-.tituloViaje2{
+.tituloViaje2 {
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
@@ -185,7 +190,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.precioViaje2{
+.precioViaje2 {
     font-size: 18px;
     color: rgb(82, 79, 79);
     margin-top: 70px;  
@@ -193,61 +198,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-.datosViaje{
-    margin-top: 100px;
-    padding-left: 45px;
-    padding-top: 25px;
-    padding-bottom: 75px;
-    padding-right: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 30px;
-    background-color: #aeecf2;
-    margin-bottom: 100px;
-}
-.precioViaje{
+.precioViaje {
     font-size: 18px;
     color: rgb(82, 79, 79);
     margin-top: 20px;
     text-align: left;
 }
 
-.botonComprar {
-    color: #1C9AEE;
-    float: right;
-    width: 95px;
-    height: 32px;
-    margin: 15px;
-    margin-top: 10px;
-    transition-duration: 0.4s;
-    border: 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.botonComprar:hover {
-    background-color: white; /* Green */
-    color: #aeecf2;
-    
-}
-
-.compraViaje{
-    margin-top: 100px;
-    padding-left: 45px;
-    padding-top: 25px;
-    padding-bottom: 75px;
-    padding-right: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 30px;
-    background-color: #F2F6FA;
-    margin-bottom: 100px;
-}
-.despegable2{
+.despegable2 {
     background-color: #aeecf2;
     border: 0;
     border-top-left-radius: 5px;
@@ -274,18 +232,161 @@
     border-bottom-right-radius: 5px;
 }
 
-.formCompra{
+.formCompra {
     margin-bottom: 20px;
 }
 
 .botonFinalizar:hover {
     background-color: white; /* Green */
     color: #aeecf2;
-    
-   
 }
-.imagenesV2{
+
+.imagenesV2 {
     border-radius: 6px;
     width: 100%;
+}
 
+.tituloViajeCompra {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0%;
+    color: #e28743;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datosViaje {
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-right: 10%;
+}
+
+.imagenDatos {
+    float: left;
+    margin-top: 0%;
+    padding: 0%;
+    margin-right: 5%;
+    width: 400px;
+    height: 400px;
+}
+
+.botonComprar {
+    color: white;
+    float: right;
+    width: 95px;
+    height: 32px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #e28743;
+}
+
+.botonComprar:hover {
+    background-color: #e6e9ea;
+    color: #e28743;
+}
+
+.fecha {
+    color: #797979;
+    display: inline;
+    margin-left: 5px;
+}
+
+.imagenTiempo {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+.imagenLinea {
+    width: 20%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.aeropuertoD {
+    margin-right: 16%;
+    float: right;
+    margin-top: 0%;
+    display: inline;
+    color: #797979;
+}
+
+.aeropuertoI {
+    margin-right: 17%;
+    float: left;
+    margin-top: 0%;
+    display: inline;
+    color: #797979;
+}
+
+.imagenLineaGris {
+    width: 57%;
+    height: 12px;
+    margin-top: 20px;
+}
+
+.precio {
+    float: right;
+    margin-top: 0%;
+    display: inline;
+}
+
+.fondoHotel {
+    margin-top: 5%;
+    margin-left: 34%;
+    padding: 3px;
+    background-color: #e7f0fc;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
+}
+
+.habitacion {
+    color: #797979;
+}
+
+.tituloHotel {
+    padding: 0%;
+    margin-top: 10%;
+    display: inline;
+}
+
+.precioTotal {
+    margin: 0%;
+    color: #797979;
+}
+
+.anyadir {
+    float: right;
+    color: #e28743;
+    font-style: none;
+    background-color: transparent;
+    border: none;
+    margin: 0%;
+}
+
+.formPasajero {
+    color: #74a6f0;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputPasajero {
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
