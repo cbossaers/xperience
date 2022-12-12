@@ -1,5 +1,5 @@
 .general {
-    padding-top: 100px;
+    padding-top: 120px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -262,6 +262,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin-right: 10%;
+    height: 410px;
 }
 
 .imagenDatos {

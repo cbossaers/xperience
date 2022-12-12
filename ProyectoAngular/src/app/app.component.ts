@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SwitchService } from 'src/app/services/switch.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
