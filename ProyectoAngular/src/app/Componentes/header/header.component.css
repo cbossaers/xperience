@@ -23,16 +23,27 @@
     font-weight:bold;
     font-size:30px;
 }
+.imagenEX{
+  width: 200px;
+}
+
+
+
 .botonLogin {
-  color: #1C9AEE;
-  border: 5px solid #1C9AEE;
-  font-weight:bold;
-  float: right;
+  background-color:  #4063a9;
+  color:white;
   width: 95px;
   height: 32px;
-  margin-right: 10%;
+  margin-left: 64.7%;
   transition-duration: 0.4s;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+
+
 
 .botonLogin:hover {
   background-color: white;
