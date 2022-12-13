@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
+            <div class="navbar">
+                <br>
+                <img class="imagenEX" src="\assets\images\LOGO_AZUL.png" />
+                <button *ngIf="!loginSwitch" class="botonLogin" (click)="openLogin()">Log in</button>
+            </div>
+            <div *ngIf="loginSwitch" >
+                <app-login></app-login>
+            </div>
 
-    </head>
-    <body>
-       <div  class="menu">
-                <div class="navbar">
-                        <p class="easy">EASY</p><p class="travel">TRAVEL</p>
-                </div>
-       </div>
-           
-        
-    </body>
-</html>
 
