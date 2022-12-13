@@ -437,6 +437,7 @@
     height: 100px;
     margin: auto;
     transform:translateY(-15%);
+    box-shadow: 10px 9px 13px 12px rgba(0, 0, 0,0.1);
 
   }
   
@@ -540,7 +541,7 @@
     transform:translateY(-2%);
 }
 .logo{
-  width: 200px;
+  width: 300px;
 }
 .buscar{
   transform:translateY(-45%);
@@ -787,16 +788,18 @@ box-shadow: 12px 11px 9px 12px rgba(0, 0, 0,0.1);
 }*/
 
 .card__info {
-  z-index: -1;
-  margin-left: -15px;
-  position: relative;
-  background-color: #fff;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
-  padding: 16px 24px 24px 30px;
-  width: 100px;
-  box-shadow: 9px 7px 8px 10px rgba(0, 0, 0,0.1);
-}
+    z-index: -1;
+    margin-left: -200px;
+    position: relative;
+    background-color: #fff;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-radius: 12px;
+    padding: 16px 24px 24px 225px;
+    width: 125px;
+    box-shadow: 6px 9px 9px 7px rgba(0, 0, 0,0.1);
+
+  }
 
 .card__category {
   font-family: 'helvetica', serif;
