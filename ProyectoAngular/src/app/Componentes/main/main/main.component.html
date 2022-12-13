@@ -6,11 +6,11 @@
                 <div class="despegables">
                     <div class="desp">
                         <input type="date" id="start" name="trip-start"
-                        min="2022-11-07" max="2025-12-31" class="despegable">
+                        min="2022-11-07" max="2025-12-31" class="despegable" formControlName="fechaS">
                     </div>
                     <div class="desp2">
                         <input type="date"  name="trip-start"
-                        min="2022-11-07" max="2025-12-31" class="despegable">
+                        min="2022-11-07" max="2025-12-31" class="despegable" formControlName="fechaV">
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                 <div><p>Presupuesto</p></div>
                 <div class="">
                     <div class="desp">
-                        <input type="text" value="500€" class="despegable" id="prep" formControlName="Presupuesto">
+                        <input type="number" value="500€" class="despegable" id="prep" formControlName="Presupuesto">
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                 <div><p>Origen</p></div>
                 <div class="">
                     <div class="desp">
-                        <input type="text" value="Valencia" class="despegable">
+                        <input type="text" value="Valencia" class="despegable" formControlName="Origen">
                     </div>
                 </div>
             </div>
