@@ -58,8 +58,7 @@ export class MainComponent implements OnInit {
     console.log(this.resultados);*/
   }
   
-
-  async enviardatos() {
+   async enviardatos() {
     const user = this.miFormulario.value;
     let salida = user.fechaS;
     let llegada = user.fechaV;
@@ -113,6 +112,7 @@ export class MainComponent implements OnInit {
     }
 
   }
+
 
   datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
