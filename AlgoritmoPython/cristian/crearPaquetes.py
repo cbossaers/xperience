@@ -13,7 +13,7 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
     habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
     
-    with open('./algoritmoPython/cristian/nombresAeropuertos.json', 'r') as f:
+    with open('C:/Users/Cristian/Documents/bluesky/algoritmoPython/cristian/nombresAeropuertos.json', 'r') as f:
         data = json.load(f)
 
     if(len(habitacion)==0 or len(vuelo)==0): return
@@ -25,10 +25,10 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
 
     result = {
         "destino": data[destino]["nombre"],
-        "precioTotal": (float(habitacion["offers"][0]["price"]["total"]) + float(vuelo["price"]["total"]))/2,
-        "precioHotel": float(habitacion["offers"][0]["price"]["total"])/2,
-        "precioIda": float(vuelo["price"]["total"])*x,
-        "precioVuelta": float(vuelo["price"]["total"])*(1-x),
+        "precioTotal": round((float(habitacion["offers"][0]["price"]["total"]) + float(vuelo["price"]["total"])),2),
+        "precioHotel": round(float(habitacion["offers"][0]["price"]["total"]),2),
+        "precioIda": round(float(vuelo["price"]["total"])*x,2),
+        "precioVuelta": round(float(vuelo["price"]["total"])*(1-x),2),
         "salidaIda": vuelo["itineraries"][0]["segments"][0]["departure"]["at"],
         "llegadaIda": vuelo["itineraries"][0]["segments"][0]["arrival"]["at"],
         "duracionIda": vuelo["itineraries"][0]["duration"],
@@ -42,7 +42,7 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
     return result
 
 def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
-    if __name__ == '__main__':
+    #if __name__ == '__main__':
         args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "OPO", "ZRH", "DUB", "LIS"]
 
         res = []
@@ -56,10 +56,12 @@ def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
 
         #x = [r[0] for r in res]
 
-        with open("./algoritmoPython/cristian/res.json", "w") as outfile:
-            json.dump(res, outfile, indent=4, sort_keys=True)
+        #with open("./algoritmoPython/cristian/res.json", "w") as outfile:
+        #    json.dump(res, outfile, indent=4, sort_keys=True)
+
+        res = list(filter(None, res))
 
         print(str(time.time()-a))
-        return outfile
+        return res
 
-GenerarPaquetes("MAD", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))
+#GenerarPaquetes("MAD", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))

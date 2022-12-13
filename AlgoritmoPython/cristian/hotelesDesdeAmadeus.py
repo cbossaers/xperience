@@ -6,8 +6,8 @@ from pprint import pprint
 import json
 
 amadeus = Client(
-    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
-    client_secret='dpBQ1LE6xJtVvPyB'
+    client_id='ESWgrFo8V2wufi2QP3gY7UW7Xx7Apm2K',
+    client_secret='eYaS8KKNExb8ZfO0'
 )
 
 def ObtenerHoteles(destino: str):
