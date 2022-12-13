@@ -42,7 +42,10 @@ export class MainComponent implements OnInit {
   numPasajeros: number = 1;
 
   miFormulario = new FormGroup({
-    Presupuesto : new FormControl('',Validators.required)
+    Presupuesto : new FormControl('',Validators.required),
+    fechaS : new FormControl('',Validators.required),
+    fechaV : new FormControl('',Validators.required),
+    Origen : new FormControl('',Validators.required)
   });
 
   constructor() {
@@ -57,9 +60,12 @@ export class MainComponent implements OnInit {
   
 
   async enviardatos() {
-    let salida = '10/05/23 00:00:00';
-    let llegada = '16/05/23 00:00:00';
-    let Origen = 'MAD';
+    const user = this.miFormulario.value;
+    let salida = user.fechaS;
+    let llegada = user.fechaV;
+    let Origen = user.Origen;
+    let presupuesto = user.Presupuesto;
+
     try {
       const response = await fetch('http://88.17.114.199:9876/paq', {
         method: 'POST',
@@ -67,6 +73,7 @@ export class MainComponent implements OnInit {
           origen: Origen,
           fechaIda: salida,
           fechaVuelta: llegada,
+          presupuesto:presupuesto,
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -110,8 +117,8 @@ export class MainComponent implements OnInit {
   datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
     this.destino = destino;
-    this.duracionIda = duracionIda;
-    this.duracionVuelta = duracionVuelta;
+    this.duracionIda = duracionIda.substring(2);
+    this.duracionVuelta = duracionVuelta.substring(2);
     this.habitacion = habitacion;
     this.hotelNombre = hotelNombre;
     this.llegadaIda = llegadaIda;
@@ -120,9 +127,9 @@ export class MainComponent implements OnInit {
     this.precioIda = precioIda;
     this.precioTotal = precioTotal;
     this.precioVuelta = precioVuelta;
-    this.salidaIda = salidaIda;
-    this.salidaVuelta = salidaVuelta;
-    this.foto=foto;
+    this.salidaIda = salidaIda.substring(0,10) + " " + salidaIda.substring(11,16) + "h";
+    this.salidaVuelta = salidaVuelta.substring(0,10) + " " + salidaVuelta.substring(11,16) + "h";
+    this.foto = foto;
 
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
@@ -151,10 +158,7 @@ export class MainComponent implements OnInit {
     }
   }
 
-  enviarInfo() {
-    const user = this.miFormulario.value;
-    alert(user.Presupuesto);
-  }
+
 
   realizarPago() {
     this.modalSwitch1 = false;
