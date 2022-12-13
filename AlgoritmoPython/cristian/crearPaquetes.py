@@ -4,11 +4,11 @@ import hotelesDesdeAmadeus as h
 import vuelosDesdeAmadeus as v
 from pprint import pprint
 from itertools import repeat
-#from concurrent.futures import ProcessPoolExecutor as Pool
+from concurrent.futures import ProcessPoolExecutor as Pool
 import time
 import random
 
-def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
+def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
 
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
     habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
@@ -17,18 +17,20 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
         data = json.load(f)
 
     if(len(habitacion)==0 or len(vuelo)==0): return
-    else: 
+    else:
         habitacion = habitacion[0][0]
         vuelo = vuelo[0]
+
+    if((int(float(habitacion["offers"][0]["price"]["total"])) + int(float(vuelo["price"]["total"])))/2 > int(presupuesto)): return
 
     x = random.uniform(0.3,0.7)
 
     result = {
         "destino": data[destino]["nombre"],
-        "precioTotal": round((float(habitacion["offers"][0]["price"]["total"]) + float(vuelo["price"]["total"])),2),
-        "precioHotel": round(float(habitacion["offers"][0]["price"]["total"]),2),
-        "precioIda": round(float(vuelo["price"]["total"])*x,2),
-        "precioVuelta": round(float(vuelo["price"]["total"])*(1-x),2),
+        "precioTotal": (int(float(habitacion["offers"][0]["price"]["total"])) + int(float(vuelo["price"]["total"])))/2,
+        "precioHotel": int(float(habitacion["offers"][0]["price"]["total"]))/2,
+        "precioIda": int(float(vuelo["price"]["total"])*x/2),
+        "precioVuelta": int(float(vuelo["price"]["total"])*(1-x))/2,
         "salidaIda": vuelo["itineraries"][0]["segments"][0]["departure"]["at"],
         "llegadaIda": vuelo["itineraries"][0]["segments"][0]["arrival"]["at"],
         "duracionIda": vuelo["itineraries"][0]["duration"],
@@ -41,7 +43,7 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
     
     return result
 
-def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
+def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
     #if __name__ == '__main__':
         args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "OPO", "ZRH", "DUB", "LIS"]
 
@@ -49,7 +51,7 @@ def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime):
 
         a = time.time()
         for x in args:
-            res.append(CrearPaquete(origen,x,fechaIda,fechaVuelta))
+            res.append(CrearPaquete(origen,x,fechaIda,fechaVuelta, presupuesto))
 
         #with Pool() as pool:
         #    pool.starmap(CrearPaquete, zip(list(repeat(origen,7)), args, list(repeat(fechaIda, 7)), list(repeat(fechaVuelta, 7))))

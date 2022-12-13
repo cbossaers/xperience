@@ -6,8 +6,8 @@ from pprint import pprint
 import json
 
 amadeus = Client(
-    client_id='ESWgrFo8V2wufi2QP3gY7UW7Xx7Apm2K',
-    client_secret='eYaS8KKNExb8ZfO0'
+    client_id='5Z3YKgGmVSuOvsqrTDaUtgZnNFdGSnKl',
+    client_secret='OAxecsexHIX6Y14r'
 )
 
 def ObtenerHoteles(destino: str):
@@ -19,7 +19,7 @@ def ObtenerHoteles(destino: str):
         for elem in response.data:
             res.append(elem["hotelId"])
 
-        res = [res[i:i+20] for i in range(0,len(res),20)]
+        res = [res[i:i+1] for i in range(0,len(res),1)]
         return res
 
     except ResponseError as error:
@@ -30,7 +30,7 @@ def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
 
     try:
         hotel_offers = amadeus.shopping.hotel_offers_search.get(
-            hotelIds=hoteles, adults=1, checkInDate=str(fechaIda.date()), checkOutDate=str(fechaVuelta.date()))
+            hotelIds=hoteles, adults=1, checkInDate=fechaIda, checkOutDate=fechaVuelta)
         
         if(hotel_offers.data != []): 
             listahab.append(hotel_offers.data)

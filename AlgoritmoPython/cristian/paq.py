@@ -13,5 +13,5 @@ class Paq(Resource):
 
     def post(self):
         args = request.json
-        x = c.GenerarPaquetes(args["origen"], datetime.datetime.strptime(args["fechaIda"], '%d/%m/%y %H:%M:%S'), datetime.datetime.strptime(args["fechaVuelta"], '%d/%m/%y %H:%M:%S'))
+        x = c.GenerarPaquetes(args["origen"], args["fechaIda"], args["fechaVuelta"], args["presupuesto"])
         return x, 200  # return data with 200 OK
