@@ -117,8 +117,8 @@ export class MainComponent implements OnInit {
   datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
     this.destino = destino;
-    this.duracionIda = duracionIda;
-    this.duracionVuelta = duracionVuelta;
+    this.duracionIda = duracionIda.substring(2);
+    this.duracionVuelta = duracionVuelta.substring(2);
     this.habitacion = habitacion;
     this.hotelNombre = hotelNombre;
     this.llegadaIda = llegadaIda;
@@ -127,9 +127,9 @@ export class MainComponent implements OnInit {
     this.precioIda = precioIda;
     this.precioTotal = precioTotal;
     this.precioVuelta = precioVuelta;
-    this.salidaIda = salidaIda;
-    this.salidaVuelta = salidaVuelta;
-    this.foto=foto;
+    this.salidaIda = salidaIda.substring(0,10) + " " + salidaIda.substring(11,16) + "h";
+    this.salidaVuelta = salidaVuelta.substring(0,10) + " " + salidaVuelta.substring(11,16) + "h";
+    this.foto = foto;
 
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
