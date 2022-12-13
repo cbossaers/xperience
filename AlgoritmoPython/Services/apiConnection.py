@@ -1,6 +1,7 @@
 import Service
 from amadeus import Client, ResponseError
 import json
+from datetime import date
 
 amadeus = Client(
     client_id='H60c8yIe6mIkrrgNCc48AvkxmRTjpjRR',
@@ -63,6 +64,20 @@ def getHotelRating(hotelIds):
         for element in response.result["data"]:
             if element["overallRating"] >= 30:
                 lista.append(element)
+        return lista
+    except ResponseError as error:
+        return error
+
+def getCheapestDatesFlights(num, origin, destination, departureDate = "", oneWay = False, duration = 3, nonStop = False, maxPrice = 99999, viewBy = "DURATION"):
+    try:
+        if(departureDate == ""):
+            today = date.today()
+            nextYear = date.today()
+            nextYear = nextYear.replace(year = nextYear.year + 1)
+            departureDate = today.strftime("%Y-%m-%d") + "," + nextYear.strftime("%Y-%m-%d")
+        response = amadeus.get(
+            '/v1/shopping/flight-dates', origin=origin, destination=destination, departureDate=departureDate, oneWay=oneWay, duration=duration,nonStop=nonStop, maxPrice=maxPrice, viewBy= viewBy)
+        lista = response["data"][:num]
         return lista
     except ResponseError as error:
         return error
