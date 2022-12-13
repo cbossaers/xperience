@@ -433,9 +433,11 @@
   .filters-wrapper {
     background: #b4cdfa;
     border-radius: 20px;
-    width: 65.8rem;
+    width: 63rem;
     height: 100px;
-    margin: auto; 
+    margin: auto;
+    transform:translateY(-15%);
+
   }
   
   .filter-tabs {
@@ -686,12 +688,30 @@ height: 100%;
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url('src/assets/images/Amsterdan.jpg');
+    background-image: url('src/assets/images/itinerario-venecia.jpg');
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-image: url('src/assets/images/paris.jpg');
 }
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('src/assets/images/Estocolmo.jpg');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url('src/assets/images/Amsterdan.jpg');
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+    background-image: url('src/assets/images/Tokio.jpg');
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+    background-image: url('src/assets/images/Londres.jpg');
+}
+
+
 
 .card__like {
     width: 18px;
