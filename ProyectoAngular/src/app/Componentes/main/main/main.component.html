@@ -147,7 +147,9 @@
                 <h3 class="tituloHotel">{{ hotelNombre }}</h3>
                 <h4 class="precio">{{ precioHotel }} €</h4>
             </div>
-            <h3 class="precioTotal"><b> Total {{ precioTotal }} € </b></h3>
+            <div style="width: 100%;">
+                <h3 class="precioTotal"><b> Total {{ precioTotal }} € </b></h3>
+            </div>
         </div>
 
         <button class="botonComprar" (click)="compraViaje()"> Comprar </button>
@@ -192,7 +194,7 @@
 
                 <div>
                     <input class="inputPasajero" type="date" id="fechaNacimiento" name="fechaNacimiento"
-                        min="2022-11-07" max="2025-12-31">
+                        max="2025-12-31">
                     <input class="inputPasajero" type="text" id="dni" name="dni" style="margin-left: 70px;" required>
                     <input class="inputPasajero" type="text" id="nacionalidad" name="nacionalidad"
                         style="margin-left: 50px;" required>

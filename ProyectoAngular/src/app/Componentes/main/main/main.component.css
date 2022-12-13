@@ -344,6 +344,7 @@
 .precio {
     float: right;
     margin-top: 0%;
+    margin-bottom: 0%;
     display: inline;
 }
 
@@ -369,6 +370,7 @@
 
 .precioTotal {
     margin: 0%;
+    margin-top: 10px;
     padding-right: 0%;
     color: #797979;
     float: right;
