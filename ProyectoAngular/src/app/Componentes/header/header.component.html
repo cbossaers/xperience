@@ -1,9 +1,9 @@
             <div class="navbar">
                 <br>
-                <p class="easy">EASY</p><p class="travel">TRAVEL</p>
+                <img class="imagenEX" src="\assets\images\LOGO_AZUL.png" />
                 <button *ngIf="!loginSwitch" class="botonLogin" (click)="openLogin()">Log in</button>
             </div>
-            <div *ngIf="loginSwitch">
+            <div *ngIf="loginSwitch" >
                 <app-login></app-login>
             </div>
 

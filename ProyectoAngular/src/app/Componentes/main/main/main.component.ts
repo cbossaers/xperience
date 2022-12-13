@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import viajees from 'src/assets/json/viajes.json';
+import { FormControl,FormGroup,Validators } from '@angular/forms';
+import  viajees from 'src/assets/json/viajes.json';
 
 
 interface VIAJES {
@@ -29,14 +30,20 @@ export class MainComponent implements OnInit {
   precioVuelta:string = "precioVuelta";
   salidaIda:string = "salidaIda";
   salidaVuelta:string = "salidaVuelta";
+  foto:string = "";
   resultados: any = viajees;
   valores: JSON = viajees;
   modalSwitch1: boolean = true;
   modalSwitch2: boolean = false;
   modalSwitch3: boolean = false;
   modalSwitch4: boolean = false;
+  modalSwitch5: boolean = false;
   modalFiltro: boolean = true;
   numPasajeros: number = 1;
+
+  miFormulario = new FormGroup({
+    Presupuesto : new FormControl('',Validators.required)
+  });
 
   constructor() {
   }
@@ -84,6 +91,7 @@ export class MainComponent implements OnInit {
       this.modalSwitch2 = true;
       this.modalSwitch3 = false;
       this.modalSwitch4 = false;
+      this.modalSwitch5 = false;
       this.modalFiltro = true;
       return otro;
 
@@ -100,7 +108,7 @@ export class MainComponent implements OnInit {
   }
 
   datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
-    llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string) {
+    llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
     this.destino = destino;
     this.duracionIda = duracionIda;
     this.duracionVuelta = duracionVuelta;
@@ -114,11 +122,13 @@ export class MainComponent implements OnInit {
     this.precioVuelta = precioVuelta;
     this.salidaIda = salidaIda;
     this.salidaVuelta = salidaVuelta;
+    this.foto=foto;
 
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
     this.modalSwitch3 = true;
     this.modalSwitch4 = false;
+    this.modalSwitch5 = false;
     this.modalFiltro = false;
   }
 
@@ -127,6 +137,7 @@ export class MainComponent implements OnInit {
     this.modalSwitch2 = false;
     this.modalSwitch3 = false;
     this.modalSwitch4 = true;
+    this.modalSwitch5 = false;
     this.modalFiltro = false;
   }
 
@@ -140,6 +151,19 @@ export class MainComponent implements OnInit {
     }
   }
 
+  enviarInfo() {
+    const user = this.miFormulario.value;
+    alert(user.Presupuesto);
+  }
+
+  realizarPago() {
+    this.modalSwitch1 = false;
+    this.modalSwitch2 = false;
+    this.modalSwitch3 = false;
+    this.modalSwitch4 = false;
+    this.modalSwitch5 = true;
+    this.modalFiltro = false;
+  }
 }
 
 
