@@ -6,8 +6,8 @@ from pprint import pprint
 import json
 
 amadeus = Client(
-    client_id='5Z3YKgGmVSuOvsqrTDaUtgZnNFdGSnKl',
-    client_secret='OAxecsexHIX6Y14r'
+    client_id='evAyCfGSi015tprOjzDUWdBUQdeK54PB',
+    client_secret='rDYX0wAOqCj6roes'
 )
 
 def ObtenerHoteles(destino: str):
@@ -47,15 +47,15 @@ def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: d
 
         res = []
 
-        #with Pool() as pool:
-        #    for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
-        #        res.append(x)
+        with Pool() as pool:
+            for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
+                res.append(x)
 
-        for hotel in hoteles:
-            res.append(ObtenerHabitaciones(hotel,fechaIda,fechaVuelta))
+        #for hotel in hoteles:
+        #   res.append(ObtenerHabitaciones(hotel,fechaIda,fechaVuelta))
 
         habitaciones = list(filter(None, res[0]))
 
         return habitaciones
 
-pprint(ObtenerHabitacionesDeCiudad("LON",datetime.datetime(2023,5,10),datetime.datetime(2023,5,16)))
+#pprint(ObtenerHabitacionesDeCiudad("PAR",datetime.datetime(2023,7,10),datetime.datetime(2023,7,18)))

@@ -1,22 +1,11 @@
 from flask import jsonify
 from flask_restful import Resource, Api, reqparse, request
-import pandas as pd
-import ast
-import json
-import datetime
 
-import crearPaquetes as c
+import fake as f
+
 
 class Paq(Resource):
-    def get(self):
-        return {'info': 'GET está actualmente deshabilitado'}, 200  # return data and 200 OK
-
     def post(self):
         args = request.json
-        print(args["origen"])
-        print(args["fechaIda"])
-        print(args["fechaVuelta"])
-        print(args["presupuesto"])
-        print(type(args["fechaIda"]))
-        x = c.GenerarPaquetes(args["origen"], args["fechaIda"], args["fechaVuelta"], args["presupuesto"])
+        x = f.Fake(args["origen"], args["fechaIda"], args["fechaVuelta"], int(args["presupuesto"]))
         return x, 200  # return data with 200 OK

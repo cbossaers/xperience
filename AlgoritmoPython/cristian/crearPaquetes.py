@@ -61,14 +61,6 @@ def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime, pres
         for x in args:
             res.append(CrearPaquete(origen,x,fechaIda,fechaVuelta, presupuesto))
 
-        #with Pool() as pool:
-        #    pool.starmap(CrearPaquete, zip(list(repeat(origen,7)), args, list(repeat(fechaIda, 7)), list(repeat(fechaVuelta, 7))))
-
-        #x = [r[0] for r in res]
-
-        #with open("./algoritmoPython/cristian/res.json", "w") as outfile:
-        #    json.dump(res, outfile, indent=4, sort_keys=True)
-
         res = list(filter(None, res))
 
         print(str(time.time()-a))
