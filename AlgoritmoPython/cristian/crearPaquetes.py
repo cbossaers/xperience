@@ -3,19 +3,34 @@ import datetime
 import hotelesDesdeAmadeus as h
 import vuelosDesdeAmadeus as v
 from pprint import pprint
-from multiprocessing import Pool
 from itertools import repeat
+from concurrent.futures import ProcessPoolExecutor as Pool
+import time
+import random
 
-def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
-    habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
+def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
+
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
+    habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
+    
+    with open('C:/Users/Cristian/Documents/bluesky/algoritmoPython/cristian/nombresAeropuertos.json', 'r') as f:
+        data = json.load(f)
+
+    if(len(habitacion)==0 or len(vuelo)==0): return
+    else:
+        habitacion = habitacion[0][0]
+        vuelo = vuelo[0]
+
+    if((int(float(habitacion["offers"][0]["price"]["total"])) + int(float(vuelo["price"]["total"])))/2 > int(presupuesto)): return
+
+    x = random.uniform(0.3,0.7)
 
     result = {
-        "destino": destino,
-        "precioTotal": (float(habitacion["offers"][0]["price"]["total"]) + float(vuelo["price"]["total"]))/2,
-        "precioHotel": float(habitacion["offers"][0]["price"]["total"])/2,
-        "precioIda": float(vuelo["price"]["total"])*0.58,
-        "precioVuelta": float(vuelo["price"]["total"])*0.42,
+        "destino": data[destino]["nombre"],
+        "precioTotal": (int(float(habitacion["offers"][0]["price"]["total"])) + int(float(vuelo["price"]["total"])))/2,
+        "precioHotel": int(float(habitacion["offers"][0]["price"]["total"]))/2,
+        "precioIda": int(float(vuelo["price"]["total"])*x/2),
+        "precioVuelta": int(float(vuelo["price"]["total"])*(1-x))/2,
         "salidaIda": vuelo["itineraries"][0]["segments"][0]["departure"]["at"],
         "llegadaIda": vuelo["itineraries"][0]["segments"][0]["arrival"]["at"],
         "duracionIda": vuelo["itineraries"][0]["duration"],
@@ -23,25 +38,32 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
         "llegadaVuelta": vuelo["itineraries"][1]["segments"][0]["arrival"]["at"],
         "duracionVuelta": vuelo["itineraries"][1]["duration"],
         "hotelNombre": habitacion["hotel"]["name"],
-        "habitacion": habitacion["offers"][0]["room"]["typeEstimated"]["bedType"] + " " + habitacion["offers"][0]["room"]["typeEstimated"]["category"]
+        "foto": data[destino]["foto"]
     }
     
-    pprint(result)
     return result
 
-#CrearPaquete("VLC","PAR",datetime.datetime(2023,1,15),datetime.datetime(2023,1,23))
+def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
+    #if __name__ == '__main__':
+        args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "OPO", "ZRH", "DUB", "LIS"]
 
-if __name__ == '__main__':
-    args1 = list(repeat("VLC",10))
-    args2 = ["PAR", "LON", "AMS", "FCO", "BER", "BRU", "CDG", "MUC", "ARN", "PMI"]
-    args3 = list(repeat(datetime.datetime(2023,1,15), 10))
-    args4 = list(repeat(datetime.datetime(2023,1,23),10))
+        res = []
 
-    res = []
-    with Pool(processes=10) as pool:
-        res = pool.starmap(CrearPaquete, zip(args1,args2,args3,args4))
+        a = time.time()
+        for x in args:
+            res.append(CrearPaquete(origen,x,fechaIda,fechaVuelta, presupuesto))
 
-    res_list1 = [r[0] for r in res]
+        #with Pool() as pool:
+        #    pool.starmap(CrearPaquete, zip(list(repeat(origen,7)), args, list(repeat(fechaIda, 7)), list(repeat(fechaVuelta, 7))))
 
-    print("------------------------")
-    print(res_list1)
+        #x = [r[0] for r in res]
+
+        #with open("./algoritmoPython/cristian/res.json", "w") as outfile:
+        #    json.dump(res, outfile, indent=4, sort_keys=True)
+
+        res = list(filter(None, res))
+
+        print(str(time.time()-a))
+        return res
+
+#GenerarPaquetes("MAD", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))

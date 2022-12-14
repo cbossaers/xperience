@@ -92,7 +92,7 @@
     <div *ngIf="modalSwitch2" class="viajesN">
         <div *ngFor="let element of resultados" class="ngf">
             <div class="viaje1N">
-                <img src="{{element.foto}}" (click)="datosViaje(element.destino, element.duracionIda, element.duracionVuelta, 
+                <img src="{{element.foto}}" (click)="datosViaje(element.origen, element.destino, element.duracionIda, element.duracionVuelta, 
                 element.habitacion, element.hotelNombre, element.llegadaIda, element.llegadaVuelta, element.precioHotel, element.precioIda, 
                 element.precioTotal, element.precioVuelta, element.salidaIda, element.salidaVuelta,element.foto)" alt="Venecia"
                     class="imageViaje">
@@ -119,7 +119,7 @@
             <img class="imagenTiempo" src="\assets\images\airplane-flying.png" />
         </div>
         <div>
-            <p class="aeropuertoI"> Aeropuerto de Valencia </p>
+            <p class="aeropuertoI"> Aeropuerto de {{ origen }} </p>
             <p class="inline" style="margin-left: 40px;"> Duración: {{ duracionIda }} </p>
             <p class="aeropuertoD"> Aeropuerto de {{ destino }} </p>
         </div>
@@ -139,7 +139,7 @@
         <div>
             <p class="aeropuertoI"> Aeropuerto de {{ destino }} </p>
             <p class="inline"> Duración: {{ duracionVuelta }} </p>
-            <p class="aeropuertoD"> Aeropuerto de Valencia </p>
+            <p class="aeropuertoD"> Aeropuerto de {{ origen }} </p>
         </div>
 
         <div class="fondoHotel">

@@ -1,10 +1,9 @@
-import json
 import datetime
 from amadeus import Client, ResponseError
 
 amadeus = Client(
-    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
-    client_secret='dpBQ1LE6xJtVvPyB'
+    client_id='5Z3YKgGmVSuOvsqrTDaUtgZnNFdGSnKl',
+    client_secret='OAxecsexHIX6Y14r'
 )
 
 def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
@@ -15,8 +14,8 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
             "originLocationCode": origen,
             "destinationLocationCode": destino,
             "departureDateTimeRange": {
-                "date": str(fechaIda.date()),
-                "time": str(fechaIda.time())
+                "date": fechaIda,
+                "time": "00:00:00"
             }
         },
         {
@@ -24,8 +23,8 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
             "originLocationCode": destino,
             "destinationLocationCode": origen,
             "departureDateTimeRange": {
-                "date": str(fechaVuelta.date()),
-                "time": str(fechaVuelta.time())
+                "date": fechaVuelta,
+                "time": "00:00:00"
             }
         }],
         "travelers": [{
@@ -51,4 +50,4 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
     except ResponseError as error:
         raise error
 
-print(ObtenerVuelos("MAD","LHR",datetime.datetime(2023,3,15),datetime.datetime(2023,3,23)))
+#print(ObtenerVuelos("VLC","LON",datetime.datetime(2023,3,1),datetime.datetime(2023,3,8)))

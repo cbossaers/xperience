@@ -17,6 +17,7 @@ interface VIAJES {
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  origen: string = "origen";
   destino: string = "destino";
   duracionIda: string = "duracionIda";
   duracionVuelta:string = "duracionVuelta";
@@ -114,8 +115,9 @@ export class MainComponent implements OnInit {
 
   }
 
-  datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
+  datosViaje(origen: string, destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
+    this.origen = origen;
     this.destino = destino;
     this.duracionIda = duracionIda.substring(2);
     this.duracionVuelta = duracionVuelta.substring(2);
