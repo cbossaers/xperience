@@ -157,15 +157,21 @@ export class MainComponent implements OnInit {
       elementos[i].value='';          
     }
   }
-
-
-
   realizarPago() {
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
     this.modalSwitch3 = false;
     this.modalSwitch4 = false;
     this.modalSwitch5 = true;
+    this.modalFiltro = false;
+  }
+
+  volverInicio() {
+    this.modalSwitch1 = true;
+    this.modalSwitch2 = false;
+    this.modalSwitch3 = false;
+    this.modalSwitch4 = false;
+    this.modalSwitch5 = false;
     this.modalFiltro = false;
   }
 }

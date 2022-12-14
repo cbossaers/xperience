@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="fondo">
-        <img class="logo" src="\assets\images/LOGO_BLANCO.png" />
+        <img class="logo" src="\assets\images/LOGO_BLANCO.png" (click)="volverInicio()"/>
         <nav class="filters-wrapper">
         <form [formGroup]="miFormulario">    
             <ul class="filter-tabs prueba borde">
@@ -9,7 +9,7 @@
                 <p class="leyenda">Origen</p>
                 <select class="botones origen" formControlName="Origen">
                     <!--<option disabled selected>Origen</option>-->     
-                    <option value="MAD">Madrid</option><option value="BCN">Barcelona</option><option value="AGP">Malaga</option><option value="ALC">Alicante</option><option value="SVQ">Sevilla</option><option value="vlc">Valencia</option>
+                    <option value="MAD">Madrid</option><option value="BCN">Barcelona</option><option value="AGP">Malaga</option><option value="ALC">Alicante</option><option value="SVQ">Sevilla</option><option value="VLC">Valencia</option>
                 </select>
                 </div>
                 </li>
@@ -17,21 +17,21 @@
                 <li>
                 <div class="filter-button filter-active nivelarP">
                     <p class="leyenda">Presupuesto</p>
-                    <input placeholder="Presupuesto" formControlName="Presupuesto" class="botones presupuesto" onClick="this.setSelectionRange(0, this.value.length)">
+                    <input formControlName="Presupuesto" class="botones presupuesto" onClick="this.setSelectionRange(0, this.value.length)">
                 </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li  class="filter-button filter-active">
                 <div class="call">
                     <p class="leyenda">Fecha ida</p>
-                    <input type="date" formControlName="fechaS"  class="botones calendario" min="2023-05-10" max="2025-12-31" placeholder="Fecha ida">
+                    <input type="date" formControlName="fechaS"  class="botones calendario" min="2022-12-14" max="2025-12-31" placeholder="Fecha ida">
                 </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li class="filter-button filter-active call">
                 <div class="call">
                     <p class="leyenda">Fecha vuelta</p>
-                    <input type="date" formControlName="fechaV" class="botones calendario" min="2023-05-16" max="2025-12-31" placeholder="Fecha ida">
+                    <input type="date" formControlName="fechaV" class="botones calendario" min="2022-12-14" max="2025-12-31" placeholder="Fecha ida">
                 </div>
                 </li>
                 <li><div class="separador"></div></li>
@@ -207,7 +207,7 @@
         </div>
 
         <div class="datosViaje" *ngIf="modalSwitch4">
-            <img style="float:right; width: 20px; height: 20px;" (click)="enviardatos()" src="\assets\images\eliminar.png" />
+            <img style="float:right; width: 20px; height: 20px;" (click)="volverInicio()" src="\assets\images\eliminar.png" />
             <div>
                 <img class="imagenDatos" src="{{foto}}" />
                 <h1 class="tituloViajeCompra">Empieza la reserva!</h1>
@@ -282,7 +282,7 @@
         </div>
 
         <div class="datosViaje" *ngIf="modalSwitch5">
-            <img style="float:right; width: 20px; height: 20px;" (click)="enviardatos()" src="\assets\images\eliminar.png" />
+            <img style="float:right; width: 20px; height: 20px;" (click)="volverInicio()" src="\assets\images\eliminar.png" />
             <div>
                 <img class="imagenDatos" src="{{foto}}" />
                 <h1 class="tituloViajeCompra">Pasarela de pago</h1>
@@ -316,7 +316,7 @@
                 </form>
 
                 <!-- Falta aplicar la función para que acceda a la pasarela de pago -->
-                <button class="botonComprar"> Finalizar </button>
+                <button class="botonComprar" (click)="volverInicio()"> Finalizar </button>
             </div>
 
         </div>

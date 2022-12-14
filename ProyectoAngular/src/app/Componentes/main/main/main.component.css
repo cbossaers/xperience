@@ -9,6 +9,8 @@
     width: 100%;
     height: 80px;
     display: inline-block;
+    background-color: white;
+    padding-top: 30px;
 }
 
 .fechas {
@@ -160,13 +162,14 @@
     display: inline-block;
     align: left;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 1px 2px 2px 2px gray;
+    border-radius: 12px;
+    /*box-shadow: 1px 2px 2px 2px gray;*/
+    box-shadow: 6px 9px 9px 7px rgba(0, 0, 0,0.1);
 }
 
 .imageViaje {
     width:60%;
-    height:150px; 
+    height:160px; 
     border-radius: 5px;
     float: left;
 }
@@ -258,6 +261,7 @@
 
 .datosViaje {
     padding: 5%;
+    margin-top: 5%;
     border-radius: 20px;
     box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
     font-family: Arial, Helvetica, sans-serif;
@@ -436,7 +440,7 @@
     width: 63rem;
     height: 100px;
     margin: auto;
-    transform:translateY(-15%);
+    transform:translateY(-20%);
     box-shadow: 10px 9px 13px 12px rgba(0, 0, 0,0.1);
 
   }
@@ -476,13 +480,14 @@
 }
 .leyenda{
     padding: 0.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "helvetica";
     font-weight: 100;
     font-size: 1rem;
+    color: #414141;
 }
 .botones{
     padding: 0 1.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "helvetica";
     font-weight: 300;
     font-size: 1.2rem;
     background: #f2f2f2;
@@ -524,7 +529,7 @@
 }
 .fondo{
   background-color: #618bda;
-  height: 350px;
+  height: 250px;
 }
 .fondo2{
   background-color: #fff;
@@ -542,6 +547,7 @@
 }
 .logo{
   width: 300px;
+  cursor: pointer;
 }
 .buscar{
   transform:translateY(-45%);
@@ -798,7 +804,6 @@ box-shadow: 12px 11px 9px 12px rgba(0, 0, 0,0.1);
     padding: 16px 24px 24px 225px;
     width: 125px;
     box-shadow: 6px 9px 9px 7px rgba(0, 0, 0,0.1);
-
   }
 
 .card__category {
