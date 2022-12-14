@@ -17,5 +17,6 @@ class Paq(Resource):
         print(args["fechaIda"])
         print(args["fechaVuelta"])
         print(args["presupuesto"])
+        print(type(args["fechaIda"]))
         x = c.GenerarPaquetes(args["origen"], args["fechaIda"], args["fechaVuelta"], args["presupuesto"])
         return x, 200  # return data with 200 OK

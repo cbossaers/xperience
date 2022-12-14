@@ -25,7 +25,15 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
 
     x = random.uniform(0.3,0.7)
 
+    if(origen == "MAD"): origen = "Madrid"
+    elif(origen == "VLC"): origen = "Valencia"
+    elif(origen == "ALC"): origen = "Alicante"
+    elif(origen == "AGP"): origen = "Málaga"
+    elif(origen == "BCN"): origen = "Barcelona"
+    else: origen = "Sevilla"
+
     result = {
+        "origen": origen,
         "destino": data[destino]["nombre"],
         "precioTotal": (int(float(habitacion["offers"][0]["price"]["total"])) + int(float(vuelo["price"]["total"])))/2,
         "precioHotel": int(float(habitacion["offers"][0]["price"]["total"]))/2,
@@ -45,7 +53,7 @@ def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: dat
 
 def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
     #if __name__ == '__main__':
-        args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "OPO", "ZRH", "DUB", "LIS"]
+        args = ["PAR", "LON", "AMS", "ROM", "BER", "BRU", "MUC", "FRA", "ZRH", "DUB"]
 
         res = []
 
@@ -64,6 +72,7 @@ def GenerarPaquetes(origen: str, fechaIda: datetime, fechaVuelta: datetime, pres
         res = list(filter(None, res))
 
         print(str(time.time()-a))
+        print(res)
         return res
 
 #GenerarPaquetes("MAD", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))

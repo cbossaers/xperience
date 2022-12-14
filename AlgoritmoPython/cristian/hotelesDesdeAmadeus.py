@@ -19,7 +19,7 @@ def ObtenerHoteles(destino: str):
         for elem in response.data:
             res.append(elem["hotelId"])
 
-        res = [res[i:i+1] for i in range(0,len(res),1)]
+        res = [res[i:i+30] for i in range(0,len(res),30)]
         return res
 
     except ResponseError as error:
