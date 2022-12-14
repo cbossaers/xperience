@@ -35,24 +35,27 @@ def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
         if(hotel_offers.data != []): 
             listahab.append(hotel_offers.data)
 
-    except Exception: 0
+    except Exception as error: print(error)
 
     if listahab == []: listahab.append("")
 
     return listahab
 
 def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: datetime):
-    #if __name__ == '__main__':
+    if __name__ == '__main__':
         hoteles = ObtenerHoteles(destino)
 
         res = []
 
-        with Pool() as pool:
-            for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
-                res.append(x)
+        #with Pool() as pool:
+        #    for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
+        #        res.append(x)
+
+        for hotel in hoteles:
+            res.append(ObtenerHabitaciones(hotel,fechaIda,fechaVuelta))
 
         habitaciones = list(filter(None, res[0]))
 
         return habitaciones
 
-#pprint(ObtenerHabitacionesDeCiudad("LON", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16)))
+pprint(ObtenerHabitacionesDeCiudad("LON",datetime.datetime(2023,5,10),datetime.datetime(2023,5,16)))
