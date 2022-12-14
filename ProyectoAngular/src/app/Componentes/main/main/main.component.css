@@ -9,6 +9,8 @@
     width: 100%;
     height: 80px;
     display: inline-block;
+    background-color: white;
+    padding-top: 75px;
 }
 
 .fechas {
@@ -524,7 +526,7 @@
 }
 .fondo{
   background-color: #618bda;
-  height: 350px;
+  height: 250px;
 }
 .fondo2{
   background-color: #fff;

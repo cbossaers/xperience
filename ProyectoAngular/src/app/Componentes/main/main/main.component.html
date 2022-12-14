@@ -1,95 +1,95 @@
-<!DOCTYPE html>
-<html class="fondo">
+    <div class="fondo">
         <img class="logo" src="\assets\images/LOGO_BLANCO.png" />
         <nav class="filters-wrapper">
         <form [formGroup]="miFormulario">    
             <ul class="filter-tabs prueba borde">
                 <li class="filter-button filter-active">
-                <div class="borde">
-                <p class="leyenda">Origen</p>
-                <select class="botones origen" formControlName="Origen">
-                    <!--<option disabled selected>Origen</option>-->     
-                    <option value="MAD">Madrid</option><option value="BCN">Barcelona</option><option value="AGP">Malaga</option><option value="ALC">Alicante</option><option value="SVQ">Sevilla</option><option value="vlc">Valencia</option>
-                </select>
-                </div>
+                    <div class="borde">
+                        <p class="leyenda">Origen</p>
+                        <select class="botones origen" formControlName="Origen">
+                            <!--<option disabled selected>Origen</option>-->     
+                            <option value="MAD">Madrid</option><option value="BCN">Barcelona</option><option value="AGP">Malaga</option><option value="ALC">Alicante</option><option value="SVQ">Sevilla</option><option value="VLC">Valencia</option>
+                        </select>
+                    </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li>
-                <div class="filter-button filter-active nivelarP">
-                    <p class="leyenda">Presupuesto</p>
-                    <input placeholder="Presupuesto" formControlName="Presupuesto" class="botones presupuesto" onClick="this.setSelectionRange(0, this.value.length)">
-                </div>
+                    <div class="filter-button filter-active nivelarP">
+                        <p class="leyenda">Presupuesto</p>
+                        <input placeholder="Presupuesto" formControlName="Presupuesto" class="botones presupuesto" onClick="this.setSelectionRange(0, this.value.length)">
+                    </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li  class="filter-button filter-active">
-                <div class="call">
-                    <p class="leyenda">Fecha ida</p>
-                    <input type="date" formControlName="fechaS"  class="botones calendario" min="2023-05-10" max="2025-12-31" placeholder="Fecha ida">
-                </div>
+                    <div class="call">
+                        <p class="leyenda">Fecha ida</p>
+                        <input type="date" formControlName="fechaS"  class="botones calendario"  max="2025-12-31" placeholder="Fecha ida">
+                    </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li class="filter-button filter-active call">
-                <div class="call">
-                    <p class="leyenda">Fecha vuelta</p>
-                    <input type="date" formControlName="fechaV" class="botones calendario" min="2023-05-16" max="2025-12-31" placeholder="Fecha ida">
-                </div>
+                    <div class="call">
+                        <p class="leyenda">Fecha vuelta</p>
+                        <input type="date" formControlName="fechaV" class="botones calendario"  max="2025-12-31" placeholder="Fecha ida">
+                    </div>
                 </li>
                 <li><div class="separador"></div></li>
                 <li  class="filter-button filter-active">
-                <div class="call">
-                    <button class="botones buscar btn-3" (click)="enviardatos()" ><span>Buscar</span></button>
-                </div>
+                    <div class="call">
+                        <button class="botones buscar btn-3" (click)="enviardatos()" ><span>Buscar</span></button>
+                    </div>
                 </li>
             </ul>
         </form> 
         </nav>
+    </div>
     <div class="filtros" *ngIf="modalSwitch1">
         <div class="fondo2">
             <section class="cards1">
-            <article class="card card--1">
+                <article class="card card--1">
+                    <div class="pequeña">   
+                    <div  class="card__img"></div>
+                        <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                    </a>
+                    </div> 
+                </article>
+                <div class="card__info">
+                    <h3 class="card__title">Venecia</h3>
+                    <span class="card__by">Desde <a href="#" class="card__author" title="author">300€</a></span>
+                    <h3 class="card__category"> Precio por persona</h3>
+                </div>
+            </section>
+            <section class="cards">
+                <article class="card card--2">
                 <div class="pequeña">   
-                <div  class="card__img"></div>
+                    <div  class="card__img"></div>
                     <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-                </a>
-                </div> 
-            </article>
-            <div class="card__info">
-                <h3 class="card__title">Venecia</h3>
-                <span class="card__by">Desde <a href="#" class="card__author" title="author">300€</a></span>
+                    <div class="card__img--hover"></div>
+                    </a>
+                    </div> 
+                </article>
+                <div class="card__info">
+                <h3 class="card__title">Paris</h3>
+                <span class="card__by">Desde <a href="#" class="card__author" title="author">170€</a></span>
                 <h3 class="card__category"> Precio por persona</h3>
-            </div>
-        </section>
-        <section class="cards">
-            <article class="card card--2">
-            <div class="pequeña">   
-                <div  class="card__img"></div>
-                <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-                </a>
-                </div> 
-            </article>
-            <div class="card__info">
-            <h3 class="card__title">Paris</h3>
-            <span class="card__by">Desde <a href="#" class="card__author" title="author">170€</a></span>
-            <h3 class="card__category"> Precio por persona</h3>
-            </div>
-        </section>
-        <section class="cards3">
-            <article class="card card--3">
-            <div class="pequeña">   
-                <div  class="card__img"></div>
-                <a href="#" class="card_link">
-                <div class="card__img--hover"></div>
-                </a>
-                </div> 
-            </article>
-            <div class="card__info">
-            <h3 class="card__title">Estocolmo</h3>
-            <span class="card__by">Desde <a href="#" class="card__author" title="author">400€</a></span>
-            <h3 class="card__category"> Precio por persona</h3>
-            </div>
-        </section>
+                </div>
+            </section>
+            <section class="cards3">
+                <article class="card card--3">
+                <div class="pequeña">   
+                    <div  class="card__img"></div>
+                    <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                    </a>
+                    </div> 
+                </article>
+                <div class="card__info">
+                <h3 class="card__title">Estocolmo</h3>
+                <span class="card__by">Desde <a href="#" class="card__author" title="author">400€</a></span>
+                <h3 class="card__category"> Precio por persona</h3>
+                </div>
+            </section>
         </div>
         <div class="fondo2">
             <section class="cards1">
@@ -321,4 +321,3 @@
 
         </div>
     </div>        
-</html>
