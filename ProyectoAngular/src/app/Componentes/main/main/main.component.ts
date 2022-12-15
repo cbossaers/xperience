@@ -30,6 +30,7 @@ export class MainComponent implements OnInit {
   precioVuelta:string = "precioVuelta";
   salidaIda:string = "salidaIda";
   salidaVuelta:string = "salidaVuelta";
+  origen:string = "origen";
   foto:string = "";
   resultados: any = viajees;
   valores: JSON = viajees;
@@ -114,8 +115,9 @@ export class MainComponent implements OnInit {
   }
 
 
-  datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
+  datosViaje(origen:string, destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
+    this.origen = origen;
     this.destino = destino;
     this.duracionIda = duracionIda.substring(2);
     this.duracionVuelta = duracionVuelta.substring(2);
