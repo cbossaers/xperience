@@ -30,6 +30,7 @@ export class MainComponent implements OnInit {
   precioVuelta:string = "precioVuelta";
   salidaIda:string = "salidaIda";
   salidaVuelta:string = "salidaVuelta";
+  origen:string = "origen";
   foto:string = "";
   resultados: any = viajees;
   valores: JSON = viajees;
@@ -58,8 +59,7 @@ export class MainComponent implements OnInit {
     console.log(this.resultados);*/
   }
   
-
-  async enviardatos() {
+   async enviardatos() {
     const user = this.miFormulario.value;
     let salida = user.fechaS;
     let llegada = user.fechaV;
@@ -114,8 +114,10 @@ export class MainComponent implements OnInit {
 
   }
 
-  datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
+
+  datosViaje(origen:string, destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
+    this.origen = origen;
     this.destino = destino;
     this.duracionIda = duracionIda.substring(2);
     this.duracionVuelta = duracionVuelta.substring(2);
@@ -157,15 +159,21 @@ export class MainComponent implements OnInit {
       elementos[i].value='';          
     }
   }
-
-
-
   realizarPago() {
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
     this.modalSwitch3 = false;
     this.modalSwitch4 = false;
     this.modalSwitch5 = true;
+    this.modalFiltro = false;
+  }
+
+  volverInicio() {
+    this.modalSwitch1 = true;
+    this.modalSwitch2 = false;
+    this.modalSwitch3 = false;
+    this.modalSwitch4 = false;
+    this.modalSwitch5 = false;
     this.modalFiltro = false;
   }
 }
