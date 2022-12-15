@@ -32,13 +32,13 @@ def Fake(origen, fechaIda, fechaVuelta, presupuesto):
         d = int(a*0.225)
         e = random.randint(0,15)
 
-        x = random.randint(0,2)
+        x = random.randint(1,2)
         y = random.randint(x+1,2+x)
 
         horaida1 = 10 + x
-        horaida2 = 12 + y
+        horaida2 = 11 + y
         horavuelta1 = 15 + x
-        horavuelta2 = 17 + y
+        horavuelta2 = 16 + y
         duracionida = horaida2 - horaida1 - 1
         duracionvuelta = horavuelta2 - horavuelta1 - 1
 
