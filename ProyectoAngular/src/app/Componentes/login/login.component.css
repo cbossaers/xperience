@@ -1,38 +1,41 @@
 
-  body {
-    background: #ecf0f300;
-  }
-  h1 {
+  
+ .login {
+background-color: gray;
+ }
+  h2 {
     margin: 0;
     padding: 0;
     color: #0f61ed;
     text-align: center;
+    bold: normal;
   }
 
   p {
     text-align: center;
+    font-size: 12px;
   }
   
+  
   .custom-form {
-    min-width: 300px;
-    max-width: 30%;
-    min-height: 400px;
-    max-height: 40%;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 2rem 3rem;
+    width: 350px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1rem;
     margin: auto;
-    border-radius: 2.5rem;
-    background-color: #ecf0f3;
+    border-radius: 0.5rem;
     margin-top: 10rem;
   }
   .custom-form input {
     display: block;
-    margin: 2rem 0;
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    border: 1;
+    margin: 1rem 0;
+    width: 220px;
+    height: 28px;
+    border-radius: 0.2rem;
+    border: 1px solid;
+    border-color: rgb(141, 141, 141);
     background: #ffffff;
+    margin-left: 60px;
   }
   .entrar {
     letter-spacing: 0.15em;
@@ -41,7 +44,7 @@
     color: #ffffff;
     font-weight: bold;
     background-color: #1c3cf6;
-    width: 40%;
+    width: 35%;
     display: block;
     padding: 0.875rem 1rem;
     border-radius: 1.5rem;
@@ -51,5 +54,15 @@
   .cerrar {
     border: none;
     float: right;
+    background-color: transparent;
+  }
+
+  .link {
+    color:#0f61ed;
+  }
+
+  .reg {
+    font-size: 15px;
+    color:#0f61ed;
   }
   

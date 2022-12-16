@@ -1,0 +1,162 @@
+.general {
+    padding-top: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.datosViaje {
+    padding: 5%;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 330px;
+    background-color: #f2f2f2;
+}
+
+.datosPago {
+    padding: 5%;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 250px;
+    background-color: #f2f2f2;
+}
+.botonGuardar {
+    color: rgb(0, 0, 0);
+    float: right;
+    width: 95px;
+    height: 35px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #e28743;
+}
+.formPasajero {
+    color: #74a6f0;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputPasajero {
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+
+:root {
+    --background-color: #0585ee;
+    --blue-50: #e3f2fd;
+    --blue-100: #bbdefb;
+    --blue-A700: #2962ff;
+    --green-50: #e8f5e9;
+    --green-100: #c8e6c9;
+    --green-A700: #00c853;
+    --purple-50: #f3e5f5;
+    --purple-100: #e1bee7;
+    --purple-A700: #aa00ff;
+    --orange-50: #fff3e0;
+    --orange-100: #ffe0b2;
+    --orange-A700: #ff6d00;
+    --orange-700: #f57c00;
+    --grey-900: #212121;
+    --white: #ffffff;
+    --round-button-active-color: #212121;
+    --translate-main-slider: 100%;
+    --main-slider-color: #e3f2fd;
+    --translate-filters-slider: 0;
+    --filters-container-height: 60.8px;
+    --filters-wrapper-opacity: 1;
+  }
+  
+  button {
+    border: none;	
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+  }
+
+  
+  
+.botones{
+    padding: 0 1.5rem;
+    font-family: "helvetica";
+    font-weight: 300;
+    font-size: 1.2rem;
+    background: #f2f2f2;
+    border-radius: 4px;
+    /*border: 1px solid #f2f2f2;*/ 
+    transform:translateY(-50%);
+    height: 30px;
+    border: none;
+    border-color: transparent;
+    width: 130px;
+}
+
+.body, html {
+  height: fit-content;
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 0%;
+}
+.fondo{
+  background-color: #618bda;
+  height: 150px;
+}
+
+
+.logo{
+  width: 300px;
+  cursor: pointer;
+}
+.buscar{
+  transform:translateY(-45%);
+  height: 33px;
+  width: 120px;
+  background: #3566b3;
+  border: 1px solid #3566b3;
+}
+ 
+.botones{
+  background: #fff;
+  color: #474747;
+  font: roboto;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0 , .1);
+  border: 0;
+  outline: 0;
+}
+
+h1 {
+    color: #0f61ed;
+    bold: normal;
+  }
+
+  .x {
+    margin-right: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+    float: right;
+  }
+
+
+
+
+
+
+
+

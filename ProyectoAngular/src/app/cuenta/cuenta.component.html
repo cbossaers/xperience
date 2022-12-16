@@ -1,0 +1,98 @@
+<html class="fondo">
+    <div>
+        <img class="logo" src="\assets\images/LOGO_BLANCO.png"/>
+    </div>
+
+    <p class="x">X</p>
+    <div class="datosViaje">
+    <form name="formulPasajeros" method="post">
+        <h1> Datos personales</h1>
+        <div>
+            <label class="formPasajero" for="titulo">Sr / Sra / Srta</label>
+            <label class="formPasajero" for="nombre" style="margin-left: 36px;">Nombre</label>
+            <label class="formPasajero" for="apellidos" style="margin-left: 157px;">Apellidos</label>
+        </div>
+        <div>
+            <select class="inputPasajero" required>
+                <option value="none">Ninguno</option>
+                <option value="Sr">Sr</option>
+                <option value="Sra">Sra</option>
+                <option value="Srta">Srta</option>
+            </select>
+            <input class="inputPasajero" type="text" id="nombre" name="nombre"
+                style="width: 150px; margin-left: 50px;" required>
+            <input class="inputPasajero" type="text" id="apellidos" name="apellidos"
+                style="width: 280px; margin-left: 50px;" required>
+        </div>
+        <div>
+            <label class="formPasajero" for="fechaNacimiento">Fecha de nacimiento</label>
+            <label class="formPasajero" for="dni" style="margin-left: 32px;">DNI</label>
+            <label class="formPasajero" for="nacionalidad" style="margin-left: 204px;">Nacionalidad</label>
+        </div>
+
+        <div>
+            <input class="inputPasajero" type="date" id="fechaNacimiento" name="fechaNacimiento"
+                max="2025-12-31">
+            <input class="inputPasajero" type="text" id="dni" name="dni" style="margin-left: 70px;" required>
+            <input class="inputPasajero" type="text" id="nacionalidad" name="nacionalidad"
+                style="margin-left: 50px;" required>
+        </div>
+
+        <div>
+            <label class="formPasajero" for="direccion">Dirección</label>
+            <label class="formPasajero" for="codPostal" style="margin-left: 346px;">Código postal</label>
+        </div>
+
+        <div>
+            <input class="inputPasajero" type="text" id="direccion" name="direccion" style="width: 350px;"
+                required>
+            <input class="inputPasajero" type="text" id="codPostal" name="codPostal" style="margin-left: 50px;"
+                required>
+        </div>
+
+        <div>
+            <label class="formPasajero" for="email">E-mail</label>
+            <label class="formPasajero" for="telefono" style="margin-left: 265px;">Teléfono</label>
+        </div>
+
+        <div>
+            <input class="inputPasajero" type="text" id="email" name="email" style="width: 250px;" required>
+            <input class="inputPasajero" type="text" id="telefono" name="telefono" style="margin-left: 50px;"
+                required>
+        </div>
+        <button class="botonGuardar"> Guardar </button>
+        
+    </form>
+    </div>
+                    
+    <div class="datosPago">
+        <form name="formulPasajeros" method="post">
+            <h1> Pasarela de pago</h1>
+            <div>
+                <label class="formPasajero" for="nombre">Nombre del titular</label>
+            </div>
+            <div>
+                <input class="inputPasajero" type="text" id="nombre" name="nombre"
+                    style="width: 150px;" required>
+            </div>
+            <div>
+                <label class="formPasajero" for="fechaExpiracion">Fecha de expiración</label>
+                <label class="formPasajero" for="cvc" style="margin-left: 32px;">CVC</label>
+            </div>
+    
+            <div>
+                <input class="inputPasajero" type="date" id="fechaNacimiento" name="fechaNacimiento"
+                    min="2022-11-07" max="2025-12-31">
+                <input class="inputPasajero" type="text" id="cvc" name="cvc" style="margin-left: 70px;" required>
+            </div>
+    
+            <div>
+                    <label class="formPasajero" for="numeroTarjeta">Número de la tarjeta</label>
+            </div>
+    
+            <div>
+                <input class="inputPasajero" type="text" id="numeroTarjeta" name="numeroTarjeta" style="width: 350px;" required>
+            </div>
+            <button class="botonGuardar"> Guardar </button>
+        </form>
+    </div>
