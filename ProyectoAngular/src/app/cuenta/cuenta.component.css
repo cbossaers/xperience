@@ -1,12 +1,8 @@
-.general {
-    padding-top: 120px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 
 .datosViaje {
     padding: 5%;
-    margin-top: 5%;
+    margin-top: 50px;
     border-radius: 20px;
     box-shadow: 0.5px 0.5px 3px 3px #e6e9ea;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +10,6 @@
     margin-right: 10%;
     margin-left: 10%;
     height: 330px;
-    background-color: #f2f2f2;
 }
 
 .datosPago {
@@ -27,7 +22,6 @@
     margin-right: 10%;
     margin-left: 10%;
     height: 250px;
-    background-color: #f2f2f2;
 }
 .botonGuardar {
     color: rgb(0, 0, 0);
@@ -148,10 +142,38 @@ h1 {
 
   .x {
     margin-right: 50px;
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 20px;
     float: right;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+  .barra {
+    color: #0f61ed;
+    font-style: none;
+    background-color: transparent;
+    border: none;
+    display:inline;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .micuenta {
+    color: #0f61ed;
+    font-style: none;
+    background-color: transparent;
+    border: none;
+    display:inline;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-bottom: 5px solid #0f61ed;
+    height: 40px;
+
+  }
+
+  
 
 
 
