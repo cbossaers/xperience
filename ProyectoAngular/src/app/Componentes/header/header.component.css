@@ -1,0 +1,20 @@
+.botonLogin {
+  background-color:  #4063a9;
+  color:white;
+  width: 95px;
+  height: 32px;
+  margin-left: 64.7%;
+  transition-duration: 0.4s;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+.botonLogin:hover {
+  background-color: white;
+  color: #aeecf2;
+  }

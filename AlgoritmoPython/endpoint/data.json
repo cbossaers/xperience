@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "fecha_salida": "2022-03-01",
+        "fecha_llegada": "2022-03-01",
+        "precio": 33.0,
+        "companyia": "FACEBOOK",
+        "ciudad_salida": "prueba1",
+        "ciudad_llegada": "prueba2",
+        "codigo_vuelo": "12345",
+        "precio_total": 88.0,
+        "precio_base": 66.0,
+        "tasas_cantidad": 111.0
+    },
+    {
+        "id": 4,
+        "fecha_salida": "2022-03-01",
+        "fecha_llegada": "2022-03-01",
+        "precio": 33.5,
+        "companyia": "hola",
+        "ciudad_salida": "valencia",
+        "ciudad_llegada": "madrid",
+        "codigo_vuelo": "13432",
+        "precio_total": 44.64,
+        "precio_base": 11.0,
+        "tasas_cantidad": 328.44
+    },
+    {
+        "id": 3,
+        "fecha_salida": "2022-03-01",
+        "fecha_llegada": "2022-03-01",
+        "precio": 99.0,
+        "companyia": "nada",
+        "ciudad_salida": "nada",
+        "ciudad_llegada": "nada",
+        "codigo_vuelo": "nada",
+        "precio_total": 44.64,
+        "precio_base": 1.0,
+        "tasas_cantidad": 1.0
+    }
+]
