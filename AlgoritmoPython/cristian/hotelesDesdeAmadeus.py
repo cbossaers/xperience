@@ -1,14 +1,13 @@
 import datetime
 from amadeus import Client, ResponseError
-from pprint import pprint
-from multiprocessing import Pool
+from concurrent.futures import ProcessPoolExecutor as Pool
 from itertools import repeat
+from pprint import pprint
 import json
-import time
 
 amadeus = Client(
-    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
-    client_secret='dpBQ1LE6xJtVvPyB'
+    client_id='evAyCfGSi015tprOjzDUWdBUQdeK54PB',
+    client_secret='rDYX0wAOqCj6roes'
 )
 
 def ObtenerHoteles(destino: str):
@@ -20,7 +19,7 @@ def ObtenerHoteles(destino: str):
         for elem in response.data:
             res.append(elem["hotelId"])
 
-        res = [res[i:i+10] for i in range(0,len(res),10)]
+        res = [res[i:i+30] for i in range(0,len(res),30)]
         return res
 
     except ResponseError as error:
@@ -31,12 +30,12 @@ def ObtenerHabitaciones(hoteles, fechaIda: datetime, fechaVuelta: datetime):
 
     try:
         hotel_offers = amadeus.shopping.hotel_offers_search.get(
-            hotelIds=hoteles, adults=1, checkInDate=str(fechaIda.date()), checkOutDate=str(fechaVuelta.date()))
+            hotelIds=hoteles, adults=1, checkInDate=fechaIda, checkOutDate=fechaVuelta)
         
         if(hotel_offers.data != []): 
             listahab.append(hotel_offers.data)
 
-    except Exception: 0
+    except Exception as error: print(error)
 
     if listahab == []: listahab.append("")
 
@@ -49,10 +48,14 @@ def ObtenerHabitacionesDeCiudad(destino: str, fechaIda: datetime, fechaVuelta: d
         res = []
 
         with Pool() as pool:
-            res = pool.starmap(ObtenerHabitaciones, zip(hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))))
+            for x in pool.map(ObtenerHabitaciones, hoteles, list(repeat(fechaIda, 10)), list(repeat(fechaVuelta, 10))):
+                res.append(x)
 
-        habitaciones = [r[0] for r in res]
+        #for hotel in hoteles:
+        #   res.append(ObtenerHabitaciones(hotel,fechaIda,fechaVuelta))
+
+        habitaciones = list(filter(None, res[0]))
 
         return habitaciones
 
-ObtenerHabitacionesDeCiudad("PAR", datetime.datetime(2023,5,10), datetime.datetime(2023,5,16))
+#pprint(ObtenerHabitacionesDeCiudad("PAR",datetime.datetime(2023,7,10),datetime.datetime(2023,7,18)))

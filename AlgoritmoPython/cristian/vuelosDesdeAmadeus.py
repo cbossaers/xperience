@@ -1,10 +1,10 @@
-import json
 import datetime
 from amadeus import Client, ResponseError
+from pprint import pprint
 
 amadeus = Client(
-    client_id='0sxAuGfYEo2XMONAV020GNRpoi5ACgYb',
-    client_secret='dpBQ1LE6xJtVvPyB'
+    client_id='evAyCfGSi015tprOjzDUWdBUQdeK54PB',
+    client_secret='rDYX0wAOqCj6roes'
 )
 
 def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
@@ -16,7 +16,7 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
             "destinationLocationCode": destino,
             "departureDateTimeRange": {
                 "date": str(fechaIda.date()),
-                "time": str(fechaIda.time())
+                "time": "00:00:00"
             }
         },
         {
@@ -25,7 +25,7 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
             "destinationLocationCode": origen,
             "departureDateTimeRange": {
                 "date": str(fechaVuelta.date()),
-                "time": str(fechaVuelta.time())
+                "time": "00:00:00"
             }
         }],
         "travelers": [{
@@ -51,4 +51,4 @@ def ObtenerVuelos(origen: str, destino: str, fechaIda: datetime, fechaVuelta: da
     except ResponseError as error:
         raise error
 
-print(ObtenerVuelos("MAD","LHR",datetime.datetime(2023,3,15),datetime.datetime(2023,3,23)))
+#pprint(ObtenerVuelos("VLC","LON",datetime.datetime(2023,7,10),datetime.datetime(2023,7,18)))
