@@ -6,7 +6,7 @@ from pprint import pprint
 from multiprocessing import Pool
 from itertools import repeat
 
-def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
+def CrearPaquette(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime):
     habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
 
