@@ -8,7 +8,7 @@ from concurrent.futures import ProcessPoolExecutor as Pool
 import time
 import random
 
-def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int):
+def CrearPaquete(origen: str, destino: str, fechaIda: datetime, fechaVuelta: datetime, presupuesto: int, cosa: int):
 
     vuelo = v.ObtenerVuelos(origen, destino, fechaIda, fechaVuelta)
     habitacion = h.ObtenerHabitacionesDeCiudad(destino, fechaIda, fechaVuelta)
