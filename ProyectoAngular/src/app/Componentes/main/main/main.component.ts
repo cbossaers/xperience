@@ -58,8 +58,7 @@ export class MainComponent implements OnInit {
     console.log(this.resultados);*/
   }
   
-
-  async enviardatos() {
+   async enviardatos() {
     const user = this.miFormulario.value;
     let salida = user.fechaS;
     let llegada = user.fechaV;
@@ -114,6 +113,7 @@ export class MainComponent implements OnInit {
 
   }
 
+
   datosViaje(destino: string, duracionIda: string, duracionVuelta: string, habitacion: string, hotelNombre: string, llegadaIda: string,
     llegadaVuelta: string, precioHotel: string, precioIda: string, precioTotal: string, precioVuelta: string, salidaIda: string, salidaVuelta: string,foto: string) {
     this.destino = destino;
@@ -157,15 +157,21 @@ export class MainComponent implements OnInit {
       elementos[i].value='';          
     }
   }
-
-
-
   realizarPago() {
     this.modalSwitch1 = false;
     this.modalSwitch2 = false;
     this.modalSwitch3 = false;
     this.modalSwitch4 = false;
     this.modalSwitch5 = true;
+    this.modalFiltro = false;
+  }
+
+  volverInicio() {
+    this.modalSwitch1 = true;
+    this.modalSwitch2 = false;
+    this.modalSwitch3 = false;
+    this.modalSwitch4 = false;
+    this.modalSwitch5 = false;
     this.modalFiltro = false;
   }
 }

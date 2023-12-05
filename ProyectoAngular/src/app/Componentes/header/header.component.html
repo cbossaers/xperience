@@ -1,10 +1,7 @@
-            <div class="navbar">
-                <br>
-                <img class="imagenEX" src="\assets\images\LOGO_AZUL.png" />
-                <button *ngIf="!loginSwitch" class="botonLogin" (click)="openLogin()">Log in</button>
-            </div>
-            <div *ngIf="loginSwitch" >
-                <app-login></app-login>
-            </div>
+
+<div *ngIf="loginSwitch" >
+    <app-login></app-login>
+</div>
+
 
 
